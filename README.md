@@ -2,7 +2,7 @@
 
 **Explore how the same model behaves on different hardware, GPU allocations and serving configurations.** Compare output throughput and latency, inspect the tested session load, and estimate active users or daily users with shared, editable assumptions.
 
-[**Open the interactive explorer ?**](https://inference-report-explorer.frosty-moss-6059.chatgpt.site/report/)
+[**Open the interactive explorer**](https://inference-report-explorer.frosty-moss-6059.chatgpt.site/report/)
 
 ![Diagram generated from benchmark data: DeepSeek V4 Pro hardware options and an equal-budget comparison of two independent deployments against one larger deployment.](docs/images/compare-model-setups.png)
 
@@ -11,11 +11,17 @@
 ## What you can compare
 
 - **One model, several setups:** browse the available hardware families, GPU allocations, frameworks and configuration differences without mixing model-version aliases.
-- **Larger allocation versus independent copies:** each pair uses the same model and hardware type at the same total GPU count. The split baseline shows per-copy performance ? copies = combined total.
+- **Larger allocation versus independent copies:** each pair uses the same model and hardware type at the same total GPU count. The split baseline shows per-copy performance x copies = combined total.
 - **Performance and usage tradeoffs:** inspect output tokens per second, first-token and per-token latency, configured root sessions, and planning estimates under the same usage assumptions.
 - **The evidence behind a result:** follow benchmark point IDs, source runs, aggregate artifacts, audit status and limitations; download CSV or JSON for your own analysis.
 
-To explore beyond the default examples, select **Collection ? All exploratory comparisons**, choose a **Model**, then browse **Hardware** and **Operating point**. Hardware options are a way to browse separate comparisons; equal GPU counts across different hardware types do not imply equal performance or cost.
+To explore beyond the default examples, select **Collection > All exploratory comparisons**, choose a **Model**, then browse **Hardware** and **Operating point**. Hardware options are a way to browse separate comparisons; equal GPU counts across different hardware types do not imply equal performance or cost.
+
+## How the selection funnel works
+
+![Selection funnel generated from the explorer's data and selection logic, showing measurements, generated comparisons, AgentX records, qualified session comparisons and the editorial examples. A separate panel shows source-audit outcomes.](docs/images/selection-funnel.png)
+
+*The first stage counts individual measurements; later stages count comparison records, which can reuse points. The funnel shows selection steps, not conversion percentages. Source verification and the choice of illustrative examples are separate; all comparison records remain available in the explorer.*
 
 ## The same model can favor different setups
 

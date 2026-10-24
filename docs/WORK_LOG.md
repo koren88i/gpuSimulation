@@ -99,3 +99,11 @@ Prepared a separate publication copy with fresh noreply Git history, defensive i
 Refocused the public README on comparing the same actual model across hardware, GPU allocations and serving setups. Added two data-generated PNG diagrams plus their Pillow renderer: a DeepSeek V4 Pro workflow/equal-budget example and GLM-5.2 examples with opposite throughput directions. Pictures explicitly distinguish modeled split totals from measured larger points, keep per-copy multipliers visible and retain selected-load, sweep and software caveats. They are labeled as diagrams rather than screenshots; browser capture was unavailable. Numerical labels and bar lengths come from the frozen browser dataset. No application code, benchmark inputs, report outputs or website deployment changed.
 
 Validation: both figures were visually inspected, PNG integrity and metadata checked, regeneration reproduced identical image hashes, README relative links resolved, privacy checks passed and the diff passed whitespace validation. Existing numerical reports and application code were unchanged.
+
+## 2026-10-24 - README selection funnel; screenshots still blocked
+
+Added a data-generated funnel illustration and README explanation. The renderer reuses `selectionSummary` from the explorer to obtain the stage definitions/counts and displays source-audit outcomes separately. The figure explicitly distinguishes measurement counts from comparison records and states that shapes are not proportional or conversion percentages. Numerical report outputs and application code are unchanged.
+
+Retried actual explorer screenshots after the user opened the report in Chrome. The correct report window was detected, but `get_window_state` failed with `FrameArrived timed out: timed out waiting on channel`; reselecting/activating the window and retrying failed with `window capture timed out: timed out waiting on channel`. The alternative browser inventory exposed no browser. Actual explorer screenshots remain outstanding; do not describe the existing diagrams as screenshots.
+
+Validation: visually inspected the funnel; all seven report tests passed. Deterministic rendering, PNG integrity/metadata, README links and whitespace checks passed. Existing comparison-diagram hashes were unchanged.

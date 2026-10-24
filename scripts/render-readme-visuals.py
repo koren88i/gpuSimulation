@@ -5,6 +5,7 @@ Run from any directory: python scripts/render-readme-visuals.py
 """
 from pathlib import Path
 import json
+import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -119,6 +120,66 @@ def outcomes():
     im.save(OUT / 'same-model-different-outcomes.png', optimize=True)
 
 
+def funnel():
+    # Reuse the explorer's own stage definitions rather than duplicate its filters.
+    js = """import {readFileSync} from 'node:fs';
+import {selectionSummary} from './report/selection.js';
+const data=JSON.parse(readFileSync('data/inferencex-ui.json','utf8'));
+console.log(JSON.stringify(selectionSummary(data).stages));"""
+    stages = json.loads(subprocess.check_output(
+        ['node', '--input-type=module', '-e', js], cwd=ROOT, encoding='utf-8'))
+    im, d = canvas(1310)
+    text(d, 64, 36, 'THE SELECTION FUNNEL', 22, GREEN, True)
+    text(d, 64, 83, 'From benchmark measurements to examples.', 53, bold=True)
+    text(d, 64, 162, 'A visual guide to the collections you can explore in the report.', 28, MUTED)
+    colors = ['#e7ece5', '#d8e7dd', '#c5dfd0', '#acd2be', '#176b52']
+    subtitles = [
+        'Individual benchmark points in the research snapshot',
+        'Equal GPU budgets; records span selection policies',
+        'Agentic coding workload; records span policies',
+        'Session estimates within the shared latency limits',
+        'Editorial subset; not the only eligible comparisons',
+    ]
+    for i, ((label, count, _), subtitle) in enumerate(zip(stages, subtitles)):
+        y = 260 + i * 158
+        left, right = 64 + i * 40, 1064 - i * 40
+        d.polygon([(left, y), (right, y), (right - 22, y + 120),
+                   (left + 22, y + 120)], fill=colors[i])
+        color = 'white' if i == len(stages) - 1 else INK
+        text(d, left + 34, y + 15, number(count), 43, color, True)
+        text(d, left + 215 if i == 0 else left + 145, y + 28,
+             label, 27, color, True)
+        text(d, left + 34, y + 78, subtitle, 21, color)
+        if i < len(stages) - 1:
+            d.line((564, y + 126, 564, y + 143), fill=MUTED, width=3)
+            d.polygon([(556, y + 140), (572, y + 140), (564, y + 150)], fill=MUTED)
+    panel(d, (1114, 260, 1536, 1012))
+    text(d, 1140, 286, 'HOW TO READ THIS', 22, GREEN, True)
+    for i, line in enumerate([
+        'The first stage counts points.',
+        'Later stages count records.',
+        'Records can reuse points.',
+        'This is not a conversion rate.',
+    ]):
+        text(d, 1140, 342 + i * 45, line, 23, MUTED)
+    d.line((1140, 555, 1508, 555), fill=LINE, width=2)
+    text(d, 1140, 584, 'SOURCE AUDIT', 23, GREEN, True)
+    counts = DATA['sourceAudit']['counts']['pairs']
+    text(d, 1140, 633, f"{number(sum(counts.values()))} qualified pairs checked", 25, bold=True)
+    text(d, 1140, 686, f"{number(counts.get('verified', 0))} verified", 32, GREEN, True)
+    text(d, 1140, 739, f"{number(counts.get('incomplete', 0))} incomplete", 32, '#925638', True)
+    text(d, 1140, 808, 'Audit status is separate', 24, MUTED)
+    text(d, 1140, 848, 'from editorial selection.', 24, MUTED)
+    text(d, 1140, 918, 'Neither proves maximum', 23, MUTED)
+    text(d, 1140, 954, 'production capacity.', 23, MUTED)
+    text(d, 64, 1063, 'The five examples are a starting point. All comparison records remain accessible.', 30, bold=True)
+    text(d, 64, 1126, 'Shapes show selection steps, not percentages or proportional quantities.', 26, MUTED)
+    text(d, 64, 1175, 'Counts come from the same frozen data and selection logic used by the explorer.', 26, MUTED)
+    text(d, 64, 1224, 'Source verification checks evidence; it does not establish capacity maxima.', 26, MUTED)
+    im.save(OUT / 'selection-funnel.png', optimize=True)
+
+
 overview()
 outcomes()
+funnel()
 print('README diagrams generated from data/inferencex-ui.json')
