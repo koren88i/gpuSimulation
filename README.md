@@ -1,8 +1,31 @@
-# GPU capacity comparison project
+# Compare one model across deployment setups
 
-This workspace contains an existing capacity simulator and a reproducible InferenceX research pipeline. The current research asks: **for one model on one hardware type, how does a larger coordinated deployment compare with independent smaller deployments using the same GPU budget?**
+**Explore how the same model behaves on different hardware, GPU allocations and serving configurations.** Compare output throughput and latency, inspect the tested session load, and estimate active users or daily users with shared, editable assumptions.
 
-Start with the public [Inference Report Explorer](https://inference-report-explorer.frosty-moss-6059.chatgpt.site/report/) or the [audited shortlist](reports/inferencex/shortlist.md). For local development, use `http://127.0.0.1:4173/report/` after starting the server. For continuation in another session, read [the handoff](docs/HANDOFF.md).
+[**Open the interactive explorer ?**](https://inference-report-explorer.frosty-moss-6059.chatgpt.site/report/)
+
+![Diagram generated from benchmark data: DeepSeek V4 Pro hardware options and an equal-budget comparison of two independent deployments against one larger deployment.](docs/images/compare-model-setups.png)
+
+*Data-generated illustration of the comparison workflow. The split side scales one measured smaller deployment; the larger side uses an observed benchmark point.*
+
+## What you can compare
+
+- **One model, several setups:** browse the available hardware families, GPU allocations, frameworks and configuration differences without mixing model-version aliases.
+- **Larger allocation versus independent copies:** each pair uses the same model and hardware type at the same total GPU count. The split baseline shows per-copy performance ? copies = combined total.
+- **Performance and usage tradeoffs:** inspect output tokens per second, first-token and per-token latency, configured root sessions, and planning estimates under the same usage assumptions.
+- **The evidence behind a result:** follow benchmark point IDs, source runs, aggregate artifacts, audit status and limitations; download CSV or JSON for your own analysis.
+
+To explore beyond the default examples, select **Collection ? All exploratory comparisons**, choose a **Model**, then browse **Hardware** and **Operating point**. Hardware options are a way to browse separate comparisons; equal GPU counts across different hardware types do not imply equal performance or cost.
+
+## The same model can favor different setups
+
+![Data-generated GLM-5.2 comparison charts: split deployments have higher selected-load throughput in the GB200 example, while the larger allocation has higher throughput in the GB300 example.](docs/images/same-model-different-outcomes.png)
+
+*Each panel has an equal GPU budget within that comparison. Panels use different budgets and are not a hardware ranking. Sparse sweeps and software differences mean these selected results do not isolate a hardware effect or prove maximum capacity.*
+
+The pictures are explanatory diagrams generated from the frozen browser dataset, not UI screenshots. To regenerate them, install Pillow (`python -m pip install Pillow`) and run `python scripts/render-readme-visuals.py`. Numerical labels and bars are calculated from the included data.
+
+For the readable findings, start with the [audited shortlist](reports/inferencex/shortlist.md). For local development, use `http://127.0.0.1:4173/report/` after starting the server. For project continuation, read [the handoff](docs/HANDOFF.md).
 
 ## Main outputs
 

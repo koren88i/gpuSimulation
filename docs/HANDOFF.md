@@ -91,3 +91,9 @@ Scaling-analysis regeneration and all relevant test files passed individually on
 ## GitHub publication copy
 
 This repository starts with fresh public history using a GitHub noreply author address. Local Sites configuration, reference checkouts, previous share bundles and optional GitHub run/job/artifact-list caches are excluded. Frozen API snapshots, aggregate JSON/ZIP artifacts, source hashes, manifests and pinned request-accounting source remain byte-for-byte unchanged. See [PUBLICATION.md](PUBLICATION.md).
+
+## 2026-10-24 - Visual README for model/setup comparisons
+
+Refocused the public README on comparing the same actual model across hardware, GPU allocations and serving setups. Added two data-generated PNG diagrams plus their Pillow renderer: a DeepSeek V4 Pro workflow/equal-budget example and GLM-5.2 examples with opposite throughput directions. Pictures explicitly distinguish modeled split totals from measured larger points, keep per-copy multipliers visible and retain selected-load, sweep and software caveats. They are labeled as diagrams rather than screenshots; browser capture was unavailable. Numerical labels and bar lengths come from the frozen browser dataset. No application code, benchmark inputs, report outputs or website deployment changed.
+
+Validation: both figures were visually inspected, PNG integrity and metadata checked, regeneration reproduced identical image hashes, README relative links resolved, privacy checks passed and the diff passed whitespace validation. Existing numerical reports and application code were unchanged.
