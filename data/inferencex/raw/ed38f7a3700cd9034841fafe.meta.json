@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen3.8-Flash-Next&benchmarkType=agentic_traces",
+  "sha256": "1ebc3315d6756260b232f40e6a67865882467b3f126a71b316abfcb06c5b0037",
+  "retrievedAt": "2026-09-05T13:37:44.517Z",
+  "bytes": 48962,
+  "count": 15
+}

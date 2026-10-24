@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen-3.5-397B-A17B&isl=1024&osl=1024",
+  "sha256": "921166e751228a55a558a96c95c1c0f706a109943bb5da6729a38d509dbbfa5a",
+  "retrievedAt": "2026-09-05T13:37:39.610Z",
+  "bytes": 1296945,
+  "count": 867
+}

@@ -1,0 +1,879 @@
+{
+  "schemaVersion": 1,
+  "manifestHash": "9695d1ffa771f2f177d9c87ff947b300904cc038e37b06de16983254ad3452f2",
+  "profileHash": "7535c38f207141dbad4f403106660e6e332979014d4f1c83481f77cf1ac31439",
+  "sourceQueries": [
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-R1-0528&isl=1024&osl=1024",
+      "sha256": "6fe96092fdc8fdf46fc915666b024c4161f55e6f648c94a25a733cf941dbb6df",
+      "retrievedAt": "2026-09-05T13:37:33.922Z",
+      "bytes": 10012756,
+      "count": 8609,
+      "displayModel": "DeepSeek-R1-0528",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=gpt-oss-120b&isl=1024&osl=1024",
+      "sha256": "7469fe4892586c5578d4c1cde3712bfa0f2c4591d8f7fecabd7d2837f5668bb0",
+      "retrievedAt": "2026-09-05T13:37:33.725Z",
+      "bytes": 11526098,
+      "count": 10045,
+      "displayModel": "gpt-oss-120b",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Llama-3.3-70B-Instruct-FP8&isl=1024&osl=1024",
+      "sha256": "fa9caaa09076a75c78f835139aa942937060e46ae56364440924d67eeb9c989a",
+      "retrievedAt": "2026-09-05T13:37:33.154Z",
+      "bytes": 6817692,
+      "count": 6192,
+      "displayModel": "Llama-3.3-70B-Instruct-FP8",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-R1-0528&isl=8192&osl=1024",
+      "sha256": "c99cfdb3362e8ebde8e2b15eb9fd0556f427e1dcf25dba1a1534469b0a26012a",
+      "retrievedAt": "2026-09-05T13:37:35.250Z",
+      "bytes": 9012312,
+      "count": 7715,
+      "displayModel": "DeepSeek-R1-0528",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-R1-0528&isl=1024&osl=8192",
+      "sha256": "62d960fb45759392680e9502cd33673e41b819e46faef98ce053534c2bad30dd",
+      "retrievedAt": "2026-09-05T13:37:35.318Z",
+      "bytes": 5408137,
+      "count": 4759,
+      "displayModel": "DeepSeek-R1-0528",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=gpt-oss-120b&isl=8192&osl=1024",
+      "sha256": "d7a9d94c96917923943b5037f70eef202b5671ba1ef091c93951f0a05b2b8bed",
+      "retrievedAt": "2026-09-05T13:37:35.917Z",
+      "bytes": 11390546,
+      "count": 9942,
+      "displayModel": "gpt-oss-120b",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=gpt-oss-120b&isl=1024&osl=8192",
+      "sha256": "656aeaf7ac4c7732bc148052dec8822dc25271b3a4ecc84a49e2ea27eb573c8f",
+      "retrievedAt": "2026-09-05T13:37:38.805Z",
+      "bytes": 10442681,
+      "count": 9186,
+      "displayModel": "gpt-oss-120b",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Llama-3.3-70B-Instruct-FP8&isl=8192&osl=1024",
+      "sha256": "6189dbdfb0f77fca1fb571a696b9a61f1e02b2d119adbc111b950367d1e524b2",
+      "retrievedAt": "2026-09-05T13:37:37.346Z",
+      "bytes": 6276973,
+      "count": 5723,
+      "displayModel": "Llama-3.3-70B-Instruct-FP8",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Llama-3.3-70B-Instruct-FP8&isl=1024&osl=8192",
+      "sha256": "1b217dd61b2f9b0641483fcd20b80035682e0c6ebd8054b2a3657ab96f4fd738",
+      "retrievedAt": "2026-09-05T13:37:36.989Z",
+      "bytes": 6130971,
+      "count": 5584,
+      "displayModel": "Llama-3.3-70B-Instruct-FP8",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen-3.5-397B-A17B&isl=8192&osl=1024",
+      "sha256": "a07b029153ae5c6fd081bfbc4e782b2fb79dae0f08c579505a9ee9a649e0fe36",
+      "retrievedAt": "2026-09-05T13:37:39.626Z",
+      "bytes": 1666290,
+      "count": 1098,
+      "displayModel": "Qwen-3.5-397B-A17B",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen-3.5-397B-A17B&isl=1024&osl=8192",
+      "sha256": "1a50ca77a21f756a3ff605143ca3adaa8920a1c4c991fcdd068b7a121eaf5ccc",
+      "retrievedAt": "2026-09-05T13:37:39.096Z",
+      "bytes": 77032,
+      "count": 65,
+      "displayModel": "Qwen-3.5-397B-A17B",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen-3.5-397B-A17B&isl=1024&osl=1024",
+      "sha256": "921166e751228a55a558a96c95c1c0f706a109943bb5da6729a38d509dbbfa5a",
+      "retrievedAt": "2026-09-05T13:37:39.610Z",
+      "bytes": 1296945,
+      "count": 867,
+      "displayModel": "Qwen-3.5-397B-A17B",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Kimi-K2.5&isl=1024&osl=1024",
+      "sha256": "7087ce6e1e1715173c302f9b647dfcbcf796c52ae3f9b9d5a813f3fc5b215cff",
+      "retrievedAt": "2026-09-05T13:37:39.946Z",
+      "bytes": 598850,
+      "count": 412,
+      "displayModel": "Kimi-K2.5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Kimi-K2.5&isl=1024&osl=8192",
+      "sha256": "ca8395cf70ce9176c585343c2ff62d8060056e501489d6b9175b09d98fabc6fd",
+      "retrievedAt": "2026-09-05T13:37:39.899Z",
+      "bytes": 122615,
+      "count": 87,
+      "displayModel": "Kimi-K2.5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Kimi-K2.5&isl=8192&osl=1024",
+      "sha256": "ea7c6d87c2323310708daab796f4ca71f8e9dc1e4e6f6d1da9ad97210b2047f4",
+      "retrievedAt": "2026-09-05T13:37:40.218Z",
+      "bytes": 822470,
+      "count": 541,
+      "displayModel": "Kimi-K2.5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M2.5&isl=8192&osl=1024",
+      "sha256": "60b10bd10b12a0a5b182b33504bdfbb1fcb1691bfe9bbf0abb67c301735ef47c",
+      "retrievedAt": "2026-09-05T13:37:41.010Z",
+      "bytes": 1246288,
+      "count": 844,
+      "displayModel": "MiniMax-M2.5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M2.5&isl=1024&osl=8192",
+      "sha256": "954ba4f6b66e7629425131b59b1901b1d1a67081a86de5a790d98e1b1fb64880",
+      "retrievedAt": "2026-09-05T13:37:40.657Z",
+      "bytes": 186328,
+      "count": 136,
+      "displayModel": "MiniMax-M2.5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M2.5&isl=1024&osl=1024",
+      "sha256": "e20485b707ea326b92aa0f2209272729fafd91eb28b60052df052b8e2db99a5a",
+      "retrievedAt": "2026-09-05T13:37:41.095Z",
+      "bytes": 1353629,
+      "count": 932,
+      "displayModel": "MiniMax-M2.5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5&isl=1024&osl=8192",
+      "sha256": "9e79b1470a7385712e666888f10b347b9ee503f78909bbdaaa4da5ca92556b30",
+      "retrievedAt": "2026-09-05T13:37:41.491Z",
+      "bytes": 18966,
+      "count": 16,
+      "displayModel": "GLM-5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5&isl=1024&osl=1024",
+      "sha256": "c286d8170e09d562a9aeccdf0ff6c90278c0498d21debf4001b7d33c5da8ec0a",
+      "retrievedAt": "2026-09-05T13:37:41.588Z",
+      "bytes": 671215,
+      "count": 471,
+      "displayModel": "GLM-5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5&isl=8192&osl=1024",
+      "sha256": "d58fc3cdb9bc54daba0473ffb6c2a0a4e144612b2120744d14b1966a400e967e",
+      "retrievedAt": "2026-09-05T13:37:41.688Z",
+      "bytes": 685561,
+      "count": 478,
+      "displayModel": "GLM-5",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-V4-Pro&isl=8192&osl=1024",
+      "sha256": "927b4df2cfe23cb6d3c97a6d1821f328975e43c1c6b2766c4a768099102b8747",
+      "retrievedAt": "2026-09-05T13:37:42.217Z",
+      "bytes": 1949642,
+      "count": 1283,
+      "displayModel": "DeepSeek-V4-Pro",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-V4-Pro&isl=1024&osl=1024",
+      "sha256": "095ebc0005d61c496af2f597ae45369503ef0ca29b3d206b5a295f3310a4ec5a",
+      "retrievedAt": "2026-09-05T13:37:42.394Z",
+      "bytes": 1526018,
+      "count": 984,
+      "displayModel": "DeepSeek-V4-Pro",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M3&isl=8192&osl=1024",
+      "sha256": "6517b61b30f4b2d241ea10e64895692e1e96ffcf936dd20f2eca064ecd8c9b09",
+      "retrievedAt": "2026-09-05T13:37:42.687Z",
+      "bytes": 3133642,
+      "count": 1977,
+      "displayModel": "MiniMax-M3",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M3&isl=1024&osl=1024",
+      "sha256": "db27da2806f18485261f0c14241b76922c498820af9e1280afb9317e8caa0123",
+      "retrievedAt": "2026-09-05T13:37:43.592Z",
+      "bytes": 2688944,
+      "count": 1687,
+      "displayModel": "MiniMax-M3",
+      "type": "single_turn"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Kimi-K3&benchmarkType=agentic_traces",
+      "sha256": "e227d1682841d1ba89431eea29d2c309fd1ae61cd965332f018b21fcd058b727",
+      "retrievedAt": "2026-09-05T13:37:43.164Z",
+      "bytes": 571268,
+      "count": 172,
+      "displayModel": "Kimi-K3",
+      "type": "agentic_traces"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen-3.5-397B-A17B&benchmarkType=agentic_traces",
+      "sha256": "4e997238ae2b9da17b35f0fc577b265d6833d6dfe4cfcd12fa7cf9a933181aeb",
+      "retrievedAt": "2026-09-05T13:37:43.331Z",
+      "bytes": 955848,
+      "count": 308,
+      "displayModel": "Qwen-3.5-397B-A17B",
+      "type": "agentic_traces"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M3&benchmarkType=agentic_traces",
+      "sha256": "12592428f645c9afa8a37e5efd8fcd31b42ccebbdf161e4c92a96688fe31a56c",
+      "retrievedAt": "2026-09-05T13:37:44.066Z",
+      "bytes": 785784,
+      "count": 246,
+      "displayModel": "MiniMax-M3",
+      "type": "agentic_traces"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-V4-Pro&benchmarkType=agentic_traces",
+      "sha256": "a2fdc757517e480f1f83b4cc36b1ed5ed768e13e407a0c34a0e564bac4112a7e",
+      "retrievedAt": "2026-09-05T13:37:44.249Z",
+      "bytes": 1311481,
+      "count": 416,
+      "displayModel": "DeepSeek-V4-Pro",
+      "type": "agentic_traces"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5.2&benchmarkType=agentic_traces",
+      "sha256": "f66df65443259d9110ac5900d6b4875bd37e8a45a6e3db99a518637c2f1cb62b",
+      "retrievedAt": "2026-09-05T13:37:44.164Z",
+      "bytes": 342172,
+      "count": 107,
+      "displayModel": "GLM-5.2",
+      "type": "agentic_traces"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5&benchmarkType=agentic_traces",
+      "sha256": "ec7cfd81aef72b041bd0f96424c0384d4dfedc5efe66b1aa25f360de5369cc7a",
+      "retrievedAt": "2026-09-05T13:37:44.508Z",
+      "bytes": 6186,
+      "count": 2,
+      "displayModel": "GLM-5",
+      "type": "agentic_traces"
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Qwen3.8-Flash-Next&benchmarkType=agentic_traces",
+      "sha256": "1ebc3315d6756260b232f40e6a67865882467b3f126a71b316abfcb06c5b0037",
+      "retrievedAt": "2026-09-05T13:37:44.517Z",
+      "bytes": 48962,
+      "count": 15,
+      "displayModel": "Qwen3.8-Flash-Next",
+      "type": "agentic_traces"
+    }
+  ],
+  "provenanceSources": [
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=437312&q=public-dataset&limit=20",
+      "sha256": "275792271dec0def724c0447b8ecf002f068b24f64a7018afd4adc34c5816ccf",
+      "retrievedAt": "2026-09-05T13:44:45.225Z",
+      "bytes": 2710,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438893&q=public-dataset&limit=20",
+      "sha256": "d088f66cea2c40062e7ae19b8c5fc447868760b21569aa60455db2b3fd27715d",
+      "retrievedAt": "2026-09-05T13:44:24.122Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438868&q=public-dataset&limit=20",
+      "sha256": "c19bc8e8d4b9ab078dd1ea986e9e264d117406dbc17842aa11a7d27063bdfb7c",
+      "retrievedAt": "2026-09-05T13:44:25.537Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438910&q=public-dataset&limit=20",
+      "sha256": "3bc8401847f0248efd8937db72bd52938edac6af6f9987473b83ea24e1b8652e",
+      "retrievedAt": "2026-09-05T13:44:46.408Z",
+      "bytes": 2717,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438908&q=public-dataset&limit=20",
+      "sha256": "cee42c49b365d2d80019330b698e7b07a86313cd98f7d46bdb82ddb5b64725eb",
+      "retrievedAt": "2026-09-05T13:44:47.123Z",
+      "bytes": 2721,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439544&q=public-dataset&limit=20",
+      "sha256": "c134bd0a307ce8cf219066fb2b8f0e484f68a1715650f53140a808d468c39477",
+      "retrievedAt": "2026-09-05T13:44:45.823Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439539&q=public-dataset&limit=20",
+      "sha256": "a750fb8b5dd07c334ff52ae3766334b271925987d7623a0dc6ed2d38b76f5088",
+      "retrievedAt": "2026-09-05T13:44:47.464Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439932&q=public-dataset&limit=20",
+      "sha256": "fc486ffd19cf498f57fd20d979f434f053e10b0c53ec04be5eb518a188b72d56",
+      "retrievedAt": "2026-09-05T13:44:47.550Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440106&q=public-dataset&limit=20",
+      "sha256": "8c5aaaa8282fb11f97e6f68e1b20973dcc39f6e250be21bdb620cf99586db912",
+      "retrievedAt": "2026-09-05T13:44:47.883Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439996&q=public-dataset&limit=20",
+      "sha256": "20ef3258f8a2a3811a15cb0fbad9e8d539644b407b2e15e9cdebaa476f9872e1",
+      "retrievedAt": "2026-09-05T13:44:48.864Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440073&q=public-dataset&limit=20",
+      "sha256": "197f51213549e5d28439c3de4bf5a4ecf9ba75bd599ed87cdeb250bbb4c6a7a1",
+      "retrievedAt": "2026-09-05T13:44:49.122Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440187&q=public-dataset&limit=20",
+      "sha256": "585cca8c2533bf5a20056ff865715349981bd32704bb7957063d8a5ee0f5880b",
+      "retrievedAt": "2026-09-05T13:44:49.083Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440176&q=public-dataset&limit=20",
+      "sha256": "f9914c5a2180af76ad1d64a0d1d84cf5bad26c22a7f51651e11e0eb3facdec0d",
+      "retrievedAt": "2026-09-05T13:44:50.404Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440542&q=public-dataset&limit=20",
+      "sha256": "4cd160625aa55cab46721aac8c586aa30cdfe4771e9de5f40551584d3e9d04a0",
+      "retrievedAt": "2026-09-05T13:44:50.436Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=441055&q=public-dataset&limit=20",
+      "sha256": "0126487a06f9b107d83febacba7c6bc8ee522a9dcf513fe24e9ee4d335e77b91",
+      "retrievedAt": "2026-09-05T13:44:50.164Z",
+      "bytes": 2711,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438917&q=public-dataset&limit=20",
+      "sha256": "986c94d2563ae4ce4d88bb7f319edf0602ec454b66d515604880b8bf22afd62d",
+      "retrievedAt": "2026-09-05T13:44:50.948Z",
+      "bytes": 412,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438926&q=public-dataset&limit=20",
+      "sha256": "8cdcff11755afd63207e737985a8807ebb3c0041e4cdec77c2d27eeea322b953",
+      "retrievedAt": "2026-09-05T13:44:51.183Z",
+      "bytes": 412,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438849&q=public-dataset&limit=20",
+      "sha256": "770e61d4275e2350647e9b9c0adefa37ab4a26be81c4f0a702fd76e896c5e0fb",
+      "retrievedAt": "2026-09-05T13:44:51.993Z",
+      "bytes": 2723,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439592&q=public-dataset&limit=20",
+      "sha256": "06feb29a1eb197bb59fbd067174e3acf955e1fbbc57c6c149536dcfb720d8a5a",
+      "retrievedAt": "2026-09-05T13:44:53.572Z",
+      "bytes": 2723,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439600&q=public-dataset&limit=20",
+      "sha256": "397dcefcb9d66e3f9b6d83044963ff5339768059722aa1bf474a9ce618424e2a",
+      "retrievedAt": "2026-09-05T13:44:54.279Z",
+      "bytes": 2724,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439979&q=public-dataset&limit=20",
+      "sha256": "d4746fd7f22916bf2a2c02991e0215d75b7bdec0cd7e36591af90a9e3686cc38",
+      "retrievedAt": "2026-09-05T13:47:56.661Z",
+      "bytes": 414,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440090&q=public-dataset&limit=20",
+      "sha256": "c61fd317ffa6382db4a7fd0ffbeb6a8400634c57d668ab21fc75ad4ea8a2ee56",
+      "retrievedAt": "2026-09-05T13:47:56.038Z",
+      "bytes": 2723,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439580&q=public-dataset&limit=20",
+      "sha256": "a86f8e2bf3062d54dc1d75d89d9241696303b0b99d6f9fc7badc3edff288482e",
+      "retrievedAt": "2026-09-05T13:50:58.681Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439579&q=public-dataset&limit=20",
+      "sha256": "1c08b57694b51dc781c02d1b729e6ffdfbc444ff2ba3a238986776d7e1670b2a",
+      "retrievedAt": "2026-09-05T13:50:58.812Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439640&q=public-dataset&limit=20",
+      "sha256": "a4cdfd4749dd0e1438a5aff6a9314e05e0038a34a45bc71b98b439f8301cb1e7",
+      "retrievedAt": "2026-09-05T13:50:58.711Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439636&q=public-dataset&limit=20",
+      "sha256": "20d50be389e0299f9eb03ebb46b133ac6110d236e45cd02a52dacf2478433801",
+      "retrievedAt": "2026-09-05T13:51:01.774Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439886&q=public-dataset&limit=20",
+      "sha256": "ca16dce1f5d9950044e9adf2bddf5953f2628504986e9285e2c960558904c23c",
+      "retrievedAt": "2026-09-05T13:51:00.418Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439885&q=public-dataset&limit=20",
+      "sha256": "8eab994f335f2e157684d2b567d433254733d4ab7bee0901f18621f65d2e5716",
+      "retrievedAt": "2026-09-05T13:51:33.402Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439908&q=public-dataset&limit=20",
+      "sha256": "103c8ae38ef996826632b74c303344824ba134300878a5965484a2a759b63193",
+      "retrievedAt": "2026-09-05T13:51:34.047Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439910&q=public-dataset&limit=20",
+      "sha256": "4fe3aa623df84dd192103583757051ddfd71bf3b03fa6fb337b3f756f2cf366c",
+      "retrievedAt": "2026-09-05T13:51:33.934Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440224&q=public-dataset&limit=20",
+      "sha256": "3ec887c0a2603524598c6eb32d9631398b00ab9bc83676b862bff0734e947ba3",
+      "retrievedAt": "2026-09-05T13:57:41.304Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440735&q=public-dataset&limit=20",
+      "sha256": "6d0d8ee3c1cc02c572e3844f25758e4837b9c0dc27fa249ff76c70b2387ba453",
+      "retrievedAt": "2026-09-05T13:57:40.265Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440715&q=public-dataset&limit=20",
+      "sha256": "36935743d7e2d28ff93e00897072ff0f726901b96612c52afab04157de50194b",
+      "retrievedAt": "2026-09-05T13:57:40.432Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439206&q=public-dataset&limit=20",
+      "sha256": "d8740c1e5f2378b2276e49284fd0ec6b2675a03c6cee8270bb43c1ab259901fd",
+      "retrievedAt": "2026-09-05T13:57:41.818Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439270&q=public-dataset&limit=20",
+      "sha256": "5d1a140788b6ee16e904012ac38384bfea30873e2d5a4460a66ca42f9152933e",
+      "retrievedAt": "2026-09-05T14:00:44.868Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439262&q=public-dataset&limit=20",
+      "sha256": "ef79fbb2aed0af6c9221b0ca4b08f63333e41f74e73ac55ae22e78ff47937f16",
+      "retrievedAt": "2026-09-05T14:00:44.872Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439309&q=public-dataset&limit=20",
+      "sha256": "c8147803f6e9afce1814c1fba4092511fbb2083f27110d29855a63d13ba1d650",
+      "retrievedAt": "2026-09-05T14:00:57.528Z",
+      "bytes": 2713,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439332&q=public-dataset&limit=20",
+      "sha256": "539cd243a4d8c9c15c0fd48de2097aea85d13af266217199855474ec4c7d488a",
+      "retrievedAt": "2026-09-05T14:01:18.048Z",
+      "bytes": 2713,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439521&q=public-dataset&limit=20",
+      "sha256": "f56bbd268a067ea24bca516a59081b8f03d739ea036a19039b49e4b701c1ce0c",
+      "retrievedAt": "2026-09-05T14:00:57.909Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439549&q=public-dataset&limit=20",
+      "sha256": "0f66a04672f12354b660d8fda67090d15432046904b1f694fad888bf7f265505",
+      "retrievedAt": "2026-09-05T14:00:58.851Z",
+      "bytes": 2718,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439758&q=public-dataset&limit=20",
+      "sha256": "75da48864cfba618b453d16578a0d04d19e876e5e65b3364023e979f4d5afc12",
+      "retrievedAt": "2026-09-05T14:01:19.217Z",
+      "bytes": 414,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439799&q=public-dataset&limit=20",
+      "sha256": "b96caec61311df9f43677e4f1618235700927c33a8586cf10f4e0e8e40e63a0e",
+      "retrievedAt": "2026-09-05T14:01:19.237Z",
+      "bytes": 414,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439793&q=public-dataset&limit=20",
+      "sha256": "0064a9b8f28bbddd5868845854bc07ced9c4b09173af0dc670127db2bba218c3",
+      "retrievedAt": "2026-09-05T14:01:19.290Z",
+      "bytes": 414,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439843&q=public-dataset&limit=20",
+      "sha256": "167cfe03c1afd6bb1ba768d43dbd7302333edc8bcddfb4a5249bd6466265dfba",
+      "retrievedAt": "2026-09-05T14:01:25.793Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439873&q=public-dataset&limit=20",
+      "sha256": "557144750fc9423ff1a198ebad5bd6ffa82d520289a79225832432cfab52c2cc",
+      "retrievedAt": "2026-09-05T14:01:46.086Z",
+      "bytes": 2721,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439875&q=public-dataset&limit=20",
+      "sha256": "dc1585d138a070ce1d6512433e3605e5c3f09a35a3b7bd679d21852fe9a68430",
+      "retrievedAt": "2026-09-05T14:01:21.294Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439958&q=public-dataset&limit=20",
+      "sha256": "1034a43a5ab6e1aa03ce4a396fa963e53a10856319ca5fd5523231b73770cdca",
+      "retrievedAt": "2026-09-05T14:01:46.551Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439974&q=public-dataset&limit=20",
+      "sha256": "dc8394fb64ca8ed4374861de5c6fbeaa757f89a5eb718a0b1caa2dc5618dbb62",
+      "retrievedAt": "2026-09-05T14:01:56.067Z",
+      "bytes": 2713,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439973&q=public-dataset&limit=20",
+      "sha256": "ffb332ff6047f1be748a7a5e6925e09feb1b8848931e2ffff2e5f717762b76ba",
+      "retrievedAt": "2026-09-05T14:01:47.096Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440049&q=public-dataset&limit=20",
+      "sha256": "233a8a019bc367d39999bf8eb7e8bf2d42003af96cc5d8aedf66f57dbacb79c7",
+      "retrievedAt": "2026-09-05T14:01:56.598Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440048&q=public-dataset&limit=20",
+      "sha256": "c874af078afef733b4ae3cd0d9cc14b1deb927e6be278e336c4afa73c8bc4fba",
+      "retrievedAt": "2026-09-05T14:01:56.759Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440190&q=public-dataset&limit=20",
+      "sha256": "6ed13926dc613704e04ee8acb79be9bae8c79cd2c95d061080d339d962180bea",
+      "retrievedAt": "2026-09-05T14:02:20.069Z",
+      "bytes": 2711,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440211&q=public-dataset&limit=20",
+      "sha256": "b845d2a05e77f0dd379b2ffffa63a38e4924e70d1e927bd80da97c40c426c666",
+      "retrievedAt": "2026-09-05T14:02:20.759Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440210&q=public-dataset&limit=20",
+      "sha256": "b98058e463217f70a2a191a6afd95023ac9f52e7a49146998b81346eeb5734d9",
+      "retrievedAt": "2026-09-05T14:02:20.754Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440200&q=public-dataset&limit=20",
+      "sha256": "361220c0a8879060cda3488931beadc92257db163e1404b79e78e56aef451880",
+      "retrievedAt": "2026-09-05T14:02:20.289Z",
+      "bytes": 69,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440244&q=public-dataset&limit=20",
+      "sha256": "741ebe9dd9207a0031d0bd2c9d2aea246848fcd356ada0119cc455ba58d03266",
+      "retrievedAt": "2026-09-05T14:02:21.735Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440301&q=public-dataset&limit=20",
+      "sha256": "380a2e2190d6c351c00844f76e37463494055b08584444a221617a5822bd7a29",
+      "retrievedAt": "2026-09-05T14:02:30.235Z",
+      "bytes": 2713,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440294&q=public-dataset&limit=20",
+      "sha256": "43d4624a286468b0e30011b5edf358a5132951896a6114af47ab4e89e6fdbb7b",
+      "retrievedAt": "2026-09-05T14:02:21.800Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440272&q=public-dataset&limit=20",
+      "sha256": "8e69979a2276083ecbace7a7f8fe6396e54655a6419136bb37e7460b3ec5d7fd",
+      "retrievedAt": "2026-09-05T14:02:31.269Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440278&q=public-dataset&limit=20",
+      "sha256": "61903865678143eb6fcfb354e3f8f98f019d57a6da187b7d1ae65fbf6ca912d6",
+      "retrievedAt": "2026-09-05T14:02:59.990Z",
+      "bytes": 2721,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440538&q=public-dataset&limit=20",
+      "sha256": "f8b3b1bfc4545e7b33fc7859f95827cf63cf8f0470b22701af76abea7c523829",
+      "retrievedAt": "2026-09-05T14:02:30.772Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440531&q=public-dataset&limit=20",
+      "sha256": "0292483fd054baa81f217724c26a1f1eb8ebd831435ea2c37dfe5f6d6675e469",
+      "retrievedAt": "2026-09-05T14:03:02.366Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440848&q=public-dataset&limit=20",
+      "sha256": "61a8f042524c950a8f95f9fc3567c4605aeeb6b8ac848192200d45a4f6a4d7dc",
+      "retrievedAt": "2026-09-05T14:03:00.519Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440956&q=public-dataset&limit=20",
+      "sha256": "928386555c543e0dfc70fba49be7c66297c0ccf134c020745dd77e3989659abd",
+      "retrievedAt": "2026-09-05T14:03:24.191Z",
+      "bytes": 2711,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440971&q=public-dataset&limit=20",
+      "sha256": "0f7b465cd1a3ca26af9bdba563ba9d40bdfee9c3e40e29f2ef0c565055812f9f",
+      "retrievedAt": "2026-09-05T14:03:46.246Z",
+      "bytes": 2711,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439196&q=public-dataset&limit=20",
+      "sha256": "55bd42f2daf9438081feb588ef55de3ebcd9d5937fe4850bb04e22e9e7db4e48",
+      "retrievedAt": "2026-09-05T14:03:24.735Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439241&q=public-dataset&limit=20",
+      "sha256": "9f663f768b1466f3d49136b635a457cfc2dd3b803ce5a168daeeb451af919999",
+      "retrievedAt": "2026-09-05T14:03:24.858Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439292&q=public-dataset&limit=20",
+      "sha256": "ad599eee02fd2f9a6c2263701394804f126a2472d3acca874b13bb307b85ff17",
+      "retrievedAt": "2026-09-05T14:03:48.409Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439931&q=public-dataset&limit=20",
+      "sha256": "f2004b8510fa24a4c748c29324d49d7c7b57358d53bc9aeb4db408580ebe7967",
+      "retrievedAt": "2026-09-05T14:03:51.401Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439955&q=public-dataset&limit=20",
+      "sha256": "3fabca1f4b9a5290d8bf9d0ea3493a0c24f05b8714a2e7976925f9103caf2f04",
+      "retrievedAt": "2026-09-05T14:03:47.137Z",
+      "bytes": 2709,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439985&q=public-dataset&limit=20",
+      "sha256": "ec89e4de254e673f2e648d9eef403ddd0f29ffff292819fc50f04bb4322d28ae",
+      "retrievedAt": "2026-09-05T14:03:51.835Z",
+      "bytes": 414,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439992&q=public-dataset&limit=20",
+      "sha256": "899bb9a02004b6d70b2450076baf9797784a1f8afed6ea4ef98288baaaf77364",
+      "retrievedAt": "2026-09-05T14:03:51.821Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440083&q=public-dataset&limit=20",
+      "sha256": "3c40579b6a9a3c72cd06292d2bbe3e953aff39127f96ddbd0d8cba0c980c845c",
+      "retrievedAt": "2026-09-05T14:03:52.381Z",
+      "bytes": 2711,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440215&q=public-dataset&limit=20",
+      "sha256": "4bd0ec3ac279d7df46c42bfe8e610877f067b955429ce5fb1170c6811789e79f",
+      "retrievedAt": "2026-09-05T14:03:56.705Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440216&q=public-dataset&limit=20",
+      "sha256": "c47caf2b4cb79f54ca9b45338596a59b8fec5d71f6b8fec8055081dc0598b753",
+      "retrievedAt": "2026-09-05T14:04:08.622Z",
+      "bytes": 2712,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440277&q=public-dataset&limit=20",
+      "sha256": "bfae2495012c8a807cf0d8c6319018aa8f991414e220c06d1770f6720cf3a135",
+      "retrievedAt": "2026-09-05T14:03:54.214Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440948&q=public-dataset&limit=20",
+      "sha256": "99e6ba319b84bdd87d609a07a71b9cdc1d51002f5d35d03124d754d62071191b",
+      "retrievedAt": "2026-09-05T14:04:12.593Z",
+      "bytes": 2719,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440950&q=public-dataset&limit=20",
+      "sha256": "a6e8ce8721069120d01d0d5b05d4b642b3d34dfbcb31e0719b7c7ee2a855bc2b",
+      "retrievedAt": "2026-09-05T14:04:24.331Z",
+      "bytes": 2712,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440960&q=public-dataset&limit=20",
+      "sha256": "cd3892048096952ac1265c10d467cea1d00c68afb84908994d5f65fd50d549fb",
+      "retrievedAt": "2026-09-05T14:04:09.114Z",
+      "bytes": 413,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440964&q=public-dataset&limit=20",
+      "sha256": "adb956ba0a37a92ec2532bdc7f8b705df499843650fef31af2a2e8c1d7abc0a0",
+      "retrievedAt": "2026-09-05T14:04:39.704Z",
+      "bytes": 2720,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440253&q=public-dataset&limit=20",
+      "sha256": "eeeb645d9ef5fa706dd6db94368c8dfd0e894fde4a2bc47689cf765458b02966",
+      "retrievedAt": "2026-09-05T14:04:24.616Z",
+      "bytes": 69,
+      "count": null
+    },
+    {
+      "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440461&q=public-dataset&limit=20",
+      "sha256": "2059cd21d754159ad7a68b968301be82ede44eb43c925a2e80909a559b72085c",
+      "retrievedAt": "2026-09-05T14:04:24.973Z",
+      "bytes": 2360,
+      "count": null
+    }
+  ],
+  "sourceCodeHashes": {
+    "fetch": "42f025ea7a663be0a737fb784a15de16e220bd4ec2d05c65286c6ea064cad2b3",
+    "normalize": "8b7fb2f066afb235ee0cb2f8d2210c2124897ca7f3e0c1228191d4da48adbf7f",
+    "capacity": "55a33cb0e6c832b4fd3c4d4a8b61ea2b23d1a1c97f1cf1c7a738a6c09a752347",
+    "compare": "2e2cf8f1ff144fa71a25a859597f9da3ceffeb41d002408c4770ef28eaf70fcb",
+    "report": "55ad93035a44455fe0e94b74d7a74a1b935886ba67984014d86d9a42b53e4c45",
+    "provenance": "5e186b278e54b80c33cf9c867a716efb944e368b0e307e8a5302868c095dd033"
+  }
+}

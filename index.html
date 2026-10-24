@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A transparent GPU serving-capacity and fragmentation simulator." />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>Capacity Lab — GPU serving scenarios</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="masthead">
+        <a class="brand" href="#top" aria-label="Capacity Lab home">
+          <span class="brand-mark" aria-hidden="true">CL</span>
+          <span><strong>Capacity Lab</strong><small>Inference systems study</small></span>
+        </a>
+        <div class="masthead-meta">
+          <a href="report/">Explore the measured report →</a>
+          <span class="status-pill"><i aria-hidden="true"></i> Illustrative model</span>
+          <span class="edition">GLM-5.2 / H200 + B200</span>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="scenario-intro" aria-labelledby="page-title">
+          <p class="eyebrow">Serving architecture simulator</p>
+          <h1 id="page-title">Capacity, boundaries, and cost.</h1>
+          <p class="lede">Three focused views separate memory allocation, small-cluster scaling, and the business impact of a fragmented B200 fleet.</p>
+        </section>
+
+        <nav class="scenario-tabs" role="tablist" aria-label="Simulation scenarios">
+          <button id="tab-h200" role="tab" aria-selected="true" aria-controls="panel-h200" tabindex="0" data-tab="h200" type="button"><span>01</span><strong>H200 fleet</strong><small>16-server allocation</small></button>
+          <button id="tab-clusters" role="tab" aria-selected="false" aria-controls="panel-clusters" tabindex="-1" data-tab="clusters" type="button"><span>02</span><strong>Cluster scaling</strong><small>1 vs 2 vs 3 servers</small></button>
+          <button id="tab-b200" role="tab" aria-selected="false" aria-controls="panel-b200" tabindex="-1" data-tab="b200" type="button"><span>03</span><strong>B200 fragmentation</strong><small>16 RoCE vs 12 + 2 + 2</small></button>
+        </nav>
+
+        <div id="panel-h200" class="tab-panel" role="tabpanel" aria-labelledby="tab-h200" data-panel="h200">
+          <section class="intro compact-intro" aria-labelledby="h200-title">
+            <div class="intro-copy"><p class="eyebrow">Memory + serving study</p><h2 id="h200-title">What changes when H200 workers are split?</h2><p class="lede">Separate the physical memory budget from benchmark-normalized serving capacity, then see how independent scheduling domains affect a primary workload.</p></div>
+            <div class="scope-note"><span class="scope-index">01</span><p><strong>One observed point, transparent estimates.</strong> NVIDIA measured 32 concurrent sessions across three H200 workers. Other fleet sizes are normalized estimates, not internal production measurements.</p></div>
+          </section>
+          <section class="fleet-strip" aria-label="Fleet summary">
+            <article><span>Fleet</span><strong id="fleet-servers">16</strong><small>H200 servers</small></article><article><span>Accelerators</span><strong id="fleet-gpus">128</strong><small>physical GPUs</small></article><article><span>Raw HBM</span><strong id="fleet-hbm">18,048</strong><small>GB across fleet</small></article><article class="accent-stat"><span>Modeled KV headroom</span><strong id="fleet-kv">1,955</strong><small>GB after listed reserves</small></article>
+          </section>
+          <section class="control-deck" aria-labelledby="controls-title">
+            <div class="section-heading"><div><p class="eyebrow">Simulation controls</p><h2 id="controls-title">Shape the serving domain</h2></div><button class="replay-button" id="replay-button" type="button"><span aria-hidden="true">↻</span>Replay allocation</button></div>
+            <div class="controls-grid">
+              <fieldset class="control-group allocation-control"><legend>Allocation</legend><div id="preset-options" class="segmented segmented-wide"></div></fieldset>
+              <div class="control-group benchmark-control"><span>Serving workload</span><strong>64K median input · 400 output</strong><small>90% KV reuse · H200 aggregated benchmark</small></div>
+              <div class="control-group session-control"><div class="label-row"><label for="session-slider">Sessions targeting primary pool</label><output id="session-output" for="session-slider">120</output></div><input id="session-slider" type="range" min="1" max="240" value="120" /><div class="range-labels" aria-hidden="true"><span>1</span><span>240</span></div></div>
+            </div>
+          </section>
+          <section class="h200-supply-section" aria-labelledby="h200-supply-title">
+            <div class="section-heading"><div><p class="eyebrow">Full-capacity comparison</p><h2 id="h200-supply-title">Splitting schedulers does not automatically destroy supply</h2><p>The unified fleet and both split pools use the same benchmark-normalized worker rate. Any topology penalty must be entered explicitly—not created by context arithmetic or rounding.</p></div></div>
+            <div class="h200-supply-grid"><article><span>Unified 16 ceiling</span><strong id="h-supply-unified">170.7</strong><small>benchmark-normalized CCU</small></article><article><span id="h-supply-selected-label">8 + 8 split</span><strong id="h-supply-selected">170.7</strong><small id="h-supply-equation">85.3 primary + 85.3 secondary = 170.7 CCU</small></article><article class="is-gap"><span>Total supply gap</span><strong id="h-supply-gap">0</strong><small>CCU before routing effects</small></article></div>
+          </section>
+          <section class="simulation" aria-labelledby="simulation-title">
+            <div class="simulation-head"><div><p class="eyebrow">Live allocation</p><h2 id="simulation-title">Sixteen workers, separate local budgets</h2></div><div class="phase-readout" aria-live="polite"><span class="phase-dot" aria-hidden="true"></span><span id="phase-label">Ready</span></div></div>
+            <div class="memory-legend" aria-label="Memory and routing legend"><span><i class="legend-weight"></i> GLM-5.2 weights</span><span><i class="legend-reserve"></i> Operational reserve</span><span><i class="legend-kv"></i> KV headroom</span><span><i class="legend-session"></i> Admitted CCU</span><span><i class="legend-waiting"></i> Waiting</span></div>
+            <div id="pool-stage" class="pool-stage" data-phase="complete"></div>
+            <aside class="boundary-note" id="boundary-note" hidden><span class="boundary-icon" aria-hidden="true">↛</span><p><strong>Capacity exists, but not in this scheduling domain.</strong>Sessions assigned to the primary pool cannot consume the secondary pool’s local KV budget automatically.</p></aside>
+            <div id="session-comparison" class="session-comparison"></div>
+          </section>
+          <section class="explanation-grid">
+            <article class="formula-card"><p class="eyebrow">Per-worker memory</p><h2>The budget in four steps</h2><ol class="formula-list"><li><span>Raw HBM</span><code><b id="formula-gpus">8</b> GPUs × 141 GB</code><strong id="formula-raw">1,128 GB</strong></li><li><span>Usable memory</span><code>Raw HBM × <b id="formula-util">90%</b></code><strong id="formula-usable">1,015 GB</strong></li><li><span>Model + runtime</span><code>Weights + workspace + safety</code><strong id="formula-committed">893 GB</strong></li><li class="formula-result"><span>KV headroom</span><code>Usable − committed</code><strong id="formula-kv">122 GB</strong></li></ol></article>
+            <article class="interpretation-card"><p class="eyebrow">Reading the result</p><h2 id="result-title">Total supply is unchanged; routing is constrained.</h2><p id="result-copy"></p><div class="interpretation-metrics"><div><span>Primary admitted</span><strong id="result-admitted">85</strong></div><div><span>Waiting</span><strong id="result-waiting">35</strong></div><div><span>Secondary CCU</span><strong id="result-secondary">85.3</strong></div></div><p class="calibration-note"><span aria-hidden="true">◇</span>Memory headroom and serving CCU are separate outputs. KV bytes per token are still unmeasured; CCU comes from the published three-worker operating point.</p></article>
+          </section>
+          <section class="audit-section" aria-labelledby="audit-title">
+            <div class="section-heading audit-heading"><div><p class="eyebrow">H200 evidence register</p><h2 id="audit-title">Know what is fact, estimate, and missing</h2></div><p>Every displayed input keeps its provenance visible.</p></div>
+            <div id="evidence-grid" class="evidence-grid"></div>
+            <details class="assumptions-panel"><summary><span><small>Advanced</small>Calibrate H200 memory and serving</span><i aria-hidden="true">+</i></summary><div class="assumption-content"><div class="assumption-header"><p>Each field states what it changes. Editing a sourced default relabels it as a user assumption.</p><button id="h200-reset" class="replay-button" type="button">Reset H200 assumptions</button></div><div class="h200-assumption-columns"><fieldset><legend>Memory budget</legend><p>The recipe stays fixed at one TP8/EP8 worker on eight H200 GPUs. These fields affect memory headroom, not benchmark-normalized CCU.</p><div class="assumption-fields"><label>Usable memory<input id="input-utilization" type="number" min="50" max="100" step="1" /><span>percent of raw HBM</span><small>Raises or lowers HBM available after the operating margin.</small></label><label>Weight footprint<input id="input-weights" type="number" min="0" step="1" /><span>GB per 8-GPU worker</span><small>More weight memory directly reduces KV headroom.</small></label><label>Runtime workspace<input id="input-runtime" type="number" min="0" step="1" /><span>GB per worker</span><small>Reserves memory for runtime, graphs and buffers.</small></label><label>Safety reserve<input id="input-safety" type="number" min="0" step="1" /><span>GB per worker</span><small>Removes additional memory from the usable KV budget.</small></label></div><div id="h-memory-live" class="h200-live" aria-live="polite"></div></fieldset><fieldset><legend>Serving capacity anchor</legend><p>CCU is normalized from NVIDIA’s H200 aggregated result. Fleet and split efficiency remain explicit editable assumptions.</p><div class="assumption-fields serving-fields"><label>Observed concurrency<input id="h-observed-ccu" type="number" min="1" step="1" /><span>sessions across 3 workers</span><small>Changes the benchmark-normalized CCU of every topology.</small></label><label>DP replica efficiency<input id="h-replica-efficiency" type="number" min="1" max="120" step="1" /><span>percent of additive ceiling</span><small>Scales all multi-worker estimates; replace with a measured curve.</small></label><label>Split-domain efficiency<input id="h-split-efficiency" type="number" min="1" max="120" step="1" /><span>percent of unified worker rate</span><small>Applies only to split pools; use below 100% only with evidence.</small></label></div><div id="h-serving-live" class="h200-live serving-live" aria-live="polite"></div></fieldset></div><div class="checkpoint-row"><span>Fixed hardware recipe</span><strong>8 × H200 · TP8 / EP8 per worker</strong><p>GPU count is intentionally locked because changing it would invalidate the weight footprint and published serving recipe.</p></div></div></details>
+          </section>
+        </div>
+
+        <div id="panel-clusters" class="tab-panel" role="tabpanel" aria-labelledby="tab-clusters" data-panel="clusters" hidden>
+          <section class="cluster-section tab-leading" aria-labelledby="cluster-title">
+            <div class="cluster-heading"><div><p class="eyebrow">Cluster size comparison</p><h2 id="cluster-title">One model across 1, 2, or 3 servers</h2></div><p>Three servers is NVIDIA’s observed H200 aggregated point: 32 concurrent sessions across three TP8/EP8 workers. One and two servers are clearly labeled normalized estimates.</p></div>
+            <div class="cluster-context-strip"><span><b>Model layout</b> TP8 / EP8 per 8-GPU worker</span><span><b>Across servers</b> DP1 → DP3 replicas</span><span><b>Network model</b> RoCE effect excluded</span></div>
+            <div class="cluster-inline-controls single-control"><label>Concurrent demand<input id="cluster-demand-input" type="number" min="1" max="999" step="1" /><small>Compared with each cluster’s benchmark-normalized CCU.</small></label></div>
+            <div id="cluster-comparison" class="cluster-comparison"></div>
+            <div class="cluster-footnote"><span aria-hidden="true">i</span><p><strong>What “without RoCE” means here:</strong> the model uses NVIDIA’s aggregated recipe, so TP8 / EP8 stays inside each H200 server over NVLink/NVSwitch. The scheduler distributes requests across workers; no cross-server tensor/expert parallelism or disaggregated KV transfer is assumed.</p></div>
+          </section>
+        </div>
+
+        <div id="panel-b200" class="tab-panel" role="tabpanel" aria-labelledby="tab-b200" data-panel="b200" hidden>
+          <section class="b200-hero tab-leading" aria-labelledby="b200-title"><div><p class="eyebrow">Fragmentation cost study</p><h2 id="b200-title">Same 16 B200 servers. Different useful capacity.</h2><p>Compare a single 16-server RoCE fabric with a 12-server fabric plus two disconnected 2-server domains.</p></div><div class="definition-chip"><strong>1 server</strong><span>8 × B200 GPUs<br />1.44 TB HBM3e</span></div></section>
+          <section class="topology-compare" aria-label="B200 topology comparison">
+            <article class="topology-card connected"><div class="topology-card-head"><span>Connected baseline</span><strong>16-server RoCE domain</strong></div><div class="node-grid sixteen" aria-label="16 connected HGX B200 servers"></div><p>One scheduler can pack NVIDIA’s observed aggregated and disaggregated GLM-5.2 serving units across all 128 GPUs.</p></article>
+            <div class="versus" aria-hidden="true">VS</div>
+            <article class="topology-card fragmented"><div class="topology-card-head"><span>Fragmented alternative</span><strong>12 RoCE + 2 local + 2 local</strong></div><div class="fragment-domains" aria-label="12 connected servers and two disconnected two-server domains"></div><p>The 12-server domain is RoCE-connected. Each 2-server domain is two independent 8-GPU workers—no RoCE link between those two servers and no spillover between domains.</p></article>
+          </section>
+          <section class="b200-controls" aria-labelledby="b200-controls-title">
+            <div class="section-heading"><div><p class="eyebrow">Editable assumptions</p><h2 id="b200-controls-title">Calibrate capacity, behavior, and money</h2></div><button id="b200-reset" class="replay-button" type="button">Reset assumptions</button></div>
+            <div class="assumption-columns">
+              <fieldset><legend>Observed serving anchors</legend><p>Capacity is calculated from NVIDIA’s published GLM-5.2 deployment units. These advanced controls recalibrate the observations—not fleet size.</p><div class="mini-fields"><label>Aggregated benchmark<input id="b-agg-concurrency" type="number" min="1" step="1" /><span>sessions / four DTP4 workers</span><small>Higher values increase local and connected capacity.</small></label><label>Disaggregated benchmark<input id="b-disagg-concurrency" type="number" min="1" step="1" /><span>sessions / 3P1D unit</span><small>Higher values benefit RoCE-connected domains.</small></label><label>RoCE transfer factor<input id="b-roce-factor" type="number" min="1" max="150" step="1" /><span>percent of published fabric result</span><small>Scales only disaggregated connected capacity.</small></label></div><div id="b-capacity-derivation" class="capacity-derivation"></div></fieldset>
+              <fieldset><legend>Daily-active-user behavior</legend><p>Little’s Law converts occupied concurrent slots into completed sessions per day. These inputs do not change GPU capacity; they change how many people that capacity supports. Full-capacity mode starts at 100% average utilization, but you can lower it for an operational estimate.</p><div class="mini-fields behavior-fields"><label>Prompts / session<input id="b-prompts" type="number" min="1" step="1" /><span>average prompts</span><small>More prompts lengthen sessions → fewer DAU per slot.</small></label><label>Response time<input id="b-response-sec" type="number" min="0" step="1" /><span>seconds / prompt</span><small>Slower answers occupy each session longer.</small></label><label>Between prompts<input id="b-gap-sec" type="number" min="0" step="1" /><span>seconds retained</span><small>Longer pauses reduce daily session turnover.</small></label><label>Sessions / DAU<input id="b-sessions-dau" type="number" min="0.1" step="0.05" /><span>sessions / unique user</span><small>More repeat sessions mean fewer unique DAU.</small></label><label>Active window<input id="b-active-hours" type="number" min="0.1" max="24" step="0.5" /><span>hours / day</span><small>More serving hours increase supported DAU.</small></label><label>Average CCU utilization<input id="b-utilization" type="number" min="1" max="100" step="1" /><span>percent occupied</span><small>100% models the requested full-capacity ceiling.</small></label></div><div id="b-behavior-live" class="calibration-live" aria-live="polite"></div></fieldset>
+              <fieldset><legend>Fully loaded server-day</legend><p>Select one cost basis. Only fields used by that basis are enabled, and the active formula appears below.</p><label class="select-label">Cost basis<select id="b-cost-mode"><option value="cloud">CoreWeave on-demand</option><option value="owned">Owned infrastructure</option><option value="custom">Custom server-day</option></select></label><div class="mini-fields cost-fields"><label data-cost-field="cloud">Cloud server-hour<input id="b-cloud-hourly" type="number" min="0" step="0.01" /><span>USD / server-hour</span><small>Cloud mode: multiplied by 24.</small></label><label data-cost-field="owned">Purchase price<input id="b-purchase-price" type="number" min="0" step="500" /><span>USD / server</span><small>Owned mode: raises amortized daily cost.</small></label><label data-cost-field="owned">Facility uplift<input id="b-overhead" type="number" min="0" step="1" /><span>percent</span><small>Owned mode: floor space, power and facilities.</small></label><label data-cost-field="owned">Amortization<input id="b-years" type="number" min="0.1" step="0.5" /><span>years</span><small>More years lower the daily ownership cost.</small></label><label data-cost-field="custom">Custom cost/day<input id="b-custom-day" type="number" min="0" step="1" /><span>USD / server-day</span><small>Custom mode: direct fully loaded rate.</small></label></div><div id="b-cost-live" class="calibration-live cost-live" aria-live="polite"></div></fieldset>
+            </div>
+          </section>
+          <section class="capacity-section" aria-labelledby="capacity-comparison-title">
+            <div class="section-heading"><div><p class="eyebrow">Full-capacity comparison</p><h2 id="capacity-comparison-title">How much can each topology support?</h2><p>Assume enough demand to fill every available slot. This compares total supply ceilings, not workload placement.</p></div><p id="b-capacity-gap-label">96 CCU · 381.6 DAU difference</p></div>
+            <div id="b-capacity-chart" class="capacity-chart"></div>
+          </section>
+          <section class="impact-section" aria-labelledby="impact-title">
+            <div class="impact-head"><div><p class="eyebrow">Business impact</p><h2 id="impact-title">What fragmentation costs</h2></div><span id="b-cost-basis-label">CoreWeave on-demand anchor</span></div>
+            <div class="impact-grid"><article><span>CCU capacity gap</span><strong id="b-lost-sessions">96</strong><small>maximum concurrent sessions</small></article><article class="impact-feature"><span>Equivalent capacity</span><strong><b id="b-equivalent-servers">1.92</b> B200</strong><small>normalized against unified 16</small></article><article><span>DAU capacity gap</span><strong id="b-lost-dau">381.6</strong><small>at current behavior settings</small></article><article><span>Value per day</span><strong id="b-cost-day">$3,170</strong><small id="b-server-day-rate">at $1,651/server-day</small></article></div>
+            <div class="loss-breakdown"><div><span>16-server unified ceiling</span><strong id="b-unified-capacity">800 CCU</strong><small id="b-unified-dau">3,180.1 derived DAU</small></div><div><span>12 + 2 + 2 fragmented ceiling</span><strong id="b-fragmented-capacity">704 CCU</strong><small id="b-fragmented-dau">2,798.5 derived DAU</small></div></div>
+            <div class="impact-sentence"><span aria-hidden="true">≈</span><p id="b-warehouse-copy"></p></div><div class="cost-horizons"><div><span>30 days</span><strong id="b-cost-month">$95,109</strong></div><div><span>365 days</span><strong id="b-cost-year">$1,157,161</strong></div><div><span>Capacity retained</span><strong id="b-utilized-percent">88.0%</strong></div></div>
+          </section>
+          <section class="dau-section" aria-labelledby="dau-title">
+            <div class="section-heading"><div><p class="eyebrow">Concurrency → DAU</p><h2 id="dau-title">A behavior model, not a magic multiplier</h2></div><span id="b-dau-multiplier" class="metric-chip">2.98 DAU / concurrent slot</span></div>
+            <div class="dau-explainer"><div class="formula-display"><code>session time = prompts × response + (prompts − 1) × gap</code><strong id="b-session-duration">105 min/session</strong><code>DAU = concurrency × utilization × active seconds ÷ session seconds ÷ sessions per DAU</code></div><div id="b-dau-examples" class="dau-examples"></div></div>
+            <p class="model-caveat"><strong>Math check:</strong> with the same behavior inputs, 100 concurrent slots always support exactly twice the DAU of 50. A “more than 2×” result requires different behavior or an empirical nonlinear calibration.</p>
+          </section>
+          <section class="b200-evidence" aria-labelledby="b200-evidence-title"><div class="section-heading"><div><p class="eyebrow">Anchors and limitations</p><h2 id="b200-evidence-title">What the model knows—and what you must measure</h2></div></div><div id="b200-evidence-grid" class="evidence-grid b200-evidence-grid"></div></section>
+        </div>
+      </main>
+      <footer><p>Capacity Lab <span>·</span> GLM-5.2 serving study</p><p>Editable decision model <span>·</span> No production SLO claims</p></footer>
+    </div>
+    <template id="server-template"><article class="server-card"><div class="server-topline"><span class="server-number"></span><span class="worker-label">TP8 / EP8 worker</span></div><div class="gpu-grid" aria-label="Eight H200 GPUs"></div><div class="memory-bar" aria-label="Worker memory allocation"><span class="memory-weight"></span><span class="memory-reserve"></span><span class="memory-kv"></span></div><div class="server-footline"><span>GLM-5.2 · FP8</span><strong class="server-kv"></strong></div></article></template>
+  </body>
+</html>

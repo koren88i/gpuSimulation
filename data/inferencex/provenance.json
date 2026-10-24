@@ -1,0 +1,1459 @@
+{
+  "entries": {
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/30385435921/attempts/1\",\"kimik3\",\"b200\",\"dynamo-vllm\",\"vllm/vllm-openai:kimi-k3\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "437312",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=437312&q=public-dataset&limit=20",
+        "sha256": "275792271dec0def724c0447b8ecf002f068b24f64a7018afd4adc34c5816ccf",
+        "retrievedAt": "2026-09-05T13:44:45.225Z",
+        "bytes": 2710,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/30781313910/attempts/3\",\"kimik3\",\"h200\",\"vllm\",\"vllm/vllm-openai:kimi-k3\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438893",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438893&q=public-dataset&limit=20",
+        "sha256": "d088f66cea2c40062e7ae19b8c5fc447868760b21569aa60455db2b3fd27715d",
+        "retrievedAt": "2026-09-05T13:44:24.122Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/30781313910/attempts/3\",\"kimik3\",\"h200\",\"vllm\",\"vllm/vllm-openai:kimi-k3\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438868",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438868&q=public-dataset&limit=20",
+        "sha256": "c19bc8e8d4b9ab078dd1ea986e9e264d117406dbc17842aa11a7d27063bdfb7c",
+        "retrievedAt": "2026-09-05T13:44:25.537Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/30781275770/attempts/2\",\"kimik3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:kimi-k3\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438910",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438910&q=public-dataset&limit=20",
+        "sha256": "3bc8401847f0248efd8937db72bd52938edac6af6f9987473b83ea24e1b8652e",
+        "retrievedAt": "2026-09-05T13:44:46.408Z",
+        "bytes": 2717,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/30781275770/attempts/2\",\"kimik3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:kimi-k3\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438908",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438908&q=public-dataset&limit=20",
+        "sha256": "cee42c49b365d2d80019330b698e7b07a86313cd98f7d46bdb82ddb5b64725eb",
+        "retrievedAt": "2026-09-05T13:44:47.123Z",
+        "bytes": 2721,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31509160691/attempts/2\",\"kimik3\",\"b300\",\"vllm\",\"vllm/vllm-openai:nightly-b22afe45ac797ae58e67a7a3ad79ee5714024420@sha256:144356af876edbb3a4bfee23e1444b196cc3fdadd0a0c1a7f11f721756972a21\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439544",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439544&q=public-dataset&limit=20",
+        "sha256": "c134bd0a307ce8cf219066fb2b8f0e484f68a1715650f53140a808d468c39477",
+        "retrievedAt": "2026-09-05T13:44:45.823Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31509160691/attempts/2\",\"kimik3\",\"b300\",\"vllm\",\"vllm/vllm-openai:nightly-b22afe45ac797ae58e67a7a3ad79ee5714024420@sha256:144356af876edbb3a4bfee23e1444b196cc3fdadd0a0c1a7f11f721756972a21\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439539",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439539&q=public-dataset&limit=20",
+        "sha256": "a750fb8b5dd07c334ff52ae3766334b271925987d7623a0dc6ed2d38b76f5088",
+        "retrievedAt": "2026-09-05T13:44:47.464Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31893747354/attempts/2\",\"kimik3\",\"b300\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-5894fdf\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439932",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439932&q=public-dataset&limit=20",
+        "sha256": "fc486ffd19cf498f57fd20d979f434f053e10b0c53ec04be5eb518a188b72d56",
+        "retrievedAt": "2026-09-05T13:44:47.550Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32180077157/attempts/2\",\"kimik3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-75c2eef\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440106",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440106&q=public-dataset&limit=20",
+        "sha256": "8c5aaaa8282fb11f97e6f68e1b20973dcc39f6e250be21bdb620cf99586db912",
+        "retrievedAt": "2026-09-05T13:44:47.883Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32146276534/attempts/1\",\"kimik3\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-75c2eef\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439996",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439996&q=public-dataset&limit=20",
+        "sha256": "20ef3258f8a2a3811a15cb0fbad9e8d539644b407b2e15e9cdebaa476f9872e1",
+        "retrievedAt": "2026-09-05T13:44:48.864Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32225002756/attempts/3\",\"kimik3\",\"b200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-728d3ad\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440073",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440073&q=public-dataset&limit=20",
+        "sha256": "197f51213549e5d28439c3de4bf5a4ecf9ba75bd599ed87cdeb250bbb4c6a7a1",
+        "retrievedAt": "2026-09-05T13:44:49.122Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32424103771/attempts/2\",\"kimik3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-75c2eef\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440187",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440187&q=public-dataset&limit=20",
+        "sha256": "585cca8c2533bf5a20056ff865715349981bd32704bb7957063d8a5ee0f5880b",
+        "retrievedAt": "2026-09-05T13:44:49.083Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32424103771/attempts/2\",\"kimik3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-728d3ad\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440176",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440176&q=public-dataset&limit=20",
+        "sha256": "f9914c5a2180af76ad1d64a0d1d84cf5bad26c22a7f51651e11e0eb3facdec0d",
+        "retrievedAt": "2026-09-05T13:44:50.404Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33146794748/attempts/2\",\"kimik3\",\"b200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-728d3ad\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440542",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440542&q=public-dataset&limit=20",
+        "sha256": "4cd160625aa55cab46721aac8c586aa30cdfe4771e9de5f40551584d3e9d04a0",
+        "retrievedAt": "2026-09-05T13:44:50.436Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3\",\"kimik3\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13-3696c77\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "441055",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=441055&q=public-dataset&limit=20",
+        "sha256": "0126487a06f9b107d83febacba7c6bc8ee522a9dcf513fe24e9ee4d335e77b91",
+        "retrievedAt": "2026-09-05T13:44:50.164Z",
+        "bytes": 2711,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31152054555/attempts/2\",\"qwen3.5\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126_256k"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438917",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438917&q=public-dataset&limit=20",
+        "sha256": "986c94d2563ae4ce4d88bb7f319edf0602ec454b66d515604880b8bf22afd62d",
+        "retrievedAt": "2026-09-05T13:44:50.948Z",
+        "bytes": 412,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31152054555/attempts/2\",\"qwen3.5\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126_256k"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438926",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438926&q=public-dataset&limit=20",
+        "sha256": "8cdcff11755afd63207e737985a8807ebb3c0041e4cdec77c2d27eeea322b953",
+        "retrievedAt": "2026-09-05T13:44:51.183Z",
+        "bytes": 412,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31042542308/attempts/1\",\"qwen3.5\",\"gb300\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260724-433429b1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126_256k",
+        "semianalysis_cc_traces_weka"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "438849",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=438849&q=public-dataset&limit=20",
+        "sha256": "770e61d4275e2350647e9b9c0adefa37ab4a26be81c4f0a702fd76e896c5e0fb",
+        "retrievedAt": "2026-09-05T13:44:51.993Z",
+        "bytes": 2723,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31582035733/attempts/2\",\"qwen3.5\",\"gb200\",\"dynamo-sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126_256k",
+        "semianalysis_cc_traces_weka"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439592",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439592&q=public-dataset&limit=20",
+        "sha256": "06feb29a1eb197bb59fbd067174e3acf955e1fbbc57c6c149536dcfb720d8a5a",
+        "retrievedAt": "2026-09-05T13:44:53.572Z",
+        "bytes": 2723,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31582035733/attempts/2\",\"qwen3.5\",\"gb200\",\"dynamo-sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126_256k",
+        "semianalysis_cc_traces_weka"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439600",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439600&q=public-dataset&limit=20",
+        "sha256": "397dcefcb9d66e3f9b6d83044963ff5339768059722aa1bf474a9ce618424e2a",
+        "retrievedAt": "2026-09-05T13:44:54.279Z",
+        "bytes": 2724,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31913009619/attempts/1\",\"qwen3.5\",\"h200\",\"sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260815-a5ba081f\",\"on\"]": {
+      "dataset": null,
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_with_subagents_256k"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439979",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439979&q=public-dataset&limit=20",
+        "sha256": "d4746fd7f22916bf2a2c02991e0215d75b7bdec0cd7e36591af90a9e3686cc38",
+        "retrievedAt": "2026-09-05T13:47:56.661Z",
+        "bytes": 414,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32177976542/attempts/4\",\"qwen3.5\",\"gb200\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-20260818-c0b6474b\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126_256k",
+        "semianalysis_cc_traces_weka"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440090",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440090&q=public-dataset&limit=20",
+        "sha256": "c61fd317ffa6382db4a7fd0ffbeb6a8400634c57d668ab21fc75ad4ea8a2ee56",
+        "retrievedAt": "2026-09-05T13:47:56.038Z",
+        "bytes": 2723,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31572866180/attempts/2\",\"minimaxm3\",\"h100\",\"vllm\",\"vllm/vllm-openai:v0.27.1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439580",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439580&q=public-dataset&limit=20",
+        "sha256": "a86f8e2bf3062d54dc1d75d89d9241696303b0b99d6f9fc7badc3edff288482e",
+        "retrievedAt": "2026-09-05T13:50:58.681Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31572866180/attempts/2\",\"minimaxm3\",\"h100\",\"vllm\",\"vllm/vllm-openai:v0.27.1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439579",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439579&q=public-dataset&limit=20",
+        "sha256": "1c08b57694b51dc781c02d1b729e6ffdfbc444ff2ba3a238986776d7e1670b2a",
+        "retrievedAt": "2026-09-05T13:50:58.812Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31561686847/attempts/1\",\"minimaxm3\",\"h200\",\"vllm\",\"vllm/vllm-openai:v0.27.1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439640",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439640&q=public-dataset&limit=20",
+        "sha256": "a4cdfd4749dd0e1438a5aff6a9314e05e0038a34a45bc71b98b439f8301cb1e7",
+        "retrievedAt": "2026-09-05T13:50:58.711Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31561686847/attempts/1\",\"minimaxm3\",\"h200\",\"vllm\",\"vllm/vllm-openai:v0.27.1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439636",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439636&q=public-dataset&limit=20",
+        "sha256": "20d50be389e0299f9eb03ebb46b133ac6110d236e45cd02a52dacf2478433801",
+        "retrievedAt": "2026-09-05T13:51:01.774Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31871181628/attempts/1\",\"minimaxm3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:v0.27.1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439886",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439886&q=public-dataset&limit=20",
+        "sha256": "ca16dce1f5d9950044e9adf2bddf5953f2628504986e9285e2c960558904c23c",
+        "retrievedAt": "2026-09-05T13:51:00.418Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31871181628/attempts/1\",\"minimaxm3\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:v0.27.1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439885",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439885&q=public-dataset&limit=20",
+        "sha256": "8eab994f335f2e157684d2b567d433254733d4ab7bee0901f18621f65d2e5716",
+        "retrievedAt": "2026-09-05T13:51:33.402Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31833066181/attempts/1\",\"minimaxm3\",\"b300\",\"vllm\",\"vllm/vllm-openai:nightly-ac7509e2b1db40fec2f03dde1ed4e9dfdc2338c9\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439908",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439908&q=public-dataset&limit=20",
+        "sha256": "103c8ae38ef996826632b74c303344824ba134300878a5965484a2a759b63193",
+        "retrievedAt": "2026-09-05T13:51:34.047Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31833401868/attempts/1\",\"minimaxm3\",\"b200\",\"vllm\",\"vllm/vllm-openai:nightly-ac7509e2b1db40fec2f03dde1ed4e9dfdc2338c9\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439910",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439910&q=public-dataset&limit=20",
+        "sha256": "4fe3aa623df84dd192103583757051ddfd71bf3b03fa6fb337b3f756f2cf366c",
+        "retrievedAt": "2026-09-05T13:51:33.934Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32505173269/attempts/1\",\"minimaxm3\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-5e35a6f4f9bbc217c599692157ca985c894373f7\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440224",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440224&q=public-dataset&limit=20",
+        "sha256": "3ec887c0a2603524598c6eb32d9631398b00ab9bc83676b862bff0734e947ba3",
+        "retrievedAt": "2026-09-05T13:57:41.304Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33221188566/attempts/3\",\"minimaxm3\",\"h100\",\"vllm\",\"ttl.sh/cquil11-vllm-tier-3565dfefe1-pr53087-20260828:24h\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440735",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440735&q=public-dataset&limit=20",
+        "sha256": "6d0d8ee3c1cc02c572e3844f25758e4837b9c0dc27fa249ff76c70b2387ba453",
+        "retrievedAt": "2026-09-05T13:57:40.265Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33221188566/attempts/3\",\"minimaxm3\",\"h100\",\"vllm\",\"ttl.sh/cquil11-vllm-tier-3565dfefe1-pr53087-20260828:24h\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440715",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440715&q=public-dataset&limit=20",
+        "sha256": "36935743d7e2d28ff93e00897072ff0f726901b96612c52afab04157de50194b",
+        "retrievedAt": "2026-09-05T13:57:40.432Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31192604550/attempts/1\",\"dsv4\",\"b300\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-904e4ec\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439206",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439206&q=public-dataset&limit=20",
+        "sha256": "d8740c1e5f2378b2276e49284fd0ec6b2675a03c6cee8270bb43c1ab259901fd",
+        "retrievedAt": "2026-09-05T13:57:41.818Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31192602558/attempts/3\",\"dsv4\",\"b200\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-904e4ec\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439270",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439270&q=public-dataset&limit=20",
+        "sha256": "5d1a140788b6ee16e904012ac38384bfea30873e2d5a4460a66ca42f9152933e",
+        "retrievedAt": "2026-09-05T14:00:44.868Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31192602558/attempts/3\",\"dsv4\",\"b200\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-904e4ec\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439262",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439262&q=public-dataset&limit=20",
+        "sha256": "ef79fbb2aed0af6c9221b0ca4b08f63333e41f74e73ac55ae22e78ff47937f16",
+        "retrievedAt": "2026-09-05T14:00:44.872Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31242829669/attempts/3\",\"dsv4\",\"gb300\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260711-7de33ce8\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439309",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439309&q=public-dataset&limit=20",
+        "sha256": "c8147803f6e9afce1814c1fba4092511fbb2083f27110d29855a63d13ba1d650",
+        "retrievedAt": "2026-09-05T14:00:57.528Z",
+        "bytes": 2713,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31275542474/attempts/4\",\"dsv4\",\"gb300\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260719-99f5a6f4\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439332",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439332&q=public-dataset&limit=20",
+        "sha256": "539cd243a4d8c9c15c0fd48de2097aea85d13af266217199855474ec4c7d488a",
+        "retrievedAt": "2026-09-05T14:01:18.048Z",
+        "bytes": 2713,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31415828111/attempts/2\",\"dsv4\",\"b300\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-426e59f\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439521",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439521&q=public-dataset&limit=20",
+        "sha256": "f56bbd268a067ea24bca516a59081b8f03d739ea036a19039b49e4b701c1ce0c",
+        "retrievedAt": "2026-09-05T14:00:57.909Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31435999410/attempts/1\",\"dsv4\",\"h200\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260720-b3570a45\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439549",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439549&q=public-dataset&limit=20",
+        "sha256": "0f66a04672f12354b660d8fda67090d15432046904b1f694fad888bf7f265505",
+        "retrievedAt": "2026-09-05T14:00:58.851Z",
+        "bytes": 2718,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31656586534/attempts/1\",\"dsv4\",\"b300\",\"sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439758",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439758&q=public-dataset&limit=20",
+        "sha256": "75da48864cfba618b453d16578a0d04d19e876e5e65b3364023e979f4d5afc12",
+        "retrievedAt": "2026-09-05T14:01:19.217Z",
+        "bytes": 414,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31665831034/attempts/1\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439799",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439799&q=public-dataset&limit=20",
+        "sha256": "b96caec61311df9f43677e4f1618235700927c33a8586cf10f4e0e8e40e63a0e",
+        "retrievedAt": "2026-09-05T14:01:19.237Z",
+        "bytes": 414,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31665831034/attempts/1\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439793",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439793&q=public-dataset&limit=20",
+        "sha256": "0064a9b8f28bbddd5868845854bc07ced9c4b09173af0dc670127db2bba218c3",
+        "retrievedAt": "2026-09-05T14:01:19.290Z",
+        "bytes": 414,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31743991710/attempts/1\",\"dsv4\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-3ee2df30337a301164c46ae444b76ee67e71c106\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439843",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439843&q=public-dataset&limit=20",
+        "sha256": "167cfe03c1afd6bb1ba768d43dbd7302333edc8bcddfb4a5249bd6466265dfba",
+        "retrievedAt": "2026-09-05T14:01:25.793Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31633154542/attempts/2\",\"dsv4\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439873",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439873&q=public-dataset&limit=20",
+        "sha256": "557144750fc9423ff1a198ebad5bd6ffa82d520289a79225832432cfab52c2cc",
+        "retrievedAt": "2026-09-05T14:01:46.086Z",
+        "bytes": 2721,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31633154542/attempts/2\",\"dsv4\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439875",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439875&q=public-dataset&limit=20",
+        "sha256": "dc1585d138a070ce1d6512433e3605e5c3f09a35a3b7bd679d21852fe9a68430",
+        "retrievedAt": "2026-09-05T14:01:21.294Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31924116400/attempts/2\",\"dsv4\",\"b200\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-426e59f\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439958",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439958&q=public-dataset&limit=20",
+        "sha256": "1034a43a5ab6e1aa03ce4a396fa963e53a10856319ca5fd5523231b73770cdca",
+        "retrievedAt": "2026-09-05T14:01:46.551Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2\",\"dsv4\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439974",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439974&q=public-dataset&limit=20",
+        "sha256": "dc8394fb64ca8ed4374861de5c6fbeaa757f89a5eb718a0b1caa2dc5618dbb62",
+        "retrievedAt": "2026-09-05T14:01:56.067Z",
+        "bytes": 2713,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2\",\"dsv4\",\"gb200\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439973",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439973&q=public-dataset&limit=20",
+        "sha256": "ffb332ff6047f1be748a7a5e6925e09feb1b8848931e2ffff2e5f717762b76ba",
+        "retrievedAt": "2026-09-05T14:01:47.096Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32168174681/attempts/2\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440049",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440049&q=public-dataset&limit=20",
+        "sha256": "233a8a019bc367d39999bf8eb7e8bf2d42003af96cc5d8aedf66f57dbacb79c7",
+        "retrievedAt": "2026-09-05T14:01:56.598Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32168174681/attempts/2\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440048",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440048&q=public-dataset&limit=20",
+        "sha256": "c874af078afef733b4ae3cd0d9cc14b1deb927e6be278e336c4afa73c8bc4fba",
+        "retrievedAt": "2026-09-05T14:01:56.759Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32403083041/attempts/3\",\"dsv4\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440190",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440190&q=public-dataset&limit=20",
+        "sha256": "6ed13926dc613704e04ee8acb79be9bae8c79cd2c95d061080d339d962180bea",
+        "retrievedAt": "2026-09-05T14:02:20.069Z",
+        "bytes": 2711,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32454316647/attempts/1\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:dev-nightly-0820\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440211",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440211&q=public-dataset&limit=20",
+        "sha256": "b845d2a05e77f0dd379b2ffffa63a38e4924e70d1e927bd80da97c40c426c666",
+        "retrievedAt": "2026-09-05T14:02:20.759Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32454316647/attempts/1\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:dev-nightly-0820\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440210",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440210&q=public-dataset&limit=20",
+        "sha256": "b98058e463217f70a2a191a6afd95023ac9f52e7a49146998b81346eeb5734d9",
+        "retrievedAt": "2026-09-05T14:02:20.754Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32242794988/attempts/3\",\"dsv4\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f\",\"off\"]": {
+      "dataset": null,
+      "datasetCandidates": [],
+      "scenarioValid": null,
+      "representativeRow": "440200",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440200&q=public-dataset&limit=20",
+        "sha256": "361220c0a8879060cda3488931beadc92257db163e1404b79e78e56aef451880",
+        "retrievedAt": "2026-09-05T14:02:20.289Z",
+        "bytes": 69,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32526153588/attempts/3\",\"dsv4\",\"b200\",\"vllm\",\"vllm/vllm-openai:nightly-dev-x86_64-cu13.0.1-426e59f\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440244",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440244&q=public-dataset&limit=20",
+        "sha256": "741ebe9dd9207a0031d0bd2c9d2aea246848fcd356ada0119cc455ba58d03266",
+        "retrievedAt": "2026-09-05T14:02:21.735Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32462813609/attempts/2\",\"dsv4\",\"gb300\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260821-f825d729\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440301",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440301&q=public-dataset&limit=20",
+        "sha256": "380a2e2190d6c351c00844f76e37463494055b08584444a221617a5822bd7a29",
+        "retrievedAt": "2026-09-05T14:02:30.235Z",
+        "bytes": 2713,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32462813609/attempts/2\",\"dsv4\",\"gb300\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260821-f825d729\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440294",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440294&q=public-dataset&limit=20",
+        "sha256": "43d4624a286468b0e30011b5edf358a5132951896a6114af47ab4e89e6fdbb7b",
+        "retrievedAt": "2026-09-05T14:02:21.800Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32793067438/attempts/1\",\"dsv4\",\"h200\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260720-b3570a45\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440272",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440272&q=public-dataset&limit=20",
+        "sha256": "8e69979a2276083ecbace7a7f8fe6396e54655a6419136bb37e7460b3ec5d7fd",
+        "retrievedAt": "2026-09-05T14:02:31.269Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32809502132/attempts/1\",\"dsv4\",\"gb300\",\"dynamo-vllm\",\"vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440278",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440278&q=public-dataset&limit=20",
+        "sha256": "61903865678143eb6fcfb354e3f8f98f019d57a6da187b7d1ae65fbf6ca912d6",
+        "retrievedAt": "2026-09-05T14:02:59.990Z",
+        "bytes": 2721,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33154296172/attempts/1\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:nightly-dev-20260827-20621aa1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440538",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440538&q=public-dataset&limit=20",
+        "sha256": "f8b3b1bfc4545e7b33fc7859f95827cf63cf8f0470b22701af76abea7c523829",
+        "retrievedAt": "2026-09-05T14:02:30.772Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33154296172/attempts/1\",\"dsv4\",\"b200\",\"sglang\",\"lmsysorg/sglang:nightly-dev-20260827-20621aa1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440531",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440531&q=public-dataset&limit=20",
+        "sha256": "0292483fd054baa81f217724c26a1f1eb8ebd831435ea2c37dfe5f6d6675e469",
+        "retrievedAt": "2026-09-05T14:03:02.366Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33145139961/attempts/2\",\"dsv4\",\"b300\",\"sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260827-20621aa1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440848",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440848&q=public-dataset&limit=20",
+        "sha256": "61a8f042524c950a8f95f9fc3567c4605aeeb6b8ac848192200d45a4f6a4d7dc",
+        "retrievedAt": "2026-09-05T14:03:00.519Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33418433573/attempts/2\",\"dsv4\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440956",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440956&q=public-dataset&limit=20",
+        "sha256": "928386555c543e0dfc70fba49be7c66297c0ccf134c020745dd77e3989659abd",
+        "retrievedAt": "2026-09-05T14:03:24.191Z",
+        "bytes": 2711,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33548589856/attempts/1\",\"dsv4\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440971",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440971&q=public-dataset&limit=20",
+        "sha256": "0f7b465cd1a3ca26af9bdba563ba9d40bdfee9c3e40e29f2ef0c565055812f9f",
+        "retrievedAt": "2026-09-05T14:03:46.246Z",
+        "bytes": 2711,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31147076962/attempts/2\",\"glm5.2\",\"b300\",\"sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439196",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439196&q=public-dataset&limit=20",
+        "sha256": "55bd42f2daf9438081feb588ef55de3ebcd9d5937fe4850bb04e22e9e7db4e48",
+        "retrievedAt": "2026-09-05T14:03:24.735Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31141585420/attempts/3\",\"glm5.2\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439241",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439241&q=public-dataset&limit=20",
+        "sha256": "9f663f768b1466f3d49136b635a457cfc2dd3b803ce5a168daeeb451af919999",
+        "retrievedAt": "2026-09-05T14:03:24.858Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31235207041/attempts/1\",\"glm5.2\",\"h200\",\"dynamo-sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439292",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439292&q=public-dataset&limit=20",
+        "sha256": "ad599eee02fd2f9a6c2263701394804f126a2472d3acca874b13bb307b85ff17",
+        "retrievedAt": "2026-09-05T14:03:48.409Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31825558603/attempts/1\",\"glm5.2\",\"gb300\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260805-211ee642\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439931",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439931&q=public-dataset&limit=20",
+        "sha256": "f2004b8510fa24a4c748c29324d49d7c7b57358d53bc9aeb4db408580ebe7967",
+        "retrievedAt": "2026-09-05T14:03:51.401Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31958517356/attempts/1\",\"glm5.2\",\"gb200\",\"dynamo-sglang\",\"lmsysorg/sglang:v0.5.17-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439955",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439955&q=public-dataset&limit=20",
+        "sha256": "3fabca1f4b9a5290d8bf9d0ea3493a0c24f05b8714a2e7976925f9103caf2f04",
+        "retrievedAt": "2026-09-05T14:03:47.137Z",
+        "bytes": 2709,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32174968310/attempts/1\",\"glm5.2\",\"b300\",\"sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439985",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439985&q=public-dataset&limit=20",
+        "sha256": "ec89e4de254e673f2e648d9eef403ddd0f29ffff292819fc50f04bb4322d28ae",
+        "retrievedAt": "2026-09-05T14:03:51.835Z",
+        "bytes": 414,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32164149308/attempts/1\",\"glm5.2\",\"b200\",\"sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "439992",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=439992&q=public-dataset&limit=20",
+        "sha256": "899bb9a02004b6d70b2450076baf9797784a1f8afed6ea4ef98288baaaf77364",
+        "retrievedAt": "2026-09-05T14:03:51.821Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32207758126/attempts/2\",\"glm5.2\",\"gb200\",\"dynamo-sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260805-211ee642\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440083",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440083&q=public-dataset&limit=20",
+        "sha256": "3c40579b6a9a3c72cd06292d2bbe3e953aff39127f96ddbd0d8cba0c980c845c",
+        "retrievedAt": "2026-09-05T14:03:52.381Z",
+        "bytes": 2711,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32346724519/attempts/4\",\"glm5.2\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc22.post1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440215",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440215&q=public-dataset&limit=20",
+        "sha256": "4bd0ec3ac279d7df46c42bfe8e610877f067b955429ce5fb1170c6811789e79f",
+        "retrievedAt": "2026-09-05T14:03:56.705Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32346724519/attempts/4\",\"glm5.2\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc22.post1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440216",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440216&q=public-dataset&limit=20",
+        "sha256": "c47caf2b4cb79f54ca9b45338596a59b8fec5d71f6b8fec8055081dc0598b753",
+        "retrievedAt": "2026-09-05T14:04:08.622Z",
+        "bytes": 2712,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32793067438/attempts/1\",\"glm5.2\",\"h200\",\"dynamo-sglang\",\"lmsysorg/sglang:v0.5.16-cu130\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440277",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440277&q=public-dataset&limit=20",
+        "sha256": "bfae2495012c8a807cf0d8c6319018aa8f991414e220c06d1770f6720cf3a135",
+        "retrievedAt": "2026-09-05T14:03:54.214Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219706372/attempts/2\",\"glm5.2\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc22.post1\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440948",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440948&q=public-dataset&limit=20",
+        "sha256": "99e6ba319b84bdd87d609a07a71b9cdc1d51002f5d35d03124d754d62071191b",
+        "retrievedAt": "2026-09-05T14:04:12.593Z",
+        "bytes": 2719,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219706372/attempts/2\",\"glm5.2\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc22.post1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440950",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440950&q=public-dataset&limit=20",
+        "sha256": "a6e8ce8721069120d01d0d5b05d4b642b3d34dfbcb31e0719b7c7ee2a855bc2b",
+        "retrievedAt": "2026-09-05T14:04:24.331Z",
+        "bytes": 2712,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33683520699/attempts/1\",\"glm5.2\",\"b200\",\"sglang\",\"lmsysorg/sglang:nightly-dev-cu13-20260901-07c8f729\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440960",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440960&q=public-dataset&limit=20",
+        "sha256": "cd3892048096952ac1265c10d467cea1d00c68afb84908994d5f65fd50d549fb",
+        "retrievedAt": "2026-09-05T14:04:09.114Z",
+        "bytes": 413,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33716849615/attempts/3\",\"glm5.2\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc22.post1\",\"on\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126",
+        "semianalysis_cc_traces_weka_06212"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440964",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440964&q=public-dataset&limit=20",
+        "sha256": "adb956ba0a37a92ec2532bdc7f8b705df499843650fef31af2a2e8c1d7abc0a0",
+        "retrievedAt": "2026-09-05T14:04:39.704Z",
+        "bytes": 2720,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32612667044/attempts/1\",\"glm5.1\",\"b200\",\"tilert\",\"ghcr.io/tile-ai/tilert:0.1.5\",\"off\"]": {
+      "dataset": null,
+      "datasetCandidates": [],
+      "scenarioValid": null,
+      "representativeRow": "440253",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440253&q=public-dataset&limit=20",
+        "sha256": "eeeb645d9ef5fa706dd6db94368c8dfd0e894fde4a2bc47689cf765458b02966",
+        "retrievedAt": "2026-09-05T14:04:24.616Z",
+        "bytes": 69,
+        "count": null
+      }
+    },
+    "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33087045564/attempts/1\",\"glm5.1\",\"b200\",\"tilert\",\"ghcr.io/tile-ai/tilert:0.1.5\",\"off\"]": {
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "datasetCandidates": [
+        "semianalysis_cc_traces_weka_062126"
+      ],
+      "scenarioValid": null,
+      "representativeRow": "440461",
+      "scope": "inferred from same run/model/hardware/framework/image/offload group",
+      "caveat": "Dataset revision, seed, sampling, scenario validity and exact per-row replay controls not verified",
+      "source": {
+        "url": "https://inferencex.semianalysis.com/api/v1/server-log-search?id=440461&q=public-dataset&limit=20",
+        "sha256": "2059cd21d754159ad7a68b968301be82ede44eb43c925a2e80909a559b72085c",
+        "retrievedAt": "2026-09-05T14:04:24.973Z",
+        "bytes": 2360,
+        "count": null
+      }
+    }
+  },
+  "errors": [
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31927376673/attempts/1\",\"qwen3.5\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219708211/attempts/1\",\"qwen3.5\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32186776214/attempts/1\",\"minimaxm3\",\"b200\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32186088945/attempts/1\",\"minimaxm3\",\"b300\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32310416645/attempts/1\",\"minimaxm3\",\"b200\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32310415315/attempts/3\",\"minimaxm3\",\"b300\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219853877/attempts/2\",\"minimaxm3\",\"b200\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    },
+    {
+      "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219853889/attempts/1\",\"minimaxm3\",\"b300\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+      "error": "TimeoutError: The operation was aborted due to timeout"
+    }
+  ]
+}

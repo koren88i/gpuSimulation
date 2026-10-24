@@ -1,0 +1,27 @@
+{
+  "id": "agentx-coding-v1",
+  "description": "AgentX replay workload with configurable occupancy-based user capacity assumptions; not measured human DAU.",
+  "methodologyUrl": "https://inferencex.semianalysis.com/about",
+  "preferredDataset": "semianalysis_cc_traces_weka_062126",
+  "reserveFraction": 0.2,
+  "rootSessionsPerUser": 1,
+  "activeAgentHoursPerDau": 2,
+  "activityWindowHours": 8,
+  "peakToWindowAverageRatio": 2,
+  "latencyLimits": {
+    "p90_ttft": 10,
+    "p90_tpot": 0.1
+  },
+  "selection": {
+    "asOfDate": "2026-09-05",
+    "maxAgeDays": null,
+    "maxPairDateGapDays": null
+  },
+  "assumptions": "All numeric settings above are editable planning assumptions, not published AgentX human-usage measurements. Recorded delays and fan-out are already included in AgentX; no extra think time is added.",
+  "fixedSequenceProxy": {
+    "enabled": false,
+    "thinkSeconds": 30,
+    "requestsPerUserPerDay": 100,
+    "description": "Optional non-agentic one-outstanding-request proxy. Defaults are hypothetical, not derived from the coding corpus. Disabled to avoid presenting fixed-length tests as measured coding-session capacity."
+  }
+}

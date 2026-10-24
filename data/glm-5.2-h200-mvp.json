@@ -1,0 +1,165 @@
+{
+  "model": {
+    "family": "GLM-5",
+    "name": "GLM-5.2",
+    "checkpoint": "Pin exact checkpoint and immutable revision before benchmarking",
+    "precision": "FP8",
+    "contextLimitTokens": 250000
+  },
+  "hardware": {
+    "gpu": "NVIDIA H200 SXM",
+    "hbmPerGpuGb": 141,
+    "gpusPerServer": 8,
+    "totalServers": 16,
+    "totalGpus": 128,
+    "unitsMeaning": "server"
+  },
+  "assumptions": {
+    "modelWeightMemoryPerWorkerGb": 893,
+    "usableMemoryFraction": 0.9,
+    "runtimeOverheadGb": 0,
+    "safetyReserveGb": 0,
+    "kvBytesPerToken": null,
+    "relativeKvUnitsPerWorker": 1,
+    "status": "illustrative"
+  },
+  "servingModel": {
+    "observedConcurrency": 32,
+    "observedWorkers": 3,
+    "gpusPerWorker": 8,
+    "replicaEfficiency": 1,
+    "splitDomainEfficiency": 1,
+    "workload": {
+      "name": "NVIDIA agentic trace (15% subset)",
+      "medianInputTokens": 64000,
+      "medianOutputTokens": 400,
+      "kvReuseFraction": 0.9,
+      "userOutputTokensPerSecondP50": 52.37,
+      "ttftP50Ms": 1790
+    }
+  },
+  "presets": [
+    {
+      "id": "unified-16",
+      "label": "Unified 16",
+      "description": "One scheduling domain",
+      "primaryServers": 16,
+      "secondaryServers": 0
+    },
+    {
+      "id": "split-8-8",
+      "label": "Split 8 + 8",
+      "description": "Two equal local budgets",
+      "primaryServers": 8,
+      "secondaryServers": 8
+    },
+    {
+      "id": "split-10-6",
+      "label": "Split 10 + 6",
+      "description": "Primary-weighted split",
+      "primaryServers": 10,
+      "secondaryServers": 6
+    },
+    {
+      "id": "split-12-4",
+      "label": "Split 12 + 4",
+      "description": "Primary-heavy split",
+      "primaryServers": 12,
+      "secondaryServers": 4
+    }
+  ],
+  "clusterComparisons": [1, 2, 3],
+  "defaults": {
+    "presetId": "split-8-8",
+    "requestedSessions": 120,
+    "clusterRequestedSessions": 28
+  },
+  "evidence": [
+    {
+      "field": "hbmPerGpuGb",
+      "value": 141,
+      "unit": "GB",
+      "status": "published hardware specification",
+      "source": "NVIDIA H200 product specification",
+      "sourceUrl": "https://www.nvidia.com/en-eu/data-center/h200/"
+    },
+    {
+      "field": "modelWeightMemoryPerWorkerGb",
+      "value": 893,
+      "unit": "GB per 8-GPU worker",
+      "status": "recipe-based estimate",
+      "source": "vLLM GLM-5 deployment recipe",
+      "sourceUrl": "https://github.com/vllm-project/recipes/blob/main/models/zai-org/GLM-5.2.yaml"
+    },
+    {
+      "field": "observedConcurrency",
+      "value": 32,
+      "unit": "sessions across 3 workers",
+      "status": "published benchmark point",
+      "source": "NVIDIA Dynamo GLM-5.2 H200 benchmark",
+      "sourceUrl": "https://docs.nvidia.com/dynamo/dev/recipes/glm-5-2",
+      "note": "H200 aggregated, three 8-GPU TP8/EP8 workers; 64K median input, 400 median output, 90% KV reuse."
+    },
+    {
+      "field": "replicaEfficiency",
+      "value": 100,
+      "unit": "% of additive DP ceiling",
+      "status": "editable assumption",
+      "source": "Replace with a measured fleet scaling curve",
+      "sourceUrl": null,
+      "note": "Applies an explicit efficiency factor when normalizing the three-worker observation to other worker counts."
+    },
+    {
+      "field": "splitDomainEfficiency",
+      "value": 100,
+      "unit": "% of unified worker rate",
+      "status": "editable assumption",
+      "source": "No topology penalty assumed by default",
+      "sourceUrl": null,
+      "note": "Applies only to split pools. Lower it only when measurements show a scheduler or topology efficiency penalty."
+    },
+    {
+      "field": "usableMemoryFraction",
+      "value": 90,
+      "unit": "% of raw HBM",
+      "status": "editable assumption",
+      "source": "Planning default",
+      "sourceUrl": null,
+      "note": "Changes modeled memory headroom only, not benchmark-normalized CCU."
+    },
+    {
+      "field": "runtimeOverheadGb",
+      "value": 0,
+      "unit": "GB per worker",
+      "status": "missing / editable",
+      "source": "Requires runtime measurement",
+      "sourceUrl": null,
+      "note": "Zero means unmeasured, not that the runtime uses no memory."
+    },
+    {
+      "field": "safetyReserveGb",
+      "value": 0,
+      "unit": "GB per worker",
+      "status": "missing / editable",
+      "source": "Requires an operational policy",
+      "sourceUrl": null,
+      "note": "Zero means no additional planning reserve has been entered."
+    },
+    {
+      "field": "contextLimitTokens",
+      "value": 250000,
+      "unit": "tokens",
+      "status": "published recipe limit",
+      "source": "NVIDIA Dynamo GLM-5.2 H200 recipe",
+      "sourceUrl": "https://docs.nvidia.com/dynamo/dev/recipes/glm-5-2"
+    },
+    {
+      "field": "kvBytesPerToken",
+      "value": null,
+      "unit": "bytes per token",
+      "status": "missing",
+      "source": "Requires checkpoint and runtime measurement",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -1,0 +1,1332 @@
+{
+  "counts": {
+    "downloaded": 80899,
+    "uniqueInScope": 53003,
+    "conflictingIds": [
+      "439524",
+      "439521",
+      "439523",
+      "439875",
+      "439877",
+      "439878",
+      "439873",
+      "439874",
+      "439876"
+    ],
+    "topologyQualified": 16028,
+    "agenticRows": 933,
+    "comparisons": 318,
+    "agenticComparisons": 64,
+    "latencyQualifiedComparisons": 30,
+    "historyErrors": [],
+    "provenanceErrors": [
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31927376673/attempts/1\",\"qwen3.5\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219708211/attempts/1\",\"qwen3.5\",\"gb300\",\"dynamo-trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc24\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32186776214/attempts/1\",\"minimaxm3\",\"b200\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32186088945/attempts/1\",\"minimaxm3\",\"b300\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32310416645/attempts/1\",\"minimaxm3\",\"b200\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32310415315/attempts/3\",\"minimaxm3\",\"b300\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219853877/attempts/2\",\"minimaxm3\",\"b200\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      },
+      {
+        "key": "[\"https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33219853889/attempts/1\",\"minimaxm3\",\"b300\",\"trt\",\"nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc23.post1\",\"on\"]",
+        "error": "TimeoutError: The operation was aborted due to timeout"
+      }
+    ]
+  },
+  "exclusions": {
+    "partial_node_allocation": 27228,
+    "partial_or_unknown_worker_placement": 7816,
+    "single_node_label_conflicts_with_gpu_count": 6348,
+    "throughput_gpu_denominator_conflict": 163,
+    "power_gpu_count_conflict": 89
+  },
+  "requested": [
+    {
+      "model": "kimik3",
+      "large": 16,
+      "small": 8,
+      "matches": [],
+      "available": [
+        {
+          "hardware": "b200",
+          "type": "agentic_traces",
+          "sizes": [
+            2
+          ]
+        },
+        {
+          "hardware": "b300",
+          "type": "agentic_traces",
+          "sizes": [
+            1
+          ]
+        },
+        {
+          "hardware": "gb200",
+          "type": "agentic_traces",
+          "sizes": [
+            1,
+            4
+          ]
+        },
+        {
+          "hardware": "gb300",
+          "type": "agentic_traces",
+          "sizes": [
+            2,
+            4,
+            6,
+            8
+          ]
+        },
+        {
+          "hardware": "h200",
+          "type": "agentic_traces",
+          "sizes": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "model": "minimaxm2.7",
+      "large": 12,
+      "small": 4,
+      "matches": [],
+      "available": []
+    },
+    {
+      "model": "dsv4",
+      "large": 8,
+      "small": 4,
+      "matches": [
+        "best_observed_throughput:401076:433090:2",
+        "best_observed_throughput:412683:427995:2",
+        "best_observed_throughput:418999:419000:2",
+        "best_observed_throughput:428446:440856:2",
+        "best_observed_throughput:434116:434119:2",
+        "best_observed_throughput:438810:439667:2",
+        "best_observed_throughput:439969:439975:2",
+        "latency_qualified_sessions:439969:439975:2",
+        "latency_qualified_throughput:439969:439975:2"
+      ],
+      "available": [
+        {
+          "hardware": "b200",
+          "type": "agentic_traces",
+          "sizes": [
+            1
+          ]
+        },
+        {
+          "hardware": "b200",
+          "type": "single_turn",
+          "sizes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "hardware": "b300",
+          "type": "agentic_traces",
+          "sizes": [
+            1
+          ]
+        },
+        {
+          "hardware": "b300",
+          "type": "single_turn",
+          "sizes": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "hardware": "gb200",
+          "type": "agentic_traces",
+          "sizes": [
+            2,
+            4,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "hardware": "gb200",
+          "type": "single_turn",
+          "sizes": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            15,
+            16,
+            18
+          ]
+        },
+        {
+          "hardware": "gb300",
+          "type": "agentic_traces",
+          "sizes": [
+            1,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "hardware": "gb300",
+          "type": "single_turn",
+          "sizes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18
+          ]
+        },
+        {
+          "hardware": "h200",
+          "type": "agentic_traces",
+          "sizes": [
+            1
+          ]
+        },
+        {
+          "hardware": "h200",
+          "type": "single_turn",
+          "sizes": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "model": "dsr1",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 8063,
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "qualifiedRows": 3357,
+      "latencyQualifiedRows": 158
+    },
+    {
+      "model": "dsr1",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 336,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 111,
+      "latencyQualifiedRows": 97
+    },
+    {
+      "model": "dsr1",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 4068,
+      "sizes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18
+      ],
+      "qualifiedRows": 844,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "dsr1",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 180,
+      "sizes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        18
+      ],
+      "qualifiedRows": 131,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "dsr1",
+      "hardware": "h100",
+      "type": "single_turn",
+      "rows": 72,
+      "sizes": [
+        4,
+        6,
+        8
+      ],
+      "qualifiedRows": 72,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "dsr1",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 2384,
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "qualifiedRows": 1754,
+      "latencyQualifiedRows": 42
+    },
+    {
+      "model": "dsv4",
+      "hardware": "b200",
+      "type": "agentic_traces",
+      "rows": 113,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 54,
+      "latencyQualifiedRows": 50
+    },
+    {
+      "model": "dsv4",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 442,
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "qualifiedRows": 267,
+      "latencyQualifiedRows": 210
+    },
+    {
+      "model": "dsv4",
+      "hardware": "b300",
+      "type": "agentic_traces",
+      "rows": 95,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 22,
+      "latencyQualifiedRows": 18
+    },
+    {
+      "model": "dsv4",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 579,
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "qualifiedRows": 154,
+      "latencyQualifiedRows": 134
+    },
+    {
+      "model": "dsv4",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "rows": 39,
+      "sizes": [
+        2,
+        4,
+        6,
+        7,
+        8
+      ],
+      "qualifiedRows": 39,
+      "latencyQualifiedRows": 27
+    },
+    {
+      "model": "dsv4",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 86,
+      "sizes": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "qualifiedRows": 86,
+      "latencyQualifiedRows": 4
+    },
+    {
+      "model": "dsv4",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "rows": 51,
+      "sizes": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16
+      ],
+      "qualifiedRows": 48,
+      "latencyQualifiedRows": 21
+    },
+    {
+      "model": "dsv4",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 144,
+      "sizes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18
+      ],
+      "qualifiedRows": 144,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "dsv4",
+      "hardware": "h200",
+      "type": "agentic_traces",
+      "rows": 10,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 10,
+      "latencyQualifiedRows": 8
+    },
+    {
+      "model": "dsv4",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 283,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 152,
+      "latencyQualifiedRows": 112
+    },
+    {
+      "model": "glm5",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 258,
+      "sizes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "qualifiedRows": 146,
+      "latencyQualifiedRows": 103
+    },
+    {
+      "model": "glm5",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 178,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 96,
+      "latencyQualifiedRows": 90
+    },
+    {
+      "model": "glm5",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 46,
+      "sizes": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "qualifiedRows": 46,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "glm5",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 97,
+      "sizes": [
+        4,
+        6,
+        9,
+        10,
+        11,
+        13,
+        15,
+        16,
+        18
+      ],
+      "qualifiedRows": 56,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "glm5",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 45,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 45,
+      "latencyQualifiedRows": 26
+    },
+    {
+      "model": "glm5.1",
+      "hardware": "b200",
+      "type": "agentic_traces",
+      "rows": 2,
+      "sizes": [
+        2
+      ],
+      "qualifiedRows": 2,
+      "latencyQualifiedRows": 2
+    },
+    {
+      "model": "glm5.1",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 4,
+      "sizes": [
+        2
+      ],
+      "qualifiedRows": 4,
+      "latencyQualifiedRows": 4
+    },
+    {
+      "model": "glm5.1",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 56,
+      "sizes": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        17,
+        18
+      ],
+      "qualifiedRows": 56,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "glm5.1",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 32,
+      "sizes": [
+        3,
+        5,
+        9,
+        10,
+        18
+      ],
+      "qualifiedRows": 28,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "glm5.2",
+      "hardware": "b200",
+      "type": "agentic_traces",
+      "rows": 15,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 15,
+      "latencyQualifiedRows": 14
+    },
+    {
+      "model": "glm5.2",
+      "hardware": "b300",
+      "type": "agentic_traces",
+      "rows": 10,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 10,
+      "latencyQualifiedRows": 10
+    },
+    {
+      "model": "glm5.2",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "rows": 14,
+      "sizes": [
+        2,
+        6,
+        8
+      ],
+      "qualifiedRows": 14,
+      "latencyQualifiedRows": 12
+    },
+    {
+      "model": "glm5.2",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "rows": 28,
+      "sizes": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        12
+      ],
+      "qualifiedRows": 28,
+      "latencyQualifiedRows": 16
+    },
+    {
+      "model": "glm5.2",
+      "hardware": "h200",
+      "type": "agentic_traces",
+      "rows": 6,
+      "sizes": [
+        4
+      ],
+      "qualifiedRows": 6,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "gptoss120b",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 7670,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 1350,
+      "latencyQualifiedRows": 11
+    },
+    {
+      "model": "gptoss120b",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 34,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "gptoss120b",
+      "hardware": "h100",
+      "type": "single_turn",
+      "rows": 3125,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 989,
+      "latencyQualifiedRows": 29
+    },
+    {
+      "model": "gptoss120b",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 7776,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 1497,
+      "latencyQualifiedRows": 41
+    },
+    {
+      "model": "kimik2.5",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 232,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 103,
+      "latencyQualifiedRows": 70
+    },
+    {
+      "model": "kimik2.5",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 161,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 56,
+      "latencyQualifiedRows": 56
+    },
+    {
+      "model": "kimik2.5",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 89,
+      "sizes": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "qualifiedRows": 89,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "kimik2.5",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 40,
+      "sizes": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16
+      ],
+      "qualifiedRows": 40,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "kimik2.5",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 60,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 60,
+      "latencyQualifiedRows": 45
+    },
+    {
+      "model": "kimik2.6",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 13,
+      "sizes": [
+        2,
+        3
+      ],
+      "qualifiedRows": 6,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "kimik3",
+      "hardware": "b200",
+      "type": "agentic_traces",
+      "rows": 22,
+      "sizes": [
+        2
+      ],
+      "qualifiedRows": 22,
+      "latencyQualifiedRows": 14
+    },
+    {
+      "model": "kimik3",
+      "hardware": "b300",
+      "type": "agentic_traces",
+      "rows": 20,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 20,
+      "latencyQualifiedRows": 18
+    },
+    {
+      "model": "kimik3",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "rows": 44,
+      "sizes": [
+        1,
+        4
+      ],
+      "qualifiedRows": 44,
+      "latencyQualifiedRows": 22
+    },
+    {
+      "model": "kimik3",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "rows": 20,
+      "sizes": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "qualifiedRows": 20,
+      "latencyQualifiedRows": 9
+    },
+    {
+      "model": "kimik3",
+      "hardware": "h200",
+      "type": "agentic_traces",
+      "rows": 35,
+      "sizes": [
+        4
+      ],
+      "qualifiedRows": 35,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "llama70b",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 6396,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 1639,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "llama70b",
+      "hardware": "h100",
+      "type": "single_turn",
+      "rows": 1244,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 414,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "llama70b",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 3336,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 838,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "minimaxm2.5",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 445,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 15,
+      "latencyQualifiedRows": 15
+    },
+    {
+      "model": "minimaxm2.5",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 288,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 14,
+      "latencyQualifiedRows": 14
+    },
+    {
+      "model": "minimaxm2.5",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 72,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "minimaxm2.5",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 74,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "minimaxm2.5",
+      "hardware": "h100",
+      "type": "single_turn",
+      "rows": 101,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "minimaxm2.5",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 165,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 78,
+      "latencyQualifiedRows": 60
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "b200",
+      "type": "agentic_traces",
+      "rows": 59,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 7,
+      "latencyQualifiedRows": 7
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 855,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 180,
+      "latencyQualifiedRows": 180
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "b300",
+      "type": "agentic_traces",
+      "rows": 57,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 7,
+      "latencyQualifiedRows": 7
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 1064,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 178,
+      "latencyQualifiedRows": 178
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "rows": 17,
+      "sizes": [
+        1,
+        2,
+        3
+      ],
+      "qualifiedRows": 17,
+      "latencyQualifiedRows": 11
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 32,
+      "sizes": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "qualifiedRows": 32,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "rows": 6,
+      "sizes": [
+        2
+      ],
+      "qualifiedRows": 1,
+      "latencyQualifiedRows": 1
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 100,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "h100",
+      "type": "agentic_traces",
+      "rows": 37,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 37,
+      "latencyQualifiedRows": 2
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "h100",
+      "type": "single_turn",
+      "rows": 79,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 52,
+      "latencyQualifiedRows": 48
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "h200",
+      "type": "agentic_traces",
+      "rows": 8,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 8,
+      "latencyQualifiedRows": 8
+    },
+    {
+      "model": "minimaxm3",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 165,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 56,
+      "latencyQualifiedRows": 54
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "b200",
+      "type": "agentic_traces",
+      "rows": 64,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 20,
+      "latencyQualifiedRows": 18
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "b200",
+      "type": "single_turn",
+      "rows": 404,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 104,
+      "latencyQualifiedRows": 62
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "b300",
+      "type": "agentic_traces",
+      "rows": 62,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "b300",
+      "type": "single_turn",
+      "rows": 406,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 60,
+      "latencyQualifiedRows": 60
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "rows": 33,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 19,
+      "latencyQualifiedRows": 17
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "gb200",
+      "type": "single_turn",
+      "rows": 34,
+      "sizes": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "qualifiedRows": 34,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "rows": 26,
+      "sizes": [
+        2,
+        5,
+        7,
+        15
+      ],
+      "qualifiedRows": 12,
+      "latencyQualifiedRows": 12
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "gb300",
+      "type": "single_turn",
+      "rows": 92,
+      "sizes": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "qualifiedRows": 54,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "h100",
+      "type": "agentic_traces",
+      "rows": 9,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "h100",
+      "type": "single_turn",
+      "rows": 60,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 16,
+      "latencyQualifiedRows": 16
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "h200",
+      "type": "agentic_traces",
+      "rows": 16,
+      "sizes": [
+        1
+      ],
+      "qualifiedRows": 8,
+      "latencyQualifiedRows": 8
+    },
+    {
+      "model": "qwen3.5",
+      "hardware": "h200",
+      "type": "single_turn",
+      "rows": 105,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.8next",
+      "hardware": "b300",
+      "type": "agentic_traces",
+      "rows": 5,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.8next",
+      "hardware": "h100",
+      "type": "agentic_traces",
+      "rows": 5,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    },
+    {
+      "model": "qwen3.8next",
+      "hardware": "h200",
+      "type": "agentic_traces",
+      "rows": 5,
+      "sizes": [],
+      "qualifiedRows": 0,
+      "latencyQualifiedRows": 0
+    }
+  ],
+  "regression": {
+    "smallId": "428445",
+    "largeId": "440856",
+    "splitOutputTps": 58048.95301663746,
+    "largeOutputTps": 69208.07665955798,
+    "throughputGainPct": 19.223643257996727,
+    "splitConcurrency": 16384,
+    "largeConcurrency": 8192,
+    "splitActiveSessions": null,
+    "largeActiveSessions": null,
+    "sessionGainPct": null,
+    "splitDau": null,
+    "largeDau": null,
+    "dauGainPct": null
+  }
+}

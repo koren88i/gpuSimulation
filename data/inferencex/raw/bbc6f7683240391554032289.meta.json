@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-V4-Pro&isl=8192&osl=1024",
+  "sha256": "927b4df2cfe23cb6d3c97a6d1821f328975e43c1c6b2766c4a768099102b8747",
+  "retrievedAt": "2026-09-05T13:37:42.217Z",
+  "bytes": 1949642,
+  "count": 1283
+}

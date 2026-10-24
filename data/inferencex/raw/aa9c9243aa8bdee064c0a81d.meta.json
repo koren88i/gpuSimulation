@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Llama-3.3-70B-Instruct-FP8&isl=1024&osl=1024",
+  "sha256": "fa9caaa09076a75c78f835139aa942937060e46ae56364440924d67eeb9c989a",
+  "retrievedAt": "2026-09-05T13:37:33.154Z",
+  "bytes": 6817692,
+  "count": 6192
+}

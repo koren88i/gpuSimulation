@@ -1,0 +1,152 @@
+{
+  "model": {
+    "name": "GLM-5.2",
+    "precision": "NVFP4",
+    "minimumRecipeVramGb": 558
+  },
+  "hardware": {
+    "server": "NVIDIA HGX B200",
+    "gpusPerServer": 8,
+    "hbmPerGpuGb": 180,
+    "hbmPerServerGb": 1440,
+    "totalServers": 16
+  },
+  "defaults": {
+    "servingModel": {
+      "aggregated": {
+        "workers": 4,
+        "gpusPerWorker": 4,
+        "observedConcurrency": 64,
+        "userOutputTokensPerSecondP50": 57.493,
+        "ttftP50Ms": 355.555
+      },
+      "disaggregated": {
+        "prefillWorkers": 3,
+        "prefillGpusPerWorker": 4,
+        "decodeWorkers": 1,
+        "decodeGpusPerWorker": 8,
+        "observedConcurrency": 128,
+        "userOutputTokensPerSecondP50": 65.105,
+        "ttftP50Ms": 1938.059
+      },
+      "roceTransferFactor": 1
+    },
+    "behavior": {
+      "promptsPerSession": 20,
+      "responseSeconds": 30,
+      "betweenPromptsSeconds": 300,
+      "sessionsPerDau": 1.15,
+      "activeHoursPerDay": 8,
+      "targetUtilization": 1
+    },
+    "cost": {
+      "mode": "cloud",
+      "cloudHourly": 68.8,
+      "purchasePrice": 430500,
+      "facilityUplift": 0.3,
+      "amortizationYears": 3,
+      "customServerDay": 1000
+    }
+  },
+  "evidence": [
+    {
+      "label": "HGX B200 server",
+      "value": "8 GPUs · 1.44 TB HBM3e",
+      "status": "published specification",
+      "kind": "published",
+      "note": "This is the unit used everywhere in the comparison.",
+      "source": "NVIDIA HGX AI factory components",
+      "sourceUrl": "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/components.html"
+    },
+    {
+      "label": "Multi-node fabric",
+      "value": "RoCE compute fabric",
+      "status": "published architecture",
+      "kind": "published",
+      "note": "The baseline assumes one 16-server RoCE scheduling domain; the split topology follows the user-defined boundaries.",
+      "source": "NVIDIA physical network topologies",
+      "sourceUrl": "https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/networking-physical-topologies.html"
+    },
+    {
+      "label": "GLM-5.2 B200 benchmark",
+      "value": "4×DTP4 @ 64 · 3P1D @ 128",
+      "status": "published benchmark points",
+      "kind": "published",
+      "note": "NVIDIA reports these operating points for a 64K/400 agentic trace with 90% KV reuse, including P50 user throughput and TTFT.",
+      "source": "NVIDIA Dynamo GLM-5.2 recipe",
+      "sourceUrl": "https://docs.nvidia.com/dynamo/dev/recipes/glm-5-2"
+    },
+    {
+      "label": "GLM-5.2 NVFP4 footprint",
+      "value": "558 GB minimum VRAM",
+      "status": "recipe estimate",
+      "kind": "published",
+      "note": "Useful for feasibility, not a production-concurrency claim.",
+      "source": "vLLM GLM-5.2 recipe",
+      "sourceUrl": "https://github.com/vllm-project/recipes/blob/main/models/zai-org/GLM-5.2.yaml"
+    },
+    {
+      "label": "Deployment packing",
+      "value": "16 GPUs aggregated · 20 GPUs disaggregated",
+      "status": "derived from manifests",
+      "kind": "published",
+      "note": "Aggregated uses four TP4/DP4 workers. Disaggregated uses three 4-GPU prefill workers and one 8-GPU decode worker. The simulator packs whole units, then fills remaining GPUs with TP4 workers.",
+      "source": "NVIDIA Dynamo deployment manifests",
+      "sourceUrl": "https://github.com/ai-dynamo/dynamo/tree/main/recipes/glm-5.2/sglang"
+    },
+    {
+      "label": "RoCE transfer calibration",
+      "value": "100% of published RDMA result",
+      "status": "editable assumption",
+      "kind": "editable",
+      "note": "NVIDIA supports RoCE for production disaggregated KV transfer, but the published GLM-5.2 result used InfiniBand. Measure your fabric and adjust this factor.",
+      "source": "NVIDIA disaggregated communication guide",
+      "sourceUrl": "https://docs.nvidia.com/dynamo/v1.0.2/kubernetes-deployment/deployment-guide/disagg-communication"
+    },
+    {
+      "label": "DAU conversion",
+      "value": "Little’s Law behavior model",
+      "status": "standard queueing identity",
+      "kind": "published",
+      "note": "L = λW links average concurrent work, arrival rate, and time in system. Session behavior inputs remain editable.",
+      "source": "Little’s Law as Viewed on Its 50th Anniversary",
+      "sourceUrl": "https://pubsonline.informs.org/doi/abs/10.1287/opre.1110.0940"
+    },
+    {
+      "label": "Agent-session behavior",
+      "value": "Long, heavy-tailed workflows",
+      "status": "research anchor",
+      "kind": "published",
+      "note": "TraceLab’s 4,300-session coding-agent dataset supports using editable prompts and pause time instead of a universal DAU multiplier.",
+      "source": "TraceLab workload study",
+      "sourceUrl": "https://arxiv.org/abs/2606.30560"
+    },
+    {
+      "label": "DAU definition",
+      "value": "Unique active users in 24 hours",
+      "status": "measurement definition",
+      "kind": "published",
+      "note": "The simulator divides completed sessions by editable sessions-per-DAU to estimate unique users.",
+      "source": "Google Analytics active-user definitions",
+      "sourceUrl": "https://support.google.com/analytics/answer/12253918?hl=en-EN"
+    },
+    {
+      "label": "Cloud cost anchor",
+      "value": "$68.80 / HGX B200 hour",
+      "status": "current vendor list price",
+      "kind": "published",
+      "note": "Eight-GPU on-demand price; equivalent to $1,651.20 per server-day before discounts.",
+      "source": "CoreWeave GPU pricing",
+      "sourceUrl": "https://www.coreweave.com/pricing"
+    },
+    {
+      "label": "Purchase cost anchor",
+      "value": "$430,500 / 8-GPU appliance",
+      "status": "editable vendor listing",
+      "kind": "editable",
+      "note": "Not NVIDIA MSRP. The owned mode adds the selected facility uplift and amortizes over the selected lifetime.",
+      "source": "Dihuni 8×B200 appliance listing",
+      "sourceUrl": "https://www.dihuni.com/product/qubrid-ai-nvidia-8-x-b200-hgx-sxm-air-cooled-server-appliance-powered-by-qubrid-ai-controller-software/"
+    }
+  ]
+}

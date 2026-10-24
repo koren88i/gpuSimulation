@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Kimi-K2.5&isl=1024&osl=8192",
+  "sha256": "ca8395cf70ce9176c585343c2ff62d8060056e501489d6b9175b09d98fabc6fd",
+  "retrievedAt": "2026-09-05T13:37:39.899Z",
+  "bytes": 122615,
+  "count": 87
+}

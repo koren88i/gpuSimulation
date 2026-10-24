@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inference Report Explorer</title>
+  <meta name="description" content="Explore measured GPU deployment comparisons, model active sessions and DAU, and inspect the evidence behind each result.">
+  <meta name="theme-color" content="#f7f6f1">
+  <meta property="og:title" content="Inference Report Explorer">
+  <meta property="og:description" content="Compare GPU deployments and explore shared session and DAU assumptions.">
+  <meta property="og:image" content="https://inference-report-explorer.frosty-moss-6059.chatgpt.site/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="report.css">
+  <script type="module" src="report.js"></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="../index.html"><span class="brandmark">CL</span><span>Capacity Lab<small>Inference research</small></span></a><nav aria-label="Main"><a href="../index.html">Simulator</a><a href="./" aria-current="page">Report explorer</a><a href="../data/shortlist.csv" download>Download shortlist ↗</a></nav></header>
+  <main>
+    <div class="heading"><div><p class="eyebrow">Measured performance. Shared assumptions.</p><h1>Inference report explorer</h1><p class="intro">One hardware budget. A larger deployment versus independent smaller copies.</p></div><span class="snapshot">Research snapshot <strong>05 Sep 2026</strong></span></div>
+    <details class="page-explainer panel">
+      <summary>What is this page?</summary>
+      <div class="page-explainer-content">
+        <p>This page compares two ways to use the <strong>same total number and type of GPUs</strong> for the same model and workload: one larger deployment, or several independent copies of a smaller measured deployment.</p>
+        <ol>
+          <li><strong>Start with measured results.</strong> We use recorded InferenceX operating points and only pair deployments with equal GPU budgets and a shared workload profile.</li>
+          <li><strong>Build the split baseline.</strong> We take one measured smaller deployment and multiply its throughput or session capacity by the number of independent copies that fit in the same GPU budget. Per-request latency is not multiplied.</li>
+          <li><strong>Compare like with like.</strong> The percentage shows the difference between the selected larger point and the combined split baseline. Both sides use the same planning assumptions.</li>
+        </ol>
+        <p><strong>Why these five by default?</strong> They are a small, source-checked editorial set chosen to make the report approachable and show different models, hardware layouts and outcomes. They are examples—not the five biggest wins and not a statistical sample. Use the Collection menu to explore all 15 latency-qualified comparisons or all 318 generated records.</p>
+        <p class="muted"><strong>How to read the result:</strong> it describes selected measured points, not proven maximum capacity. A larger deployment can win or lose, and software differences or sparse load sweeps may help explain the result.</p>
+      </div>
+    </details>
+    <div id="load-state" role="status">Loading the comparison report…</div>
+    <div id="workspace" hidden>
+      <section class="toolbar" aria-label="Comparison filters">
+        <label>Collection<select id="collection"><option value="shortlist">Audited examples</option><option value="qualified">Latency-qualified AgentX comparisons</option><option value="all">All exploratory comparisons</option></select></label>
+        <label>Model<select id="model"><option value="">All models</option></select></label>
+        <label>Hardware<select id="hardware"><option value="">All hardware</option></select></label>
+        <label>Operating point<select id="policy"><option value="">All operating points</option><option value="latency_qualified_sessions">Sessions within latency limits</option><option value="latency_qualified_throughput">Throughput within latency limits</option><option value="best_observed_throughput">Best observed throughput</option></select></label>
+      </section>
+      <div class="layout">
+        <aside class="rail"><div class="rail-heading"><h2>Comparisons</h2><span id="result-count"></span></div><div id="comparison-list"></div></aside>
+        <section class="workbench" id="detail" aria-label="Selected comparison"></section>
+      </div>
+      <section class="assumptions panel">
+        <div><p class="eyebrow">A shared usage profile</p><h2>Make the estimates your own.</h2><p>Applied identically to both sides. Measured throughput and latency stay fixed.</p><p class="muted">Changing these assumptions scales session and DAU estimates; it does not change their relative advantage.</p></div>
+        <form id="profile-form" novalidate>
+          <div class="form-grid">
+            <div><label for="reserve">Capacity reserve (%)</label><input id="reserve" type="number" min="0" max="95" step="1" required><details class="parameter-help"><summary>ⓘ Reserve: meaning & default</summary><p>The fraction of observed session capacity held back from the user estimate. More reserve reduces both sessions and DAU. Default: 20%, an illustrative headroom allowance for variability. It is not a measured safety margin or an availability guarantee; lowering modeled occupancy does not remeasure latency.</p></details></div>
+            <div><label for="active-hours">Active agent hours / user / day</label><input id="active-hours" type="number" min="0.1" max="24" step="0.1" required><details class="parameter-help"><summary>ⓘ Active hours: meaning & default</summary><p>Total time each daily user occupies a root coding session, summed across the day. It includes the session's recorded pauses and subagent activity, not just GPU generation time or time logged in. Default: 2 hours, an illustrative part-day coding-agent usage scenario. It is not an average measured from users. More hours per user means fewer DAU for the same concurrent capacity.</p></details></div>
+            <div><label for="window-hours">Daily activity window (hours)</label><input id="window-hours" type="number" min="1" max="24" step="1" required><details class="parameter-help"><summary>ⓘ Activity window: meaning & default</summary><p>The span of the day over which the modeled population's usage is concentrated. Default: 8 hours represents one workday in a common time zone, an illustrative scenario rather than a measured traffic pattern. A wider window supports more DAU at the same peak capacity and peak ratio. It does not mean each user is active for eight hours.</p></details></div>
+            <div><label for="peak">Peak / average in that window</label><input id="peak" type="number" min="1" max="12" step="0.1" required><details class="parameter-help"><summary>ⓘ Peak ratio: meaning & default</summary><p>Peak concurrent occupancy divided by average concurrent occupancy within the activity window. Default: 2 means the busiest time has twice the window's average load, an illustrative allowance for uneven demand. No production traffic trace establishes this value. A higher peak ratio lowers DAU. Reserve separately holds capacity back; this ratio describes when demand occurs.</p></details></div>
+          </div>
+          <p id="profile-error" class="error" role="alert"></p>
+          <div class="form-actions"><button type="submit" class="primary">Apply assumptions</button><button type="button" id="reset">Reset default</button><button type="button" id="export-profile">Export profile</button><span id="profile-status" role="status"></span></div>
+        </form>
+        <details class="profile-explanation">
+          <summary>How these inputs become sessions and DAU</summary>
+          <p><strong>The workload is grounded in AgentX; the numeric usage defaults are planning assumptions.</strong> They were not fitted to measured human usage and are not an established “typical coding user” profile. The defaults describe a part-day user population sharing one workday, with uneven demand and spare capacity.</p>
+          <div class="equations"><p><strong>S = C × (1 − r) ÷ R</strong></p><p><strong>DAU = S × W ÷ (H × P)</strong></p></div>
+          <p><strong>C</strong> is the selected benchmark's configured root-session concurrency; <strong>r</strong> is reserve as a fraction; <strong>R</strong> is root sessions per active user; <strong>S</strong> is estimated supported concurrent active users. <strong>W</strong> is the activity window in hours, <strong>H</strong> is active session-hours per daily user, and <strong>P</strong> is the within-window peak ratio.</p>
+          <p>Why this equation: DAU × H gives daily user-hours. Dividing by W gives average simultaneous users; multiplying by P gives peak simultaneous users. Set that peak equal to S and solve for DAU. This is an occupancy estimate, not a count of completed tasks or a forecast of adoption.</p>
+          <p><strong>Fixed mapping: R = 1.</strong> One root session tree represents one active user, the simplest explicit mapping. AgentX subagents belong to that tree; they are not extra human users. Multiple independent root sessions per person would reduce supported user counts. The UI keeps this mapping fixed.</p>
+          <div id="profile-equation-values" aria-live="polite"></div>
+          <p><strong>Same treatment on both sides:</strong> calculate the larger point from its measured C. For k independent smaller copies, calculate one smaller point and multiply sessions and DAU by k. Apply identical usage inputs. These controls do not reselect benchmark points.</p>
+          <p><strong>Eligibility defaults:</strong> p90 first-token latency ≤ 10 seconds and p90 time per output token ≤ 100 ms. These are illustrative responsiveness ceilings, not user-validated service targets. Both required metrics must be present and pass. They are fixed in this UI. Fixed-length tests have no coding-session/DAU estimate under the default profile.</p>
+        </details>
+      </section>
+      <details class="coverage panel"><summary>How we selected these comparisons</summary><div id="selection-content"></div></details>
+      <details class="coverage panel"><summary>Coverage & how to read the estimates</summary><div id="coverage-content"></div></details>
+    </div>
+  </main>
+  <footer><span>Capacity Lab · InferenceX research</span><span>Observed operating points, not proven capacity maxima.</span><a href="../data/comparisons.csv" download>All comparison data ↗</a></footer>
+</body>
+</html>

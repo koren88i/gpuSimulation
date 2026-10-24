@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5&benchmarkType=agentic_traces",
+  "sha256": "ec7cfd81aef72b041bd0f96424c0384d4dfedc5efe66b1aa25f360de5369cc7a",
+  "retrievedAt": "2026-09-05T13:37:44.508Z",
+  "bytes": 6186,
+  "count": 2
+}

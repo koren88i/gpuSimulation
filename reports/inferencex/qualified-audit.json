@@ -1,0 +1,608 @@
+{
+  "points": {
+    "439312": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 12,
+      "prefillGpu": 8,
+      "decodeGpu": 4,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.0.dev1"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 1035,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "439312",
+      "artifactId": 9027500288,
+      "artifactSha256": "6d82ec884e9c1770c341fbd561d6f4d6eae1ae15276491d17945fa94a46efcfd",
+      "artifactFile": "data/inferencex/audit/artifact-9027500288.json",
+      "filename": "dsv4_p1x8_d1x4_conc8_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc8_gb300-nv_0_conc8.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31242829669/attempts/3",
+      "sourceSha": "2676944be075008b3b8a5a5749a892a9491e781d"
+    },
+    "439339": {
+      "status": "incomplete",
+      "reason": "Incomplete evidence: original aggregate omits explicit GPU allocation totals",
+      "artifactFile": "data/inferencex/audit/artifact-9030893014.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31275542474/attempts/4"
+    },
+    "439841": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.1"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 5036,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "439841",
+      "artifactId": 9210768216,
+      "artifactSha256": "b36b0b07cab7e7575bc84ce052eb55a3647b29bf350fec3e3a7a4b4509df3a54",
+      "artifactFile": "data/inferencex/audit/artifact-9210768216.json",
+      "filename": "dsv4_p1x8ep8dpa_d0x8ep8dpa_conc68_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc68_gb200-nv_01_conc68.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31743991710/attempts/1",
+      "sourceSha": "323cc1c424266bfd7c9865690ea1604638fb3b0f"
+    },
+    "439929": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "router": {
+        "name": "dynamo-router",
+        "version": "71eb001e17fa73c742f0afe1a6ed96836cb135fd"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 631,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "439929",
+      "artifactId": 9235423625,
+      "artifactSha256": "ad1b574b7010e058072f7e9db11880fe6a9b17155d7c0f0c55f7a84717ee2e38",
+      "artifactFile": "data/inferencex/audit/artifact-9235423625.json",
+      "filename": "glm5.2_p1x8_d0x8_conc4_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_01_conc4.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31825558603/attempts/1",
+      "sourceSha": "b384c40a703d4ed4584e2ffa6af0dff00b2e49dd"
+    },
+    "439949": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "router": {
+        "name": "dynamo-router",
+        "version": "71eb001e17fa73c742f0afe1a6ed96836cb135fd"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 2159,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "439949",
+      "artifactId": 9267839410,
+      "artifactSha256": "8ecff9fe56853de825a653c52f917c615d75d9efc8552bee89027f5042c98143",
+      "artifactFile": "data/inferencex/audit/artifact-9267839410.json",
+      "filename": "glm5.2_p1x8_d0x8_conc16_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc16_gb200-nv_10_recipe-12010b86ca133ae4_conc16.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31958517356/attempts/1",
+      "sourceSha": "5921b0f0451ea6352875935cd3f7e7aae1a20e40"
+    },
+    "439969": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 16,
+      "prefillGpu": 8,
+      "decodeGpu": 8,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.0.dev20260720"
+      },
+      "profilingErrors": {
+        "errors": 26,
+        "attempted": 27934,
+        "errorRatePct": 0.09307653755280304
+      },
+      "metricMatch": true,
+      "rowId": "439969",
+      "artifactId": 9269791953,
+      "artifactSha256": "66d61834cf1b076642705704a99ab5b36a0193c4fa2d4733a0293fcd9611d0b5",
+      "artifactFile": "data/inferencex/audit/artifact-9269791953.json",
+      "filename": "dsv4_p1x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_05_recipe-856babb1e00e524c_conc256.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d"
+    },
+    "439975": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 16,
+      "decodeGpu": 16,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.0.dev20260720"
+      },
+      "profilingErrors": {
+        "errors": 59,
+        "attempted": 57224,
+        "errorRatePct": 0.10310359289808473
+      },
+      "metricMatch": true,
+      "rowId": "439975",
+      "artifactId": 9270659360,
+      "artifactSha256": "95ececcefe742fdfe0418b350ff1976422ae4fdb2c0b2b5d04c41c854acf301d",
+      "artifactFile": "data/inferencex/audit/artifact-9270659360.json",
+      "filename": "dsv4_p2x8ep8dpa_d1x16ep16dpa_conc512_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb200-nv_14_recipe-47a4969f521268bc_conc512.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d"
+    },
+    "440078": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 8,
+      "decodeGpu": 24,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.2.1"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 6224,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "440078",
+      "artifactId": 9377141615,
+      "artifactSha256": "51478af02adaa96d46a39c9d55403fa2c46eab997ca65b889b4f5a4e04f71fba",
+      "artifactFile": "data/inferencex/audit/artifact-9377141615.json",
+      "filename": "glm5.2_p1x8ep8dpa_d6x4_conc45_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw6_disagg-true_spec-mtp_conc45_gb200-nv_05_recipe-47a33cf6d3ecd9ea_conc45.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32207758126/attempts/2",
+      "sourceSha": "6130a8b5b671be6fc9695e8d159197f2cd275482"
+    },
+    "440282": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 20,
+      "prefillGpu": 4,
+      "decodeGpu": 16,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0"
+      },
+      "profilingErrors": {
+        "errors": 10,
+        "attempted": 15924,
+        "errorRatePct": 0.06279829188646069
+      },
+      "metricMatch": true,
+      "rowId": "440282",
+      "artifactId": 9551885230,
+      "artifactSha256": "e14c726cd51e3fd846ec7b9e370f7bbdec976a295d458a7581479babf4ad9a23",
+      "artifactFile": "data/inferencex/audit/artifact-9551885230.json",
+      "filename": "dsv4_p1x4ep4dpa_d1x16ep16dpa_conc128_fp4_dynamo-vllm_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc128_gb300-nv_01_recipe-d84f06bb4a4016f9_conc128.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32809502132/attempts/1",
+      "sourceSha": "54d9fafdbbdb3fca2ca3ed0e1336ee118eb8581e"
+    },
+    "440965": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 12,
+      "prefillGpu": 4,
+      "decodeGpu": 8,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0.dev20260807"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 248,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "440965",
+      "artifactId": 9883947256,
+      "artifactSha256": "c1147fdc07d92fa78338ed43147cc3f7aa4bc4c0915b77a2a6731de53d7f9777",
+      "artifactFile": "data/inferencex/audit/artifact-9883947256.json",
+      "filename": "glm5.2_p1x4ep4dpa_d1x8_conc1_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc1_gb300-nv_00_recipe-2c1e328dedad3e33_conc1.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33716849615/attempts/3",
+      "sourceSha": "0debaafdef3aa9e6cf711a75cb56950500afb87a"
+    },
+    "440966": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 36,
+      "prefillGpu": 20,
+      "decodeGpu": 16,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0.dev20260807"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 20131,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "440966",
+      "artifactId": 9893465190,
+      "artifactSha256": "2b6aa8e1fbc021cbaa7b80e6b50fafeff30078ea66da91b9cfd85b710c9c4f1e",
+      "artifactFile": "data/inferencex/audit/artifact-9893465190.json",
+      "filename": "glm5.2_p5x4ep4dpa_d1x16ep16dpa_conc152_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw5_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc152_gb300-nv_02_recipe-8a4e0280b60c2b98_conc152.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33716849615/attempts/3",
+      "sourceSha": "0debaafdef3aa9e6cf711a75cb56950500afb87a"
+    },
+    "440967": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 48,
+      "prefillGpu": 32,
+      "decodeGpu": 16,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0.dev20260807"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 33000,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "440967",
+      "artifactId": 9898697090,
+      "artifactSha256": "3f4407eb4ad47a38cb5d2812c67d8aa74e1576b0c12a4dc63de2a38600fbcae3",
+      "artifactFile": "data/inferencex/audit/artifact-9898697090.json",
+      "filename": "glm5.2_p8x4ep4dpa_d1x16ep16dpa_conc259_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw8_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc259_gb300-nv_00_recipe-a1478a997df8e481_conc259.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33716849615/attempts/3",
+      "sourceSha": "0debaafdef3aa9e6cf711a75cb56950500afb87a"
+    },
+    "440969": {
+      "status": "verified",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 24,
+      "decodeGpu": 8,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0.dev20260807"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 25620,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "440969",
+      "artifactId": 9891216050,
+      "artifactSha256": "481fa13df41b34f2ca5e4d1ccd8bb1b18880f0bb68c88b7ec926dcf881352ea1",
+      "artifactFile": "data/inferencex/audit/artifact-9891216050.json",
+      "filename": "glm5.2_p6x4ep4dpa_d1x8ep8dpa_conc227_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw6_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc227_gb300-nv_00_recipe-f9811075483abcc0_conc227.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33716849615/attempts/3",
+      "sourceSha": "0debaafdef3aa9e6cf711a75cb56950500afb87a"
+    },
+    "440971": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 36,
+      "prefillGpu": 4,
+      "decodeGpu": 32,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0.dev20260807"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 499,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "440971",
+      "artifactId": 9833004661,
+      "artifactSha256": "b58ea87898b1eb89bf871f88fb5e83b0c5e6ab11609c950fe0da10230e83671d",
+      "artifactFile": "data/inferencex/audit/artifact-9833004661.json",
+      "filename": "dsv4_p1x4ep4dpa_d4x8ep8_conc4_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dpfalse-nw4_disagg-true_spec-mtp_conc4_gb300-nv_00_recipe-00830dd7233d99bf_conc4.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33548589856/attempts/1",
+      "sourceSha": "05cb2d84b76f4617421c6bcb012708f46eaea166"
+    },
+    "440974": {
+      "status": "verified",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 28,
+      "prefillGpu": 4,
+      "decodeGpu": 24,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.4.0.dev20260807"
+      },
+      "profilingErrors": {
+        "errors": 2,
+        "attempted": 3583,
+        "errorRatePct": 0.055819145967066705
+      },
+      "metricMatch": true,
+      "rowId": "440974",
+      "artifactId": 9839763309,
+      "artifactSha256": "cd16f66ec0a2b6d40ff40fcb119693362d6b2df29e331353495d970631706143",
+      "artifactFile": "data/inferencex/audit/artifact-9839763309.json",
+      "filename": "dsv4_p1x4ep4dpa_d6x4ep4_conc24_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep4-dpfalse-nw6_disagg-true_spec-mtp_conc24_gb300-nv_00_recipe-9a7e5f9c42d9a0af_conc24.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33548589856/attempts/1",
+      "sourceSha": "05cb2d84b76f4617421c6bcb012708f46eaea166"
+    },
+    "441056": {
+      "status": "verified",
+      "modelCheckpoint": "moonshotai/Kimi-K3",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "router": null,
+      "profilingErrors": {
+        "errors": 1,
+        "attempted": 543,
+        "errorRatePct": 0.1841620626151013
+      },
+      "metricMatch": true,
+      "rowId": "441056",
+      "artifactId": 9922855888,
+      "artifactSha256": "8a79fd82140dba55721093fee662c48c02a1fdc8877486720140096e2af22294",
+      "artifactFile": "data/inferencex/audit/artifact-9922855888.json",
+      "filename": "kimik3_p1x8_d0x8_conc4_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_08_recipe-78c06441e0d4b36f_conc4.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985"
+    },
+    "441057": {
+      "status": "verified",
+      "modelCheckpoint": "moonshotai/Kimi-K3",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 8,
+      "decodeGpu": 24,
+      "router": {
+        "name": "dynamo-router",
+        "version": "ba83080ecd31c1ce918559e576d3c5bc9e092ff1"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 4174,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "441057",
+      "artifactId": 9902847914,
+      "artifactSha256": "8807edd83c32cf3cf4b36f3a7689d51e3ee9c31b2ff60ab62d800e22c46eb497",
+      "artifactFile": "data/inferencex/audit/artifact-9902847914.json",
+      "filename": "kimik3_p1x8_d3x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw3_disagg-true_spec-mtp_conc32_gb300-nv_00_recipe-6c780787606fa74f_conc32.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985"
+    },
+    "441058": {
+      "status": "verified",
+      "modelCheckpoint": "moonshotai/Kimi-K3",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 24,
+      "prefillGpu": 8,
+      "decodeGpu": 16,
+      "router": {
+        "name": "dynamo-router",
+        "version": "ba83080ecd31c1ce918559e576d3c5bc9e092ff1"
+      },
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 4067,
+        "errorRatePct": 0
+      },
+      "metricMatch": true,
+      "rowId": "441058",
+      "artifactId": 9878869484,
+      "artifactSha256": "c40817928b91384fa68a6f77fa59e155ef7340df876637fa6fbe074254ab9883",
+      "artifactFile": "data/inferencex/audit/artifact-9878869484.json",
+      "filename": "kimik3_p1x8_d2x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc32_gb300-nv_07_recipe-654ab7326aedae68_conc32.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985"
+    }
+  },
+  "pairs": {
+    "latency_qualified_sessions:439312:440971:3": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:439339:439312:3": {
+      "status": "incomplete",
+      "reason": "Smaller: Incomplete evidence: original aggregate omits explicit GPU allocation totals"
+    },
+    "latency_qualified_sessions:439339:440282:5": {
+      "status": "incomplete",
+      "reason": "Smaller: Incomplete evidence: original aggregate omits explicit GPU allocation totals"
+    },
+    "latency_qualified_sessions:439339:440971:9": {
+      "status": "incomplete",
+      "reason": "Smaller: Incomplete evidence: original aggregate omits explicit GPU allocation totals"
+    },
+    "latency_qualified_sessions:439339:440974:7": {
+      "status": "incomplete",
+      "reason": "Smaller: Incomplete evidence: original aggregate omits explicit GPU allocation totals"
+    },
+    "latency_qualified_sessions:439841:439969:2": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:439841:439975:4": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:439929:440967:6": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:439929:440969:4": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:439949:440078:4": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:439969:439975:2": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:440965:440966:3": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:440965:440967:4": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:441056:441057:4": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    },
+    "latency_qualified_sessions:441056:441058:3": {
+      "status": "verified",
+      "reason": "Both original aggregates match API identity, allocation, metrics and profiling accounting; checkpoint and recorded corpus metadata agree across the pair."
+    }
+  },
+  "counts": {
+    "points": {
+      "verified": 17,
+      "incomplete": 1
+    },
+    "pairs": {
+      "verified": 11,
+      "incomplete": 4
+    }
+  },
+  "downloadErrors": [],
+  "limitations": "Aggregate verification does not prove optimal capacity, complete replay compliance, immutable corpus revision, physical host placement or production suitability."
+}

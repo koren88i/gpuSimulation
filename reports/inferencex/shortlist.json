@@ -1,0 +1,1348 @@
+{
+  "profile": {
+    "id": "agentx-coding-v1",
+    "description": "AgentX replay workload with configurable occupancy-based user capacity assumptions; not measured human DAU.",
+    "methodologyUrl": "https://inferencex.semianalysis.com/about",
+    "preferredDataset": "semianalysis_cc_traces_weka_062126",
+    "reserveFraction": 0.2,
+    "rootSessionsPerUser": 1,
+    "activeAgentHoursPerDau": 2,
+    "activityWindowHours": 8,
+    "peakToWindowAverageRatio": 2,
+    "latencyLimits": {
+      "p90_ttft": 10,
+      "p90_tpot": 0.1
+    },
+    "selection": {
+      "asOfDate": "2026-09-05",
+      "maxAgeDays": null,
+      "maxPairDateGapDays": null
+    },
+    "assumptions": "All numeric settings above are editable planning assumptions, not published AgentX human-usage measurements. Recorded delays and fan-out are already included in AgentX; no extra think time is added.",
+    "fixedSequenceProxy": {
+      "enabled": false,
+      "thinkSeconds": 30,
+      "requestsPerUserPerDay": 100,
+      "description": "Optional non-agentic one-outstanding-request proxy. Defaults are hypothetical, not derived from the coding corpus. Disabled to avoid presenting fixed-length tests as measured coding-session capacity."
+    }
+  },
+  "selected": [
+    {
+      "id": "latency_qualified_sessions:439969:439975:2",
+      "policy": "latency_qualified_sessions",
+      "model": "dsv4",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "precision": "fp4",
+      "specMethod": "mtp",
+      "isl": null,
+      "osl": null,
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "nodeUnit": "4-GPU NVL compute-tray equivalents",
+      "gpusPerNode": 4,
+      "smallNodeEquivalents": 4,
+      "largeNodeEquivalents": 8,
+      "copies": 2,
+      "smallId": "439969",
+      "largeId": "439975",
+      "smallDate": "2026-08-18",
+      "largeDate": "2026-08-18",
+      "smallFramework": "dynamo-vllm",
+      "largeFramework": "dynamo-vllm",
+      "smallImage": "vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f",
+      "largeImage": "vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f",
+      "smallObservedConcurrencies": [
+        128,
+        256
+      ],
+      "largeObservedConcurrencies": [
+        512
+      ],
+      "smallRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "largeRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "smallMedianTtft": 2.93856,
+      "largeMedianTtft": 3.0472,
+      "smallP90Ttft": 5.7034,
+      "largeP90Ttft": 6.10671,
+      "smallP90Tpot": 0.01783,
+      "largeP90Tpot": 0.01815,
+      "smallPrefillGpus": 8,
+      "largePrefillGpus": 16,
+      "smallDecodeGpus": 8,
+      "largeDecodeGpus": 16,
+      "flags": [
+        "split_capacity_projected",
+        "physical_hosts_not_independently_verified",
+        "sparse_smaller_configuration_concurrency_sweep",
+        "sparse_larger_configuration_concurrency_sweep",
+        "agentic_scenario_validity_unverified",
+        "dataset_revision_replay_controls_unverified",
+        "speculative_acceptance_provenance_not_verified"
+      ],
+      "splitOutputTps": 14978.20382,
+      "largeOutputTps": 15698.6809,
+      "throughputGainPct": 4.810170088872501,
+      "splitConcurrency": 512,
+      "largeConcurrency": 512,
+      "splitActiveSessions": 409.6,
+      "largeActiveSessions": 409.6,
+      "sessionGainPct": 0,
+      "splitDau": 819.2000000000002,
+      "largeDau": 819.2000000000002,
+      "dauGainPct": 0,
+      "reviewLabel": "Closest controlled comparison",
+      "reviewReason": "Same source run, engine image and router version. Small/large measured loads scale together. Sparse sweeps do not establish the maximum capacity of either size.",
+      "pointVerification": "matched original aggregate",
+      "productionCapacityValidated": false,
+      "sourceAudit": {
+        "small": {
+          "rowId": "439969",
+          "artifactId": 9269791953,
+          "artifactSha256": "66d61834cf1b076642705704a99ab5b36a0193c4fa2d4733a0293fcd9611d0b5",
+          "artifactFile": "data/inferencex/audit/artifact-9269791953.json",
+          "filename": "dsv4_p1x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_05_recipe-856babb1e00e524c_conc256.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+          "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d",
+          "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 16,
+          "prefillGpu": 8,
+          "decodeGpu": 8,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "1.3.0.dev20260720"
+          },
+          "profiledRequests": 27908,
+          "profilingErrors": {
+            "errors": 26,
+            "attempted": 27934,
+            "errorRatePct": 0.09307653755280304
+          },
+          "rawRequestAccounting": {
+            "records_total": 30779,
+            "records_profiled": 27908,
+            "records_dropped_total": 2871,
+            "records_warmup_dropped": 2845,
+            "records_error_dropped": 27,
+            "error_categories": {
+              "InvalidInferenceResultError": 27
+            }
+          },
+          "p90Ttft": 5.7034,
+          "p90Tpot": 0.01783,
+          "higherFailedConcurrencies": [],
+          "observedConcurrencies": [
+            128,
+            256
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        },
+        "large": {
+          "rowId": "439975",
+          "artifactId": 9270659360,
+          "artifactSha256": "95ececcefe742fdfe0418b350ff1976422ae4fdb2c0b2b5d04c41c854acf301d",
+          "artifactFile": "data/inferencex/audit/artifact-9270659360.json",
+          "filename": "dsv4_p2x8ep8dpa_d1x16ep16dpa_conc512_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb200-nv_14_recipe-47a4969f521268bc_conc512.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+          "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d",
+          "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 32,
+          "prefillGpu": 16,
+          "decodeGpu": 16,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "1.3.0.dev20260720"
+          },
+          "profiledRequests": 57165,
+          "profilingErrors": {
+            "errors": 59,
+            "attempted": 57224,
+            "errorRatePct": 0.10310359289808473
+          },
+          "rawRequestAccounting": {
+            "records_total": 62901,
+            "records_profiled": 57165,
+            "records_dropped_total": 5736,
+            "records_warmup_dropped": 5677,
+            "records_error_dropped": 61,
+            "error_categories": {
+              "InvalidInferenceResultError": 61
+            }
+          },
+          "p90Ttft": 6.10671,
+          "p90Tpot": 0.01815,
+          "higherFailedConcurrencies": [],
+          "observedConcurrencies": [
+            512
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        }
+      }
+    },
+    {
+      "id": "latency_qualified_sessions:441056:441058:3",
+      "policy": "latency_qualified_sessions",
+      "model": "kimik3",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "precision": "fp4",
+      "specMethod": "mtp",
+      "isl": null,
+      "osl": null,
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "nodeUnit": "4-GPU NVL compute-tray equivalents",
+      "gpusPerNode": 4,
+      "smallNodeEquivalents": 2,
+      "largeNodeEquivalents": 6,
+      "copies": 3,
+      "smallId": "441056",
+      "largeId": "441058",
+      "smallDate": "2026-09-04",
+      "largeDate": "2026-09-04",
+      "smallFramework": "dynamo-vllm",
+      "largeFramework": "dynamo-vllm",
+      "smallImage": "vllm/vllm-openai:nightly-dev-arm64-cu13-3696c77",
+      "largeImage": "vllm/vllm-openai:nightly-dev-arm64-cu13-3696c77",
+      "smallObservedConcurrencies": [
+        1,
+        4
+      ],
+      "largeObservedConcurrencies": [
+        32,
+        48,
+        64
+      ],
+      "smallRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "largeRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "smallMedianTtft": 1.03039,
+      "largeMedianTtft": 2.35235,
+      "smallP90Ttft": 3.85867,
+      "largeP90Ttft": 6.46101,
+      "smallP90Tpot": 0.00516,
+      "largeP90Tpot": 0.00955,
+      "smallPrefillGpus": null,
+      "largePrefillGpus": 8,
+      "smallDecodeGpus": null,
+      "largeDecodeGpus": 16,
+      "flags": [
+        "split_capacity_projected",
+        "physical_hosts_not_independently_verified",
+        "sparse_smaller_configuration_concurrency_sweep",
+        "agentic_scenario_validity_unverified",
+        "dataset_revision_replay_controls_unverified",
+        "total_concurrency_differs",
+        "speculative_acceptance_provenance_not_verified",
+        "aggregated_vs_disaggregated"
+      ],
+      "splitOutputTps": 578.82213,
+      "largeOutputTps": 1156.74463,
+      "throughputGainPct": 99.84457574211957,
+      "splitConcurrency": 12,
+      "largeConcurrency": 32,
+      "splitActiveSessions": 9.600000000000001,
+      "largeActiveSessions": 25.6,
+      "sessionGainPct": 166.66666666666666,
+      "splitDau": 19.200000000000003,
+      "largeDau": 51.20000000000001,
+      "dauGainPct": 166.66666666666669,
+      "reviewLabel": "Kimi K3: three-copy baseline",
+      "reviewReason": "Same source run and engine image; aggregated baseline versus P/D deployment. Small setup was tested at few concurrency values. Treat the result as an observed operating-point comparison.",
+      "pointVerification": "matched original aggregate",
+      "productionCapacityValidated": false,
+      "sourceAudit": {
+        "small": {
+          "rowId": "441056",
+          "artifactId": 9922855888,
+          "artifactSha256": "8a79fd82140dba55721093fee662c48c02a1fdc8877486720140096e2af22294",
+          "artifactFile": "data/inferencex/audit/artifact-9922855888.json",
+          "filename": "kimik3_p1x8_d0x8_conc4_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_08_recipe-78c06441e0d4b36f_conc4.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+          "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+          "modelCheckpoint": "moonshotai/Kimi-K3",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 8,
+          "prefillGpu": 8,
+          "decodeGpu": 0,
+          "metricMatch": true,
+          "router": null,
+          "profiledRequests": 542,
+          "profilingErrors": {
+            "errors": 1,
+            "attempted": 543,
+            "errorRatePct": 0.1841620626151013
+          },
+          "rawRequestAccounting": {
+            "records_total": 587,
+            "records_profiled": 542,
+            "records_dropped_total": 45,
+            "records_warmup_dropped": 44,
+            "records_error_dropped": 39,
+            "error_categories": {
+              "InvalidInferenceResultError": 39
+            }
+          },
+          "p90Ttft": 3.85867,
+          "p90Tpot": 0.00516,
+          "higherFailedConcurrencies": [
+            70
+          ],
+          "observedConcurrencies": [
+            1,
+            4,
+            48,
+            70
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        },
+        "large": {
+          "rowId": "441058",
+          "artifactId": 9878869484,
+          "artifactSha256": "c40817928b91384fa68a6f77fa59e155ef7340df876637fa6fbe074254ab9883",
+          "artifactFile": "data/inferencex/audit/artifact-9878869484.json",
+          "filename": "kimik3_p1x8_d2x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc32_gb300-nv_07_recipe-654ab7326aedae68_conc32.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+          "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+          "modelCheckpoint": "moonshotai/Kimi-K3",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 24,
+          "prefillGpu": 8,
+          "decodeGpu": 16,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "ba83080ecd31c1ce918559e576d3c5bc9e092ff1"
+          },
+          "profiledRequests": 4067,
+          "profilingErrors": {
+            "errors": 0,
+            "attempted": 4067,
+            "errorRatePct": 0
+          },
+          "rawRequestAccounting": {
+            "records_total": 4421,
+            "records_profiled": 4067,
+            "records_dropped_total": 354,
+            "records_warmup_dropped": 354,
+            "records_error_dropped": 279,
+            "error_categories": {
+              "InvalidInferenceResultError": 279
+            }
+          },
+          "p90Ttft": 6.46101,
+          "p90Tpot": 0.00955,
+          "higherFailedConcurrencies": [
+            48,
+            64
+          ],
+          "observedConcurrencies": [
+            32,
+            48,
+            64
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        }
+      }
+    },
+    {
+      "id": "latency_qualified_sessions:441056:441057:4",
+      "policy": "latency_qualified_sessions",
+      "model": "kimik3",
+      "hardware": "gb300",
+      "type": "agentic_traces",
+      "precision": "fp4",
+      "specMethod": "mtp",
+      "isl": null,
+      "osl": null,
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "nodeUnit": "4-GPU NVL compute-tray equivalents",
+      "gpusPerNode": 4,
+      "smallNodeEquivalents": 2,
+      "largeNodeEquivalents": 8,
+      "copies": 4,
+      "smallId": "441056",
+      "largeId": "441057",
+      "smallDate": "2026-09-04",
+      "largeDate": "2026-09-04",
+      "smallFramework": "dynamo-vllm",
+      "largeFramework": "dynamo-vllm",
+      "smallImage": "vllm/vllm-openai:nightly-dev-arm64-cu13-3696c77",
+      "largeImage": "vllm/vllm-openai:nightly-dev-arm64-cu13-3696c77",
+      "smallObservedConcurrencies": [
+        1,
+        4
+      ],
+      "largeObservedConcurrencies": [
+        1,
+        32,
+        48
+      ],
+      "smallRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "largeRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "smallMedianTtft": 1.03039,
+      "largeMedianTtft": 2.38038,
+      "smallP90Ttft": 3.85867,
+      "largeP90Ttft": 7.47517,
+      "smallP90Tpot": 0.00516,
+      "largeP90Tpot": 0.00704,
+      "smallPrefillGpus": null,
+      "largePrefillGpus": 8,
+      "smallDecodeGpus": null,
+      "largeDecodeGpus": 24,
+      "flags": [
+        "split_capacity_projected",
+        "physical_hosts_not_independently_verified",
+        "sparse_smaller_configuration_concurrency_sweep",
+        "agentic_scenario_validity_unverified",
+        "dataset_revision_replay_controls_unverified",
+        "total_concurrency_differs",
+        "speculative_acceptance_provenance_not_verified",
+        "aggregated_vs_disaggregated"
+      ],
+      "splitOutputTps": 771.76284,
+      "largeOutputTps": 1192.31282,
+      "throughputGainPct": 54.49212610443905,
+      "splitConcurrency": 16,
+      "largeConcurrency": 32,
+      "splitActiveSessions": 12.8,
+      "largeActiveSessions": 25.6,
+      "sessionGainPct": 100,
+      "splitDau": 25.600000000000005,
+      "largeDau": 51.20000000000001,
+      "dauGainPct": 100,
+      "reviewLabel": "Kimi K3: four-copy baseline",
+      "reviewReason": "Same source run and engine image. Shares the small baseline with the preceding example, so these are related examples, not independent replications.",
+      "pointVerification": "matched original aggregate",
+      "productionCapacityValidated": false,
+      "sourceAudit": {
+        "small": {
+          "rowId": "441056",
+          "artifactId": 9922855888,
+          "artifactSha256": "8a79fd82140dba55721093fee662c48c02a1fdc8877486720140096e2af22294",
+          "artifactFile": "data/inferencex/audit/artifact-9922855888.json",
+          "filename": "kimik3_p1x8_d0x8_conc4_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_08_recipe-78c06441e0d4b36f_conc4.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+          "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+          "modelCheckpoint": "moonshotai/Kimi-K3",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 8,
+          "prefillGpu": 8,
+          "decodeGpu": 0,
+          "metricMatch": true,
+          "router": null,
+          "profiledRequests": 542,
+          "profilingErrors": {
+            "errors": 1,
+            "attempted": 543,
+            "errorRatePct": 0.1841620626151013
+          },
+          "rawRequestAccounting": {
+            "records_total": 587,
+            "records_profiled": 542,
+            "records_dropped_total": 45,
+            "records_warmup_dropped": 44,
+            "records_error_dropped": 39,
+            "error_categories": {
+              "InvalidInferenceResultError": 39
+            }
+          },
+          "p90Ttft": 3.85867,
+          "p90Tpot": 0.00516,
+          "higherFailedConcurrencies": [
+            70
+          ],
+          "observedConcurrencies": [
+            1,
+            4,
+            48,
+            70
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        },
+        "large": {
+          "rowId": "441057",
+          "artifactId": 9902847914,
+          "artifactSha256": "8807edd83c32cf3cf4b36f3a7689d51e3ee9c31b2ff60ab62d800e22c46eb497",
+          "artifactFile": "data/inferencex/audit/artifact-9902847914.json",
+          "filename": "kimik3_p1x8_d3x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw3_disagg-true_spec-mtp_conc32_gb300-nv_00_recipe-6c780787606fa74f_conc32.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+          "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+          "modelCheckpoint": "moonshotai/Kimi-K3",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 32,
+          "prefillGpu": 8,
+          "decodeGpu": 24,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "ba83080ecd31c1ce918559e576d3c5bc9e092ff1"
+          },
+          "profiledRequests": 4174,
+          "profilingErrors": {
+            "errors": 0,
+            "attempted": 4174,
+            "errorRatePct": 0
+          },
+          "rawRequestAccounting": {
+            "records_total": 4528,
+            "records_profiled": 4174,
+            "records_dropped_total": 354,
+            "records_warmup_dropped": 354,
+            "records_error_dropped": 275,
+            "error_categories": {
+              "InvalidInferenceResultError": 275
+            }
+          },
+          "p90Ttft": 7.47517,
+          "p90Tpot": 0.00704,
+          "higherFailedConcurrencies": [
+            48
+          ],
+          "observedConcurrencies": [
+            1,
+            32,
+            48
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        }
+      }
+    },
+    {
+      "id": "latency_qualified_sessions:439841:439969:2",
+      "policy": "latency_qualified_sessions",
+      "model": "dsv4",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "precision": "fp4",
+      "specMethod": "mtp",
+      "isl": null,
+      "osl": null,
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "nodeUnit": "4-GPU NVL compute-tray equivalents",
+      "gpusPerNode": 4,
+      "smallNodeEquivalents": 2,
+      "largeNodeEquivalents": 4,
+      "copies": 2,
+      "smallId": "439841",
+      "largeId": "439969",
+      "smallDate": "2026-08-14",
+      "largeDate": "2026-08-18",
+      "smallFramework": "dynamo-vllm",
+      "largeFramework": "dynamo-vllm",
+      "smallImage": "vllm/vllm-openai:nightly-3ee2df30337a301164c46ae444b76ee67e71c106",
+      "largeImage": "vllm/vllm-openai:nightly-dev-arm64-cu13.0.1-426e59f",
+      "smallObservedConcurrencies": [
+        8,
+        12,
+        16,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80
+      ],
+      "largeObservedConcurrencies": [
+        128,
+        256
+      ],
+      "smallRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31743991710/attempts/1",
+      "largeRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "smallMedianTtft": 0.97133,
+      "largeMedianTtft": 2.93856,
+      "smallP90Ttft": 3.59035,
+      "largeP90Ttft": 5.7034,
+      "smallP90Tpot": 0.09826,
+      "largeP90Tpot": 0.01783,
+      "smallPrefillGpus": null,
+      "largePrefillGpus": 8,
+      "smallDecodeGpus": null,
+      "largeDecodeGpus": 8,
+      "flags": [
+        "split_capacity_projected",
+        "physical_hosts_not_independently_verified",
+        "sparse_larger_configuration_concurrency_sweep",
+        "agentic_scenario_validity_unverified",
+        "dataset_revision_replay_controls_unverified",
+        "software_differs",
+        "dates_differ",
+        "total_concurrency_differs",
+        "offload_differs",
+        "speculative_acceptance_provenance_not_verified",
+        "aggregated_vs_disaggregated"
+      ],
+      "splitOutputTps": 2579.81326,
+      "largeOutputTps": 7489.10191,
+      "throughputGainPct": 190.2962794291553,
+      "splitConcurrency": 136,
+      "largeConcurrency": 256,
+      "splitActiveSessions": 108.80000000000001,
+      "largeActiveSessions": 204.8,
+      "sessionGainPct": 88.23529411764706,
+      "splitDau": 217.60000000000002,
+      "largeDau": 409.6000000000001,
+      "dauGainPct": 88.23529411764707,
+      "reviewLabel": "DeepSeek: broader small-side sweep",
+      "reviewReason": "Small-side sweep crosses the latency limit above the selected point; larger-side maximum remains unproven. Engine and router versions differ across four days.",
+      "pointVerification": "matched original aggregate",
+      "productionCapacityValidated": false,
+      "sourceAudit": {
+        "small": {
+          "rowId": "439841",
+          "artifactId": 9210768216,
+          "artifactSha256": "b36b0b07cab7e7575bc84ce052eb55a3647b29bf350fec3e3a7a4b4509df3a54",
+          "artifactFile": "data/inferencex/audit/artifact-9210768216.json",
+          "filename": "dsv4_p1x8ep8dpa_d0x8ep8dpa_conc68_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc68_gb200-nv_01_conc68.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31743991710/attempts/1",
+          "sourceSha": "323cc1c424266bfd7c9865690ea1604638fb3b0f",
+          "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 8,
+          "prefillGpu": 8,
+          "decodeGpu": 0,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "1.3.1"
+          },
+          "profiledRequests": 5036,
+          "profilingErrors": {
+            "errors": 0,
+            "attempted": 5036,
+            "errorRatePct": 0
+          },
+          "rawRequestAccounting": {
+            "records_total": 5787,
+            "records_profiled": 5036,
+            "records_dropped_total": 751,
+            "records_warmup_dropped": 751,
+            "records_error_dropped": 0,
+            "error_categories": {}
+          },
+          "p90Ttft": 3.59035,
+          "p90Tpot": 0.09826,
+          "higherFailedConcurrencies": [
+            72,
+            76,
+            80
+          ],
+          "observedConcurrencies": [
+            8,
+            12,
+            16,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52,
+            56,
+            60,
+            64,
+            68,
+            72,
+            76,
+            80
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        },
+        "large": {
+          "rowId": "439969",
+          "artifactId": 9269791953,
+          "artifactSha256": "66d61834cf1b076642705704a99ab5b36a0193c4fa2d4733a0293fcd9611d0b5",
+          "artifactFile": "data/inferencex/audit/artifact-9269791953.json",
+          "filename": "dsv4_p1x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_05_recipe-856babb1e00e524c_conc256.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+          "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d",
+          "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 16,
+          "prefillGpu": 8,
+          "decodeGpu": 8,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "1.3.0.dev20260720"
+          },
+          "profiledRequests": 27908,
+          "profilingErrors": {
+            "errors": 26,
+            "attempted": 27934,
+            "errorRatePct": 0.09307653755280304
+          },
+          "rawRequestAccounting": {
+            "records_total": 30779,
+            "records_profiled": 27908,
+            "records_dropped_total": 2871,
+            "records_warmup_dropped": 2845,
+            "records_error_dropped": 27,
+            "error_categories": {
+              "InvalidInferenceResultError": 27
+            }
+          },
+          "p90Ttft": 5.7034,
+          "p90Tpot": 0.01783,
+          "higherFailedConcurrencies": [],
+          "observedConcurrencies": [
+            128,
+            256
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        }
+      }
+    },
+    {
+      "id": "latency_qualified_sessions:439949:440078:4",
+      "policy": "latency_qualified_sessions",
+      "model": "glm5.2",
+      "hardware": "gb200",
+      "type": "agentic_traces",
+      "precision": "fp4",
+      "specMethod": "mtp",
+      "isl": null,
+      "osl": null,
+      "dataset": "semianalysis_cc_traces_weka_062126",
+      "nodeUnit": "4-GPU NVL compute-tray equivalents",
+      "gpusPerNode": 4,
+      "smallNodeEquivalents": 2,
+      "largeNodeEquivalents": 8,
+      "copies": 4,
+      "smallId": "439949",
+      "largeId": "440078",
+      "smallDate": "2026-08-16",
+      "largeDate": "2026-08-19",
+      "smallFramework": "dynamo-sglang",
+      "largeFramework": "dynamo-sglang",
+      "smallImage": "lmsysorg/sglang:v0.5.17-cu130",
+      "largeImage": "lmsysorg/sglang:nightly-dev-cu13-20260805-211ee642",
+      "smallObservedConcurrencies": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ],
+      "largeObservedConcurrencies": [
+        45
+      ],
+      "smallRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31958517356/attempts/1",
+      "largeRunUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32207758126/attempts/2",
+      "smallMedianTtft": 0.44221,
+      "largeMedianTtft": 2.11831,
+      "smallP90Ttft": 9.55932,
+      "largeP90Ttft": 6.76545,
+      "smallP90Tpot": 0.01338,
+      "largeP90Tpot": 0.0052,
+      "smallPrefillGpus": null,
+      "largePrefillGpus": 8,
+      "smallDecodeGpus": null,
+      "largeDecodeGpus": 24,
+      "flags": [
+        "split_capacity_projected",
+        "physical_hosts_not_independently_verified",
+        "sparse_larger_configuration_concurrency_sweep",
+        "agentic_scenario_validity_unverified",
+        "dataset_revision_replay_controls_unverified",
+        "software_differs",
+        "dates_differ",
+        "total_concurrency_differs",
+        "speculative_acceptance_provenance_not_verified",
+        "aggregated_vs_disaggregated"
+      ],
+      "splitOutputTps": 2269.85456,
+      "largeOutputTps": 1822.76048,
+      "throughputGainPct": -19.697036448009264,
+      "splitConcurrency": 64,
+      "largeConcurrency": 45,
+      "splitActiveSessions": 51.2,
+      "largeActiveSessions": 36,
+      "sessionGainPct": -29.6875,
+      "splitDau": 102.40000000000002,
+      "largeDau": 72,
+      "dauGainPct": -29.68750000000001,
+      "reviewLabel": "Split-favored counterexample",
+      "reviewReason": "Same model checkpoint and corpus; engine and router versions differ. Larger allocation has one measured concurrency, so this does not prove split deployments have greater ultimate capacity.",
+      "pointVerification": "matched original aggregate",
+      "productionCapacityValidated": false,
+      "sourceAudit": {
+        "small": {
+          "rowId": "439949",
+          "artifactId": 9267839410,
+          "artifactSha256": "8ecff9fe56853de825a653c52f917c615d75d9efc8552bee89027f5042c98143",
+          "artifactFile": "data/inferencex/audit/artifact-9267839410.json",
+          "filename": "glm5.2_p1x8_d0x8_conc16_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc16_gb200-nv_10_recipe-12010b86ca133ae4_conc16.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31958517356/attempts/1",
+          "sourceSha": "5921b0f0451ea6352875935cd3f7e7aae1a20e40",
+          "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 8,
+          "prefillGpu": 8,
+          "decodeGpu": 0,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "71eb001e17fa73c742f0afe1a6ed96836cb135fd"
+          },
+          "profiledRequests": 2159,
+          "profilingErrors": {
+            "errors": 0,
+            "attempted": 2159,
+            "errorRatePct": 0
+          },
+          "rawRequestAccounting": {
+            "records_total": 2336,
+            "records_profiled": 2159,
+            "records_dropped_total": 177,
+            "records_warmup_dropped": 177,
+            "records_error_dropped": 0,
+            "error_categories": {}
+          },
+          "p90Ttft": 9.55932,
+          "p90Tpot": 0.01338,
+          "higherFailedConcurrencies": [],
+          "observedConcurrencies": [
+            1,
+            2,
+            4,
+            8,
+            12,
+            16
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        },
+        "large": {
+          "rowId": "440078",
+          "artifactId": 9377141615,
+          "artifactSha256": "51478af02adaa96d46a39c9d55403fa2c46eab997ca65b889b4f5a4e04f71fba",
+          "artifactFile": "data/inferencex/audit/artifact-9377141615.json",
+          "filename": "glm5.2_p1x8ep8dpa_d6x4_conc45_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw6_disagg-true_spec-mtp_conc45_gb200-nv_05_recipe-47a33cf6d3ecd9ea_conc45.json",
+          "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32207758126/attempts/2",
+          "sourceSha": "6130a8b5b671be6fc9695e8d159197f2cd275482",
+          "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+          "dataset": {
+            "source_type": "public_dataset",
+            "loader": "semianalysis_cc_traces_weka_062126",
+            "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+            "hf_split": "train",
+            "num_dataset_entries": 393
+          },
+          "gpuTotal": 32,
+          "prefillGpu": 8,
+          "decodeGpu": 24,
+          "metricMatch": true,
+          "router": {
+            "name": "dynamo-router",
+            "version": "1.2.1"
+          },
+          "profiledRequests": 6224,
+          "profilingErrors": {
+            "errors": 0,
+            "attempted": 6224,
+            "errorRatePct": 0
+          },
+          "rawRequestAccounting": {
+            "records_total": 6723,
+            "records_profiled": 6224,
+            "records_dropped_total": 499,
+            "records_warmup_dropped": 499,
+            "records_error_dropped": 0,
+            "error_categories": {}
+          },
+          "p90Ttft": 6.76545,
+          "p90Tpot": 0.0052,
+          "higherFailedConcurrencies": [],
+          "observedConcurrencies": [
+            45
+          ],
+          "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+        }
+      }
+    }
+  ],
+  "pointAudits": {
+    "439841": {
+      "rowId": "439841",
+      "artifactId": 9210768216,
+      "artifactSha256": "b36b0b07cab7e7575bc84ce052eb55a3647b29bf350fec3e3a7a4b4509df3a54",
+      "artifactFile": "data/inferencex/audit/artifact-9210768216.json",
+      "filename": "dsv4_p1x8ep8dpa_d0x8ep8dpa_conc68_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc68_gb200-nv_01_conc68.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31743991710/attempts/1",
+      "sourceSha": "323cc1c424266bfd7c9865690ea1604638fb3b0f",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.1"
+      },
+      "profiledRequests": 5036,
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 5036,
+        "errorRatePct": 0
+      },
+      "rawRequestAccounting": {
+        "records_total": 5787,
+        "records_profiled": 5036,
+        "records_dropped_total": 751,
+        "records_warmup_dropped": 751,
+        "records_error_dropped": 0,
+        "error_categories": {}
+      },
+      "p90Ttft": 3.59035,
+      "p90Tpot": 0.09826,
+      "higherFailedConcurrencies": [
+        72,
+        76,
+        80
+      ],
+      "observedConcurrencies": [
+        8,
+        12,
+        16,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        60,
+        64,
+        68,
+        72,
+        76,
+        80
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "439949": {
+      "rowId": "439949",
+      "artifactId": 9267839410,
+      "artifactSha256": "8ecff9fe56853de825a653c52f917c615d75d9efc8552bee89027f5042c98143",
+      "artifactFile": "data/inferencex/audit/artifact-9267839410.json",
+      "filename": "glm5.2_p1x8_d0x8_conc16_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc16_gb200-nv_10_recipe-12010b86ca133ae4_conc16.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31958517356/attempts/1",
+      "sourceSha": "5921b0f0451ea6352875935cd3f7e7aae1a20e40",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "71eb001e17fa73c742f0afe1a6ed96836cb135fd"
+      },
+      "profiledRequests": 2159,
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 2159,
+        "errorRatePct": 0
+      },
+      "rawRequestAccounting": {
+        "records_total": 2336,
+        "records_profiled": 2159,
+        "records_dropped_total": 177,
+        "records_warmup_dropped": 177,
+        "records_error_dropped": 0,
+        "error_categories": {}
+      },
+      "p90Ttft": 9.55932,
+      "p90Tpot": 0.01338,
+      "higherFailedConcurrencies": [],
+      "observedConcurrencies": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "439969": {
+      "rowId": "439969",
+      "artifactId": 9269791953,
+      "artifactSha256": "66d61834cf1b076642705704a99ab5b36a0193c4fa2d4733a0293fcd9611d0b5",
+      "artifactFile": "data/inferencex/audit/artifact-9269791953.json",
+      "filename": "dsv4_p1x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_05_recipe-856babb1e00e524c_conc256.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 16,
+      "prefillGpu": 8,
+      "decodeGpu": 8,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.0.dev20260720"
+      },
+      "profiledRequests": 27908,
+      "profilingErrors": {
+        "errors": 26,
+        "attempted": 27934,
+        "errorRatePct": 0.09307653755280304
+      },
+      "rawRequestAccounting": {
+        "records_total": 30779,
+        "records_profiled": 27908,
+        "records_dropped_total": 2871,
+        "records_warmup_dropped": 2845,
+        "records_error_dropped": 27,
+        "error_categories": {
+          "InvalidInferenceResultError": 27
+        }
+      },
+      "p90Ttft": 5.7034,
+      "p90Tpot": 0.01783,
+      "higherFailedConcurrencies": [],
+      "observedConcurrencies": [
+        128,
+        256
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "439975": {
+      "rowId": "439975",
+      "artifactId": 9270659360,
+      "artifactSha256": "95ececcefe742fdfe0418b350ff1976422ae4fdb2c0b2b5d04c41c854acf301d",
+      "artifactFile": "data/inferencex/audit/artifact-9270659360.json",
+      "filename": "dsv4_p2x8ep8dpa_d1x16ep16dpa_conc512_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb200-nv_14_recipe-47a4969f521268bc_conc512.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666/attempts/2",
+      "sourceSha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d",
+      "modelCheckpoint": "deepseek-ai/DeepSeek-V4-Pro",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 16,
+      "decodeGpu": 16,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.0.dev20260720"
+      },
+      "profiledRequests": 57165,
+      "profilingErrors": {
+        "errors": 59,
+        "attempted": 57224,
+        "errorRatePct": 0.10310359289808473
+      },
+      "rawRequestAccounting": {
+        "records_total": 62901,
+        "records_profiled": 57165,
+        "records_dropped_total": 5736,
+        "records_warmup_dropped": 5677,
+        "records_error_dropped": 61,
+        "error_categories": {
+          "InvalidInferenceResultError": 61
+        }
+      },
+      "p90Ttft": 6.10671,
+      "p90Tpot": 0.01815,
+      "higherFailedConcurrencies": [],
+      "observedConcurrencies": [
+        512
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "440078": {
+      "rowId": "440078",
+      "artifactId": 9377141615,
+      "artifactSha256": "51478af02adaa96d46a39c9d55403fa2c46eab997ca65b889b4f5a4e04f71fba",
+      "artifactFile": "data/inferencex/audit/artifact-9377141615.json",
+      "filename": "glm5.2_p1x8ep8dpa_d6x4_conc45_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw6_disagg-true_spec-mtp_conc45_gb200-nv_05_recipe-47a33cf6d3ecd9ea_conc45.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32207758126/attempts/2",
+      "sourceSha": "6130a8b5b671be6fc9695e8d159197f2cd275482",
+      "modelCheckpoint": "nvidia/GLM-5.2-NVFP4",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 8,
+      "decodeGpu": 24,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.2.1"
+      },
+      "profiledRequests": 6224,
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 6224,
+        "errorRatePct": 0
+      },
+      "rawRequestAccounting": {
+        "records_total": 6723,
+        "records_profiled": 6224,
+        "records_dropped_total": 499,
+        "records_warmup_dropped": 499,
+        "records_error_dropped": 0,
+        "error_categories": {}
+      },
+      "p90Ttft": 6.76545,
+      "p90Tpot": 0.0052,
+      "higherFailedConcurrencies": [],
+      "observedConcurrencies": [
+        45
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "441056": {
+      "rowId": "441056",
+      "artifactId": 9922855888,
+      "artifactSha256": "8a79fd82140dba55721093fee662c48c02a1fdc8877486720140096e2af22294",
+      "artifactFile": "data/inferencex/audit/artifact-9922855888.json",
+      "filename": "kimik3_p1x8_d0x8_conc4_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_08_recipe-78c06441e0d4b36f_conc4.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+      "modelCheckpoint": "moonshotai/Kimi-K3",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 8,
+      "prefillGpu": 8,
+      "decodeGpu": 0,
+      "metricMatch": true,
+      "router": null,
+      "profiledRequests": 542,
+      "profilingErrors": {
+        "errors": 1,
+        "attempted": 543,
+        "errorRatePct": 0.1841620626151013
+      },
+      "rawRequestAccounting": {
+        "records_total": 587,
+        "records_profiled": 542,
+        "records_dropped_total": 45,
+        "records_warmup_dropped": 44,
+        "records_error_dropped": 39,
+        "error_categories": {
+          "InvalidInferenceResultError": 39
+        }
+      },
+      "p90Ttft": 3.85867,
+      "p90Tpot": 0.00516,
+      "higherFailedConcurrencies": [
+        70
+      ],
+      "observedConcurrencies": [
+        1,
+        4,
+        48,
+        70
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "441057": {
+      "rowId": "441057",
+      "artifactId": 9902847914,
+      "artifactSha256": "8807edd83c32cf3cf4b36f3a7689d51e3ee9c31b2ff60ab62d800e22c46eb497",
+      "artifactFile": "data/inferencex/audit/artifact-9902847914.json",
+      "filename": "kimik3_p1x8_d3x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw3_disagg-true_spec-mtp_conc32_gb300-nv_00_recipe-6c780787606fa74f_conc32.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+      "modelCheckpoint": "moonshotai/Kimi-K3",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 32,
+      "prefillGpu": 8,
+      "decodeGpu": 24,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "ba83080ecd31c1ce918559e576d3c5bc9e092ff1"
+      },
+      "profiledRequests": 4174,
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 4174,
+        "errorRatePct": 0
+      },
+      "rawRequestAccounting": {
+        "records_total": 4528,
+        "records_profiled": 4174,
+        "records_dropped_total": 354,
+        "records_warmup_dropped": 354,
+        "records_error_dropped": 275,
+        "error_categories": {
+          "InvalidInferenceResultError": 275
+        }
+      },
+      "p90Ttft": 7.47517,
+      "p90Tpot": 0.00704,
+      "higherFailedConcurrencies": [
+        48
+      ],
+      "observedConcurrencies": [
+        1,
+        32,
+        48
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    },
+    "441058": {
+      "rowId": "441058",
+      "artifactId": 9878869484,
+      "artifactSha256": "c40817928b91384fa68a6f77fa59e155ef7340df876637fa6fbe074254ab9883",
+      "artifactFile": "data/inferencex/audit/artifact-9878869484.json",
+      "filename": "kimik3_p1x8_d2x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc32_gb300-nv_07_recipe-654ab7326aedae68_conc32.json",
+      "runUrl": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625/attempts/3",
+      "sourceSha": "f6984c117827245de7c26ea6496e661dd2e41985",
+      "modelCheckpoint": "moonshotai/Kimi-K3",
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "gpuTotal": 24,
+      "prefillGpu": 8,
+      "decodeGpu": 16,
+      "metricMatch": true,
+      "router": {
+        "name": "dynamo-router",
+        "version": "ba83080ecd31c1ce918559e576d3c5bc9e092ff1"
+      },
+      "profiledRequests": 4067,
+      "profilingErrors": {
+        "errors": 0,
+        "attempted": 4067,
+        "errorRatePct": 0
+      },
+      "rawRequestAccounting": {
+        "records_total": 4421,
+        "records_profiled": 4067,
+        "records_dropped_total": 354,
+        "records_warmup_dropped": 354,
+        "records_error_dropped": 279,
+        "error_categories": {
+          "InvalidInferenceResultError": 279
+        }
+      },
+      "p90Ttft": 6.46101,
+      "p90Tpot": 0.00955,
+      "higherFailedConcurrencies": [
+        48,
+        64
+      ],
+      "observedConcurrencies": [
+        32,
+        48,
+        64
+      ],
+      "verdict": "source_aggregate_verified; capacity_maximum_and_scenario_compliance_unproven"
+    }
+  }
+}

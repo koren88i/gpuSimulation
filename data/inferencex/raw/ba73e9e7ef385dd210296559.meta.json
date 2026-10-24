@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M3&benchmarkType=agentic_traces",
+  "sha256": "12592428f645c9afa8a37e5efd8fcd31b42ccebbdf161e4c92a96688fe31a56c",
+  "retrievedAt": "2026-09-05T13:37:44.066Z",
+  "bytes": 785784,
+  "count": 246
+}

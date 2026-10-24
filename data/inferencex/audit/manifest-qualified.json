@@ -1,0 +1,938 @@
+{
+  "selectedIds": [
+    "439312",
+    "439339",
+    "439841",
+    "439929",
+    "439949",
+    "439969",
+    "439975",
+    "440078",
+    "440282",
+    "440965",
+    "440966",
+    "440967",
+    "440969",
+    "440971",
+    "440974",
+    "441056",
+    "441057",
+    "441058"
+  ],
+  "runs": [
+    {
+      "id": "31242829669",
+      "sha": "2676944be075008b3b8a5a5749a892a9491e781d",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31242829669"
+    },
+    {
+      "id": "31275542474",
+      "sha": "b33ee5f8f0f38b4c65c0839f9ab752cb7d3da1bd",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31275542474"
+    },
+    {
+      "id": "31743991710",
+      "sha": "323cc1c424266bfd7c9865690ea1604638fb3b0f",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31743991710"
+    },
+    {
+      "id": "31825558603",
+      "sha": "b384c40a703d4ed4584e2ffa6af0dff00b2e49dd",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31825558603"
+    },
+    {
+      "id": "31958517356",
+      "sha": "5921b0f0451ea6352875935cd3f7e7aae1a20e40",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31958517356"
+    },
+    {
+      "id": "31965016666",
+      "sha": "c082cd503375a232ae14e736ea31b6c58d2ccf5d",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/31965016666"
+    },
+    {
+      "id": "32207758126",
+      "sha": "6130a8b5b671be6fc9695e8d159197f2cd275482",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32207758126"
+    },
+    {
+      "id": "32809502132",
+      "sha": "54d9fafdbbdb3fca2ca3ed0e1336ee118eb8581e",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/32809502132"
+    },
+    {
+      "id": "33548589856",
+      "sha": "05cb2d84b76f4617421c6bcb012708f46eaea166",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33548589856"
+    },
+    {
+      "id": "33701025625",
+      "sha": "f6984c117827245de7c26ea6496e661dd2e41985",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33701025625"
+    },
+    {
+      "id": "33716849615",
+      "sha": "0debaafdef3aa9e6cf711a75cb56950500afb87a",
+      "url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/33716849615"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 9027500288,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p1x8_d1x4_conc8_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc8_gb300-nv_0",
+      "sha256": "6d82ec884e9c1770c341fbd561d6f4d6eae1ae15276491d17945fa94a46efcfd",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9027500288/zip",
+      "file": "data/inferencex/audit/artifact-9027500288.json"
+    },
+    {
+      "id": 9026881375,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p1x8_d1x16_conc256_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc256_gb300-nv_1",
+      "sha256": "8f27f69cce802b2c839be3bdaffbf0858cee67a52f4d49aefaa91154ec75bb4b",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9026881375/zip",
+      "file": "data/inferencex/audit/artifact-9026881375.json"
+    },
+    {
+      "id": 9026343535,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc8_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc8_gb300-nv_0",
+      "sha256": "f0614bdc2119d8a327a62ded01552c879e882dddb546b391adc9de3b54d10ac7",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9026343535/zip",
+      "file": "data/inferencex/audit/artifact-9026343535.json"
+    },
+    {
+      "id": 9026327855,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p2x8_d1x16_conc256_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc256_gb300-nv_2",
+      "sha256": "c3bbba12cca14744e3a5c6ec284943b6e90a685e011e0ea1e18bf834c2600b1d",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9026327855/zip",
+      "file": "data/inferencex/audit/artifact-9026327855.json"
+    },
+    {
+      "id": 9025286441,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc4_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_0",
+      "sha256": "751fcbb15891950bd3b2692caeda894bf51e60d51b76fb337f473469550ba2ab",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9025286441/zip",
+      "file": "data/inferencex/audit/artifact-9025286441.json"
+    },
+    {
+      "id": 9024052276,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p3x8_d1x16_conc512_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw3_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb300-nv_0",
+      "sha256": "c0aed81eb993b2cdd45b0da5cf4c16b9d253337a622174cc282e54270dae295a",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9024052276/zip",
+      "file": "data/inferencex/audit/artifact-9024052276.json"
+    },
+    {
+      "id": 9022608112,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc16_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc16_gb300-nv_2",
+      "sha256": "cdc164738ec4256f605959c725887a36c513cba31ff4c8fe80230028e2d26f27",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9022608112/zip",
+      "file": "data/inferencex/audit/artifact-9022608112.json"
+    },
+    {
+      "id": 9022566557,
+      "runId": "31242829669",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc1_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc1_gb300-nv_1",
+      "sha256": "48e1746d13a4eb51a23b0fdbeef87679d46e57d6dea4ebfdba4cf62525e39841",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9022566557/zip",
+      "file": "data/inferencex/audit/artifact-9022566557.json"
+    },
+    {
+      "id": 9050196324,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p6x8_d1x16_conc1536_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw6_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc1536_gb300-nv_1",
+      "sha256": "bc587f13b7d84a36980372011ce5c9742a15ba541a1e4dcb0b4dba122e9fa60e",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9050196324/zip",
+      "file": "data/inferencex/audit/artifact-9050196324.json"
+    },
+    {
+      "id": 9046302197,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc4_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_1",
+      "sha256": "d549702338e63d1a1e269de82852c98614b2e35d5ebc519a0555fa4c00cec30d",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9046302197/zip",
+      "file": "data/inferencex/audit/artifact-9046302197.json"
+    },
+    {
+      "id": 9043999101,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p3x8_d1x16_conc768_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw3_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc768_gb300-nv_2",
+      "sha256": "d37d0659580f20dd7d00d080928848a750002d55aa634f9171da652dfcd50335",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9043999101/zip",
+      "file": "data/inferencex/audit/artifact-9043999101.json"
+    },
+    {
+      "id": 9041369963,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc2_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc2_gb300-nv_2",
+      "sha256": "a8d3b1803992f75ef1efbac74a1a65c23782666ea53a19c44d0459660303dbbe",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9041369963/zip",
+      "file": "data/inferencex/audit/artifact-9041369963.json"
+    },
+    {
+      "id": 9032356175,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p1x8_d1x16_conc256_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc256_gb300-nv_0",
+      "sha256": "11c7841a83a0ff4a87c13c9d17636c531382e827b1db565e1b3c9d9d73f44bd2",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9032356175/zip",
+      "file": "data/inferencex/audit/artifact-9032356175.json"
+    },
+    {
+      "id": 9032219736,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p2x8_d1x16_conc512_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb300-nv_2",
+      "sha256": "d2ff02c7e8a39d13d7ee8bf1ae975bbd7259d41271633e7d7d4f8adab9946f82",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9032219736/zip",
+      "file": "data/inferencex/audit/artifact-9032219736.json"
+    },
+    {
+      "id": 9031069002,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p1x8_d1x4_conc80_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc80_gb300-nv_1",
+      "sha256": "e6a4473358574e42792ddfaf1d965df0b422c41d894d1842b1098c8fa917fb4a",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9031069002/zip",
+      "file": "data/inferencex/audit/artifact-9031069002.json"
+    },
+    {
+      "id": 9030893014,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc16_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc16_gb300-nv_0",
+      "sha256": "f91fe4fc22368bd79de0f049d09066836b505a5ac5cfa5e0f0f5f68a5ed8fea2",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9030893014/zip",
+      "file": "data/inferencex/audit/artifact-9030893014.json"
+    },
+    {
+      "id": 9030788158,
+      "runId": "31275542474",
+      "name": "bmk_agentic_dsv4_p1x4_d0x4_conc8_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc8_gb300-nv_2",
+      "sha256": "d358246143dfecc800c47478bf69a7ccfc4b6f23875a0fa48951c51beaed2647",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9030788158/zip",
+      "file": "data/inferencex/audit/artifact-9030788158.json"
+    },
+    {
+      "id": 9226962251,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_00",
+      "sha256": "5fb052b6fc7569c28f869da2d9a29c358da69577071eaa9b53ee5352b800b99c",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9226962251/zip",
+      "file": "data/inferencex/audit/artifact-9226962251.json"
+    },
+    {
+      "id": 9226741707,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p2x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_09",
+      "sha256": "067c69bd8fed5d511ab855c22b0c9b7ceb89fc307259ec776c8fc8e2cd5c1ec6",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9226741707/zip",
+      "file": "data/inferencex/audit/artifact-9226741707.json"
+    },
+    {
+      "id": 9225417288,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc192_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc192_gb200-nv_14",
+      "sha256": "3c5eb14a50ab8784ef74ce3f5403cbd360454ef6fdd94a2c236bba7f417a79e9",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9225417288/zip",
+      "file": "data/inferencex/audit/artifact-9225417288.json"
+    },
+    {
+      "id": 9222473735,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc64_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc64_gb200-nv_12",
+      "sha256": "5168ecfdbd139cdaa14d10eaa1e9ec8a9a2dd5d7cfd5a20862aea253d59f6f66",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9222473735/zip",
+      "file": "data/inferencex/audit/artifact-9222473735.json"
+    },
+    {
+      "id": 9219942556,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc72_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc72_gb200-nv_07",
+      "sha256": "72a88bc29428e1c3ed0dc92904b33e011b8324611d14a86c30a92c0d869d37a1",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9219942556/zip",
+      "file": "data/inferencex/audit/artifact-9219942556.json"
+    },
+    {
+      "id": 9219450412,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc40_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc40_gb200-nv_17",
+      "sha256": "277a4f88df8506f0f4a96a29d44f65ff8c85de6b0b64ae8ec84353c17324f158",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9219450412/zip",
+      "file": "data/inferencex/audit/artifact-9219450412.json"
+    },
+    {
+      "id": 9218248433,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc2_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc2_gb200-nv_02",
+      "sha256": "ea9c5f0c84cb51e9b3815baceceb02f27a6d1db96f4de7052de9bfdedc1af5f9",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9218248433/zip",
+      "file": "data/inferencex/audit/artifact-9218248433.json"
+    },
+    {
+      "id": 9216444117,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc48_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc48_gb200-nv_08",
+      "sha256": "8ea91aea070562b4be7bcab720b7e7a9b7710e9a69f42a9e0143a45d911ecb6c",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9216444117/zip",
+      "file": "data/inferencex/audit/artifact-9216444117.json"
+    },
+    {
+      "id": 9216129612,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc44_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc44_gb200-nv_13",
+      "sha256": "2b3fe8a7c9f5bf184075bdae81097dc4ff8b4ed2d884d2034a8e21c1c1d5ed90",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9216129612/zip",
+      "file": "data/inferencex/audit/artifact-9216129612.json"
+    },
+    {
+      "id": 9216028451,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc32_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc32_gb200-nv_05",
+      "sha256": "ab4e0fb36521b1c088f31eaec7458d931df85b2b1a5957255265aa235131b4d3",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9216028451/zip",
+      "file": "data/inferencex/audit/artifact-9216028451.json"
+    },
+    {
+      "id": 9216021522,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc16_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc16_gb200-nv_04",
+      "sha256": "31f0631a15a1750ea45c2345e0d14307141d2fde9c06d9000f7353f3ff7075d8",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9216021522/zip",
+      "file": "data/inferencex/audit/artifact-9216021522.json"
+    },
+    {
+      "id": 9215742688,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc96_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc96_gb200-nv_09",
+      "sha256": "fbe0d7084485a6728883d00679252e957407a69b3d1e1ab1bb57b55cc98fef38",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9215742688/zip",
+      "file": "data/inferencex/audit/artifact-9215742688.json"
+    },
+    {
+      "id": 9215353816,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc32_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc32_gb200-nv_07",
+      "sha256": "ffb1bfb32316076f07b551b70a1b79231a4a5161ed92475ccb118c5b216c2932",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9215353816/zip",
+      "file": "data/inferencex/audit/artifact-9215353816.json"
+    },
+    {
+      "id": 9214424596,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc8_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc8_gb200-nv_17",
+      "sha256": "2c2cd769cea987c0e2a87acf4e93aadb1a185342cb005f9e34642edb67f929ce",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9214424596/zip",
+      "file": "data/inferencex/audit/artifact-9214424596.json"
+    },
+    {
+      "id": 9213803596,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc76_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc76_gb200-nv_14",
+      "sha256": "283d6e9a6e3c2cc391eb0503c61a04ead9cbc5929eb85eb0b37001d4660108f8",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9213803596/zip",
+      "file": "data/inferencex/audit/artifact-9213803596.json"
+    },
+    {
+      "id": 9213449286,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p2x8ep8dpa_d1x8ep8dpa_conc192_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc192_gb200-nv_15",
+      "sha256": "4c2ad328f4c16d57c225b950fca17aaae86046fabe080beb2f6ea051b857497f",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9213449286/zip",
+      "file": "data/inferencex/audit/artifact-9213449286.json"
+    },
+    {
+      "id": 9212602501,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc64_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc64_gb200-nv_11",
+      "sha256": "5bb17693c44d3f31b0790fe79b8b06d85ab0b85c8628c8674e0ff3b626c6141e",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9212602501/zip",
+      "file": "data/inferencex/audit/artifact-9212602501.json"
+    },
+    {
+      "id": 9212034456,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc80_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc80_gb200-nv_03",
+      "sha256": "6d9fa8d370f0a0f58c6d5ac74b6acb683c7868159d7ce72ca4d568d5d101a6b9",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9212034456/zip",
+      "file": "data/inferencex/audit/artifact-9212034456.json"
+    },
+    {
+      "id": 9211242136,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc24_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc24_gb200-nv_06",
+      "sha256": "50b5641f099985e6254bcb3ade3e089102076b820e32116b748c1f684ea5300c",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9211242136/zip",
+      "file": "data/inferencex/audit/artifact-9211242136.json"
+    },
+    {
+      "id": 9210768216,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc68_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc68_gb200-nv_01",
+      "sha256": "b36b0b07cab7e7575bc84ce052eb55a3647b29bf350fec3e3a7a4b4509df3a54",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9210768216/zip",
+      "file": "data/inferencex/audit/artifact-9210768216.json"
+    },
+    {
+      "id": 9209029552,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc128_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc128_gb200-nv_16",
+      "sha256": "11cd3c029e8cda0d21959829866e66ccd3ab70da1e5df08454fd04286b9630e5",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9209029552/zip",
+      "file": "data/inferencex/audit/artifact-9209029552.json"
+    },
+    {
+      "id": 9208701872,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p2x8ep8dpa_d1x8ep8dpa_conc384_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc384_gb200-nv_12",
+      "sha256": "fb17c3f16299decff26f3b976f420c1234e85422c3ec4612b1c05843a1d901a8",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9208701872/zip",
+      "file": "data/inferencex/audit/artifact-9208701872.json"
+    },
+    {
+      "id": 9205380939,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc56_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc56_gb200-nv_08",
+      "sha256": "6f5dfa008c9062088c5a16b5063dd00b507a7769f3d2a3e760b1e5ced723e4f5",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9205380939/zip",
+      "file": "data/inferencex/audit/artifact-9205380939.json"
+    },
+    {
+      "id": 9205060328,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc6_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc6_gb200-nv_04",
+      "sha256": "d5e3fddf3d4106adfbc16dfb2d3dd7ff76255f3a2cf94dba3eff56c91f2f6e0d",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9205060328/zip",
+      "file": "data/inferencex/audit/artifact-9205060328.json"
+    },
+    {
+      "id": 9203446819,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc12_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc12_gb200-nv_13",
+      "sha256": "e9fb3ee797018e8f3c19bae0040de7eac3d6dec1a2b136e110d116c033ed1c75",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9203446819/zip",
+      "file": "data/inferencex/audit/artifact-9203446819.json"
+    },
+    {
+      "id": 9203443385,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc36_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc36_gb200-nv_05",
+      "sha256": "ab93d0831388fb2e4d30c4c22059d09b097033dc1eee73cd5f8f33358f2b8173",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9203443385/zip",
+      "file": "data/inferencex/audit/artifact-9203443385.json"
+    },
+    {
+      "id": 9203280009,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc4_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb200-nv_07",
+      "sha256": "0360fec7c6a8136e70ed9b44119208879dd7c40d8e96308b6164a1121ee90085",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9203280009/zip",
+      "file": "data/inferencex/audit/artifact-9203280009.json"
+    },
+    {
+      "id": 9201404950,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc60_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc60_gb200-nv_17",
+      "sha256": "71cd458c94185eb55a053b7548a6300b54bfc764aebb9dd0ead7f0cd6d03cc7c",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9201404950/zip",
+      "file": "data/inferencex/audit/artifact-9201404950.json"
+    },
+    {
+      "id": 9201271753,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc52_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc52_gb200-nv_14",
+      "sha256": "f0e1f64514f99677e9a3da485d6c8abeea2f4d7ff8ed0dbfbf215938c3c37b79",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9201271753/zip",
+      "file": "data/inferencex/audit/artifact-9201271753.json"
+    },
+    {
+      "id": 9201241294,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc28_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc28_gb200-nv_09",
+      "sha256": "0e8ba88e524d3e85c16ca551f82749f580cbc20889239a9dc76706ffed6a722f",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9201241294/zip",
+      "file": "data/inferencex/audit/artifact-9201241294.json"
+    },
+    {
+      "id": 9201158815,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d0x8ep8dpa_conc8_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc8_gb200-nv_03",
+      "sha256": "72a34e335e36190e838c042667cba08b0e40c28d5c4c83618d510c3995257d35",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9201158815/zip",
+      "file": "data/inferencex/audit/artifact-9201158815.json"
+    },
+    {
+      "id": 9201121978,
+      "runId": "31743991710",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc1_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc1_gb200-nv_06",
+      "sha256": "d6cd005fc52b99579de93e84eb9c5e1066a58ee44d4ea51e8d6c62c6e8378f30",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9201121978/zip",
+      "file": "data/inferencex/audit/artifact-9201121978.json"
+    },
+    {
+      "id": 9235511532,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p2x8ep8dpa_d1x16ep16dpa_conc128_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc128_gb300-nv_02",
+      "sha256": "00b573127a78fa83e3c42b8ef6cb5b7449f8fc07a5076698682748c3dc2dffd2",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9235511532/zip",
+      "file": "data/inferencex/audit/artifact-9235511532.json"
+    },
+    {
+      "id": 9235423625,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc4_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_01",
+      "sha256": "ad1b574b7010e058072f7e9db11880fe6a9b17155d7c0f0c55f7a84717ee2e38",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9235423625/zip",
+      "file": "data/inferencex/audit/artifact-9235423625.json"
+    },
+    {
+      "id": 9235271335,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p1x4ep4dpa_d6x4_conc45_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw6_disagg-true_spec-mtp_conc45_gb300-nv_00",
+      "sha256": "18f13a42b9d033fe9243a0dfedc00847f98c391acbfb90f0666128df9296daf1",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9235271335/zip",
+      "file": "data/inferencex/audit/artifact-9235271335.json"
+    },
+    {
+      "id": 9233301212,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p1x4ep4dpa_d2x4_conc48_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc48_gb300-nv_01",
+      "sha256": "663d875606a3d010087a01fbbcb682016d2645f57bb5778bba25df443ac11048",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9233301212/zip",
+      "file": "data/inferencex/audit/artifact-9233301212.json"
+    },
+    {
+      "id": 9233171128,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p2x8ep8dpa_d1x16ep16dpa_conc192_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc192_gb300-nv_03",
+      "sha256": "9b0559ea06e632801feb206b7df42db53a0bba53bcf6a8a08cf451410119e468",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9233171128/zip",
+      "file": "data/inferencex/audit/artifact-9233171128.json"
+    },
+    {
+      "id": 9232384458,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p1x4ep4dpa_d4x4_conc48_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw4_disagg-true_spec-mtp_conc48_gb300-nv_02",
+      "sha256": "82b4cfbd54569f4a004adfe95d4ea35e79c7484c04ebd3e58d309c9a52c4446f",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9232384458/zip",
+      "file": "data/inferencex/audit/artifact-9232384458.json"
+    },
+    {
+      "id": 9231184140,
+      "runId": "31825558603",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc2_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc2_gb300-nv_00",
+      "sha256": "27023637131751e8db6ae7f3675f412e4f83253ac5d0e9f3c676a567bb0568fb",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9231184140/zip",
+      "file": "data/inferencex/audit/artifact-9231184140.json"
+    },
+    {
+      "id": 9269339375,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x4_d1x4_conc12_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc12_gb200-nv_13_recipe-9a181e7058909bd0",
+      "sha256": "a27349353722c431e5667094f9714307f73ddfbe5579f2888ef4243eac5113da",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9269339375/zip",
+      "file": "data/inferencex/audit/artifact-9269339375.json"
+    },
+    {
+      "id": 9269079374,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x4_d1x4_conc10_kvdram-hicache_fp4_dynamo-sglang_prefill-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc10_gb200-nv_12_recipe-9a181e7058909bd0",
+      "sha256": "6805a7b4f0f84b0d20a538a6eed67d7610c41b5604b65b6fd0d3f8f3f12291fa",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9269079374/zip",
+      "file": "data/inferencex/audit/artifact-9269079374.json"
+    },
+    {
+      "id": 9268997726,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc12_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc12_gb200-nv_02_recipe-12010b86ca133ae4",
+      "sha256": "c7a38cd32cf0d3463492c289e4c0cd343e7e7e27d98019e28bbb3472fa188af4",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9268997726/zip",
+      "file": "data/inferencex/audit/artifact-9268997726.json"
+    },
+    {
+      "id": 9268926042,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc4_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb200-nv_06_recipe-12010b86ca133ae4",
+      "sha256": "9f457b18a34666fec77435974c14af5d30f1084b5de3a56c3d1e7c59d0133cb4",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9268926042/zip",
+      "file": "data/inferencex/audit/artifact-9268926042.json"
+    },
+    {
+      "id": 9268918299,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc2_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc2_gb200-nv_09_recipe-12010b86ca133ae4",
+      "sha256": "604d73041f9603db3d1921753fba08010dfc6c838ef6606fce722e70f7330942",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9268918299/zip",
+      "file": "data/inferencex/audit/artifact-9268918299.json"
+    },
+    {
+      "id": 9268912474,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc1_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc1_gb200-nv_07_recipe-12010b86ca133ae4",
+      "sha256": "fecbba871989cc7cda55aaa65ba959d2279b59d60016c5aef889990314feb689",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9268912474/zip",
+      "file": "data/inferencex/audit/artifact-9268912474.json"
+    },
+    {
+      "id": 9268105532,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc8_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc8_gb200-nv_05_recipe-12010b86ca133ae4",
+      "sha256": "d312d04fdd0a66b454ca95327ed2769b710cf854472957871f64cae54949200b",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9268105532/zip",
+      "file": "data/inferencex/audit/artifact-9268105532.json"
+    },
+    {
+      "id": 9267839410,
+      "runId": "31958517356",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc16_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc16_gb200-nv_10_recipe-12010b86ca133ae4",
+      "sha256": "8ecff9fe56853de825a653c52f917c615d75d9efc8552bee89027f5042c98143",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9267839410/zip",
+      "file": "data/inferencex/audit/artifact-9267839410.json"
+    },
+    {
+      "id": 9276704999,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc8_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc8_gb200-nv_00_recipe-8d80e5ba8d92dc44",
+      "sha256": "0255968892008e1c60216d4227cffd13f4c9251d046b2b21e3ff88c1c2350fba",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9276704999/zip",
+      "file": "data/inferencex/audit/artifact-9276704999.json"
+    },
+    {
+      "id": 9272245207,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p2x8ep8dpa_d1x12ep12dpa_conc576_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp12-pp1-dcp1-pcp1-ep12-dptrue-nw1_disagg-true_spec-mtp_conc576_gb200-nv_16_recipe-d7afa7f01be968e0",
+      "sha256": "86adb9311fb2c9876a32081b79055f175c65654f25aae190f8f19c0c0899c280",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9272245207/zip",
+      "file": "data/inferencex/audit/artifact-9272245207.json"
+    },
+    {
+      "id": 9272193641,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc128_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc128_gb200-nv_00_recipe-b01cb33e392b60b0",
+      "sha256": "f617ae336a4a117c215cef5da202ddd65fd69006da3adb54b4cddf1a5a27e632",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9272193641/zip",
+      "file": "data/inferencex/audit/artifact-9272193641.json"
+    },
+    {
+      "id": 9270659360,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p2x8ep8dpa_d1x16ep16dpa_conc512_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb200-nv_14_recipe-47a4969f521268bc",
+      "sha256": "95ececcefe742fdfe0418b350ff1976422ae4fdb2c0b2b5d04c41c854acf301d",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9270659360/zip",
+      "file": "data/inferencex/audit/artifact-9270659360.json"
+    },
+    {
+      "id": 9270254500,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc1_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc1_gb200-nv_04_recipe-5e3e6100420afbe7",
+      "sha256": "2392a757a857bfe6f0215386da0a36f8ea83ba1f49824f193181bd44080c69e7",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9270254500/zip",
+      "file": "data/inferencex/audit/artifact-9270254500.json"
+    },
+    {
+      "id": 9269791953,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x8ep8dpa_conc256_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc256_gb200-nv_05_recipe-856babb1e00e524c",
+      "sha256": "66d61834cf1b076642705704a99ab5b36a0193c4fa2d4733a0293fcd9611d0b5",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9269791953/zip",
+      "file": "data/inferencex/audit/artifact-9269791953.json"
+    },
+    {
+      "id": 9269676173,
+      "runId": "31965016666",
+      "name": "bmk_agentic_dsv4_p1x8_d0x8_conc4_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb200-nv_03_recipe-5e3e6100420afbe7",
+      "sha256": "d7c4d040b5588bca008775926e8536f61641ca7f1d55147aed069b4eff501962",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9269676173/zip",
+      "file": "data/inferencex/audit/artifact-9269676173.json"
+    },
+    {
+      "id": 9381838953,
+      "runId": "32207758126",
+      "name": "bmk_agentic_glm5.2_p1x8ep8dpa_d4x4_conc48_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw4_disagg-true_spec-mtp_conc48_gb200-nv_02_recipe-702d8b334cad6fe4",
+      "sha256": "6d5aed22f9c0642f8e502c3a7c91467e3d7bef2e19f51a97e4b3da2d8120f6c3",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9381838953/zip",
+      "file": "data/inferencex/audit/artifact-9381838953.json"
+    },
+    {
+      "id": 9377141615,
+      "runId": "32207758126",
+      "name": "bmk_agentic_glm5.2_p1x8ep8dpa_d6x4_conc45_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep1-dpfalse-nw6_disagg-true_spec-mtp_conc45_gb200-nv_05_recipe-47a33cf6d3ecd9ea",
+      "sha256": "51478af02adaa96d46a39c9d55403fa2c46eab997ca65b889b4f5a4e04f71fba",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9377141615/zip",
+      "file": "data/inferencex/audit/artifact-9377141615.json"
+    },
+    {
+      "id": 9376772421,
+      "runId": "32207758126",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc8_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc8_gb200-nv_12_recipe-5b5af277f4513b42",
+      "sha256": "1d6a5269242c75f06333c365a85756dbd3531e561304ca157a3b87bb261a2629",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9376772421/zip",
+      "file": "data/inferencex/audit/artifact-9376772421.json"
+    },
+    {
+      "id": 9374325933,
+      "runId": "32207758126",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc4_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb200-nv_07_recipe-95ee7b3c8b8de040",
+      "sha256": "4843c0a3b8ae89fc5930ea54b63ad1e7f2365a78473f4a70474dce90d254cd09",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9374325933/zip",
+      "file": "data/inferencex/audit/artifact-9374325933.json"
+    },
+    {
+      "id": 9374030593,
+      "runId": "32207758126",
+      "name": "bmk_agentic_glm5.2_p2x8ep8dpa_d1x16ep16dpa_conc128_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc128_gb200-nv_00_recipe-b9567e846cc182aa",
+      "sha256": "fd73fd1a75200ba09556bfcb51269cbdad28d96ab8860b410c53164619e25aae",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9374030593/zip",
+      "file": "data/inferencex/audit/artifact-9374030593.json"
+    },
+    {
+      "id": 9373357022,
+      "runId": "32207758126",
+      "name": "bmk_agentic_glm5.2_p1x8_d0x8_conc2_kvdram-hicache_fp4_dynamo-sglang_prefill-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc2_gb200-nv_14_recipe-06592c54f1344892",
+      "sha256": "9f740a6dd243dfa69070ead829050986398f11c91b29652c499fb78bd76cafa5",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9373357022/zip",
+      "file": "data/inferencex/audit/artifact-9373357022.json"
+    },
+    {
+      "id": 9555108588,
+      "runId": "32809502132",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x16ep16dpa_conc512_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc512_gb300-nv_03_recipe-6ab19ba8680ab38b",
+      "sha256": "1b3bde74e25a3e9332aed1d837446c0a7923ef42371e6250fba4e7b6a2e0ab98",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9555108588/zip",
+      "file": "data/inferencex/audit/artifact-9555108588.json"
+    },
+    {
+      "id": 9554775756,
+      "runId": "32809502132",
+      "name": "bmk_agentic_dsv4_p1x4ep4dpa_d1x16ep16dpa_conc256_fp4_dynamo-vllm_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc256_gb300-nv_00_recipe-1472857d464c0780",
+      "sha256": "28358f590cc16409234afd7431d521410d0943f1dec3f685ce98ffa8f4791e02",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9554775756/zip",
+      "file": "data/inferencex/audit/artifact-9554775756.json"
+    },
+    {
+      "id": 9551885230,
+      "runId": "32809502132",
+      "name": "bmk_agentic_dsv4_p1x4ep4dpa_d1x16ep16dpa_conc128_fp4_dynamo-vllm_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc128_gb300-nv_01_recipe-d84f06bb4a4016f9",
+      "sha256": "e14c726cd51e3fd846ec7b9e370f7bbdec976a295d458a7581479babf4ad9a23",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9551885230/zip",
+      "file": "data/inferencex/audit/artifact-9551885230.json"
+    },
+    {
+      "id": 9551350151,
+      "runId": "32809502132",
+      "name": "bmk_agentic_dsv4_p1x4ep4dpa_d4x8_conc4_fp4_dynamo-vllm_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw4_disagg-true_spec-mtp_conc4_gb300-nv_02_recipe-ccc45769efa2ef8b",
+      "sha256": "70937f3f6056d371286ac4aed35eec011517246e21cf004a78e283023977011e",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9551350151/zip",
+      "file": "data/inferencex/audit/artifact-9551350151.json"
+    },
+    {
+      "id": 9845087108,
+      "runId": "33548589856",
+      "name": "bmk_agentic_dsv4_p1x8ep8dpa_d1x32ep32dpa_conc388_kvdram-native_fp4_dynamo-trt_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp32-pp1-dcp1-pcp1-ep32-dptrue-nw1_disagg-true_spec-mtp_conc388_gb300-nv_00_recipe-b73591945a557392",
+      "sha256": "a4c74e70f6e09ad6740b0dec1ad9ddae8019d4bac2306cd883180fe385358623",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9845087108/zip",
+      "file": "data/inferencex/audit/artifact-9845087108.json"
+    },
+    {
+      "id": 9840803631,
+      "runId": "33548589856",
+      "name": "bmk_agentic_dsv4_p3x8ep8dpa_d1x16ep16dpa_conc1152_kvdram-native_fp4_dynamo-trt_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw3_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc1152_gb300-nv_07_recipe-09562eb6acb8bcad",
+      "sha256": "3d63897a606fc6b2820836d696a5de77cc95a2f3703f1396e351e2b5e47874bc",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9840803631/zip",
+      "file": "data/inferencex/audit/artifact-9840803631.json"
+    },
+    {
+      "id": 9839763309,
+      "runId": "33548589856",
+      "name": "bmk_agentic_dsv4_p1x4ep4dpa_d6x4ep4_conc24_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep4-dpfalse-nw6_disagg-true_spec-mtp_conc24_gb300-nv_00_recipe-9a7e5f9c42d9a0af",
+      "sha256": "cd16f66ec0a2b6d40ff40fcb119693362d6b2df29e331353495d970631706143",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9839763309/zip",
+      "file": "data/inferencex/audit/artifact-9839763309.json"
+    },
+    {
+      "id": 9836330007,
+      "runId": "33548589856",
+      "name": "bmk_agentic_dsv4_p2x8ep8dpa_d1x32ep32dpa_conc736_kvdram-native_fp4_dynamo-trt_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw2_decode-tp32-pp1-dcp1-pcp1-ep32-dptrue-nw1_disagg-true_spec-mtp_conc736_gb300-nv_00_recipe-3250d9deddf365c4",
+      "sha256": "94570a85a144c4fbe4c739d4256d6e7e1ea824e1953b6031c8c9089b37f9e7e8",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9836330007/zip",
+      "file": "data/inferencex/audit/artifact-9836330007.json"
+    },
+    {
+      "id": 9833004661,
+      "runId": "33548589856",
+      "name": "bmk_agentic_dsv4_p1x4ep4dpa_d4x8ep8_conc4_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dpfalse-nw4_disagg-true_spec-mtp_conc4_gb300-nv_00_recipe-00830dd7233d99bf",
+      "sha256": "b58ea87898b1eb89bf871f88fb5e83b0c5e6ab11609c950fe0da10230e83671d",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9833004661/zip",
+      "file": "data/inferencex/audit/artifact-9833004661.json"
+    },
+    {
+      "id": 9831001276,
+      "runId": "33548589856",
+      "name": "bmk_agentic_dsv4_p5x8ep8dpa_d1x16ep16dpa_conc2626_kvdram-native_fp4_dynamo-trt_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw5_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc2626_gb300-nv_00_recipe-27bc485be5e1c8ef",
+      "sha256": "ebd89e8a443b28fdcbacea8f040c341e434ac281ecfd9717601cf27e5343122b",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9831001276/zip",
+      "file": "data/inferencex/audit/artifact-9831001276.json"
+    },
+    {
+      "id": 9922855888,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d0x8_conc4_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc4_gb300-nv_08_recipe-78c06441e0d4b36f",
+      "sha256": "8a79fd82140dba55721093fee662c48c02a1fdc8877486720140096e2af22294",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9922855888/zip",
+      "file": "data/inferencex/audit/artifact-9922855888.json"
+    },
+    {
+      "id": 9903192950,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d2x8_conc48_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc48_gb300-nv_08_recipe-654ab7326aedae68",
+      "sha256": "387d36b8256e13bb80522813b3871b07aebc9589ffadd503dd20f8c34e381626",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9903192950/zip",
+      "file": "data/inferencex/audit/artifact-9903192950.json"
+    },
+    {
+      "id": 9902847914,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d3x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw3_disagg-true_spec-mtp_conc32_gb300-nv_00_recipe-6c780787606fa74f",
+      "sha256": "8807edd83c32cf3cf4b36f3a7689d51e3ee9c31b2ff60ab62d800e22c46eb497",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9902847914/zip",
+      "file": "data/inferencex/audit/artifact-9902847914.json"
+    },
+    {
+      "id": 9899036583,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d1x8_conc52_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc52_gb300-nv_12_recipe-6fd4e09344f47784",
+      "sha256": "0a0650861b024e0e1b656be5dfc8f4b7f1ff2482f718ae430a3d10114fa91305",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9899036583/zip",
+      "file": "data/inferencex/audit/artifact-9899036583.json"
+    },
+    {
+      "id": 9881154668,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d3x8_conc1_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw3_disagg-true_spec-mtp_conc1_gb300-nv_00_recipe-de789edf167f3d47",
+      "sha256": "61031c08832310d2b27a010756a9bd20d63befb0bb8a1b9749a0c833dda72890",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9881154668/zip",
+      "file": "data/inferencex/audit/artifact-9881154668.json"
+    },
+    {
+      "id": 9880865140,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d3x8_conc48_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw3_disagg-true_spec-mtp_conc48_gb300-nv_01_recipe-6c780787606fa74f",
+      "sha256": "553a0ae4148d7e1c25d06e965766dbf2701f6638a7a781eedaa50c60966f3868",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9880865140/zip",
+      "file": "data/inferencex/audit/artifact-9880865140.json"
+    },
+    {
+      "id": 9878869484,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d2x8_conc32_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc32_gb300-nv_07_recipe-654ab7326aedae68",
+      "sha256": "c40817928b91384fa68a6f77fa59e155ef7340df876637fa6fbe074254ab9883",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9878869484/zip",
+      "file": "data/inferencex/audit/artifact-9878869484.json"
+    },
+    {
+      "id": 9878317307,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d1x8_conc48_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc48_gb300-nv_02_recipe-6fd4e09344f47784",
+      "sha256": "939cf81c7e0c96efeb58c9f29b3f6bb3ba27e7ca6f315f1c0ee75d981ed2640f",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9878317307/zip",
+      "file": "data/inferencex/audit/artifact-9878317307.json"
+    },
+    {
+      "id": 9877671914,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d2x8_conc64_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw2_disagg-true_spec-mtp_conc64_gb300-nv_01_recipe-654ab7326aedae68",
+      "sha256": "f77fda924e9aaa8d36db31d5502484085527faa0dd0ea9e6fd831fd0206ff00c",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9877671914/zip",
+      "file": "data/inferencex/audit/artifact-9877671914.json"
+    },
+    {
+      "id": 9876721343,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d0x8_conc70_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-none_conc70_gb300-nv_09_recipe-67563905f379e1c6",
+      "sha256": "d1afea13770f3630adb05f4455208c5d1987664a58e7db96a47483e592b3c90a",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9876721343/zip",
+      "file": "data/inferencex/audit/artifact-9876721343.json"
+    },
+    {
+      "id": 9876245824,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d0x8_conc48_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-none_conc48_gb300-nv_07_recipe-67563905f379e1c6",
+      "sha256": "f772573f48c9cb244c0a4491645f3f1103b70487651d93f83ae8d7b8da43132a",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9876245824/zip",
+      "file": "data/inferencex/audit/artifact-9876245824.json"
+    },
+    {
+      "id": 9876148121,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d1x8_conc56_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc56_gb300-nv_11_recipe-6fd4e09344f47784",
+      "sha256": "b80c95e944c244d8943ed81ac7487327c561c5f809b3e152ec644e8686e0f91b",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9876148121/zip",
+      "file": "data/inferencex/audit/artifact-9876148121.json"
+    },
+    {
+      "id": 9875755060,
+      "runId": "33701025625",
+      "name": "bmk_agentic_kimik3_p1x8_d0x8_conc1_kvdram-mooncake_fp4_dynamo-vllm_prefill-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw1_decode-tp8-pp1-dcp8-pcp1-ep1-dpfalse-nw0_disagg-false_spec-mtp_conc1_gb300-nv_02_recipe-78c06441e0d4b36f",
+      "sha256": "5b08c6e7670616f8071ef384dfee6255bb9e3921902594bf7c90f9302079b907",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9875755060/zip",
+      "file": "data/inferencex/audit/artifact-9875755060.json"
+    },
+    {
+      "id": 9898697090,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p8x4ep4dpa_d1x16ep16dpa_conc259_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw8_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc259_gb300-nv_00_recipe-a1478a997df8e481",
+      "sha256": "3f4407eb4ad47a38cb5d2812c67d8aa74e1576b0c12a4dc63de2a38600fbcae3",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9898697090/zip",
+      "file": "data/inferencex/audit/artifact-9898697090.json"
+    },
+    {
+      "id": 9893465190,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p5x4ep4dpa_d1x16ep16dpa_conc152_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw5_decode-tp16-pp1-dcp1-pcp1-ep16-dptrue-nw1_disagg-true_spec-mtp_conc152_gb300-nv_02_recipe-8a4e0280b60c2b98",
+      "sha256": "2b6aa8e1fbc021cbaa7b80e6b50fafeff30078ea66da91b9cfd85b710c9c4f1e",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9893465190/zip",
+      "file": "data/inferencex/audit/artifact-9893465190.json"
+    },
+    {
+      "id": 9891216050,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p6x4ep4dpa_d1x8ep8dpa_conc227_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw6_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_disagg-true_spec-mtp_conc227_gb300-nv_00_recipe-f9811075483abcc0",
+      "sha256": "481fa13df41b34f2ca5e4d1ccd8bb1b18880f0bb68c88b7ec926dcf881352ea1",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9891216050/zip",
+      "file": "data/inferencex/audit/artifact-9891216050.json"
+    },
+    {
+      "id": 9887710366,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p3x4ep4dpa_d4x4ep4_conc60_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw3_decode-tp4-pp1-dcp1-pcp1-ep4-dpfalse-nw4_disagg-true_spec-mtp_conc60_gb300-nv_00_recipe-f63399bafdaaa69e",
+      "sha256": "a0db303fea7c579f036000e8bffefbb985466bcd297f276c6961a3f79bf8a2ec",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9887710366/zip",
+      "file": "data/inferencex/audit/artifact-9887710366.json"
+    },
+    {
+      "id": 9886440149,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p1x4ep4dpa_d4x4ep4_conc30_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp4-pp1-dcp1-pcp1-ep4-dpfalse-nw4_disagg-true_spec-mtp_conc30_gb300-nv_02_recipe-697738aa6a8ddf6d",
+      "sha256": "e17dfa254799727663c5df086b519d1e377b628cfd640d6471cf0a18a00773e9",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9886440149/zip",
+      "file": "data/inferencex/audit/artifact-9886440149.json"
+    },
+    {
+      "id": 9884315536,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p1x4ep4dpa_d1x8ep8_conc20_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dpfalse-nw1_disagg-true_spec-mtp_conc20_gb300-nv_10_recipe-f38420fbd10ded77",
+      "sha256": "f95f81cf35a51f82a98ac602b69b8989148914532bf841c40566a8660a957fb1",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9884315536/zip",
+      "file": "data/inferencex/audit/artifact-9884315536.json"
+    },
+    {
+      "id": 9883947256,
+      "runId": "33716849615",
+      "name": "bmk_agentic_glm5.2_p1x4ep4dpa_d1x8_conc1_kvdram-native_fp4_dynamo-trt_prefill-tp4-pp1-dcp1-pcp1-ep4-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep1-dpfalse-nw1_disagg-true_spec-mtp_conc1_gb300-nv_00_recipe-2c1e328dedad3e33",
+      "sha256": "c1147fdc07d92fa78338ed43147cc3f7aa4bc4c0915b77a2a6731de53d7f9777",
+      "source": "https://api.github.com/repos/SemiAnalysisAI/InferenceX/actions/artifacts/9883947256/zip",
+      "file": "data/inferencex/audit/artifact-9883947256.json"
+    }
+  ],
+  "errors": []
+}

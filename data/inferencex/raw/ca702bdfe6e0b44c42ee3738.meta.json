@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=MiniMax-M3&isl=8192&osl=1024",
+  "sha256": "6517b61b30f4b2d241ea10e64895692e1e96ffcf936dd20f2eca064ecd8c9b09",
+  "retrievedAt": "2026-09-05T13:37:42.687Z",
+  "bytes": 3133642,
+  "count": 1977
+}

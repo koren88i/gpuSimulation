@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=gpt-oss-120b&isl=8192&osl=1024",
+  "sha256": "d7a9d94c96917923943b5037f70eef202b5671ba1ef091c93951f0a05b2b8bed",
+  "retrievedAt": "2026-09-05T13:37:35.917Z",
+  "bytes": 11390546,
+  "count": 9942
+}

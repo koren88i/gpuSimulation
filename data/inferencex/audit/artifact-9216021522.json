@@ -1,0 +1,263 @@
+[
+  {
+    "filename": "dsv4_p1x8ep8dpa_d0x8ep8dpa_conc16_fp4_dynamo-vllm_prefill-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw1_decode-tp8-pp1-dcp1-pcp1-ep8-dptrue-nw0_disagg-false_spec-mtp_conc16_gb200-nv_04_conc16.json",
+    "data": {
+      "hw": "cluster:gb200-nv",
+      "conc": 16,
+      "image": "vllm/vllm-openai:nightly-3ee2df30337a301164c46ae444b76ee67e71c106",
+      "model": "deepseek-ai/DeepSeek-V4-Pro",
+      "infmax_model_prefix": "dsv4",
+      "framework": "dynamo-vllm",
+      "precision": "fp4",
+      "spec_decoding": "mtp",
+      "disagg": false,
+      "scenario_type": "agentic-coding",
+      "is_multinode": true,
+      "tp": 8,
+      "ep": 8,
+      "dp_attention": "true",
+      "kv_offloading": "none",
+      "kv_offload_backend": null,
+      "allocated_cpu_dram_gb": 0,
+      "num_requests_total": 2272,
+      "num_requests_successful": 2095,
+      "request_accounting": {
+        "records_total": 2272,
+        "records_profiled": 2095,
+        "records_dropped_total": 177,
+        "records_warmup_dropped": 177,
+        "records_error_dropped": 0,
+        "error_categories": {}
+      },
+      "prefill_num_workers": 1,
+      "prefill_tp": 8,
+      "prefill_pp": 1,
+      "prefill_dcp_size": 1,
+      "prefill_pcp_size": 1,
+      "prefill_ep": 8,
+      "prefill_dp_attention": "true",
+      "num_prefill_gpu": 8,
+      "decode_num_workers": 0,
+      "decode_tp": 0,
+      "decode_pp": 1,
+      "decode_dcp_size": 1,
+      "decode_pcp_size": 1,
+      "decode_ep": 0,
+      "decode_dp_attention": "true",
+      "num_decode_gpu": 0,
+      "router": {
+        "name": "dynamo-router",
+        "version": "1.3.1"
+      },
+      "dataset": {
+        "source_type": "public_dataset",
+        "loader": "semianalysis_cc_traces_weka_062126",
+        "hf_dataset_name": "semianalysisai/cc-traces-weka-062126",
+        "hf_split": "train",
+        "num_dataset_entries": 393
+      },
+      "request_metrics": {
+        "qps": {
+          "window_seconds": 1,
+          "samples": 3617,
+          "mean": 0.57893,
+          "p50": 0.0,
+          "p75": 1,
+          "p90": 2,
+          "p95": 2,
+          "std": 0.86138
+        },
+        "latency": {
+          "ttft": {
+            "mean": 0.87892,
+            "p50": 0.51448,
+            "p75": 0.94691,
+            "p90": 1.74318,
+            "p95": 2.47044,
+            "std": 1.35074
+          },
+          "e2el": {
+            "mean": 11.85547,
+            "p50": 4.70607,
+            "p75": 10.85939,
+            "p90": 27.29212,
+            "p95": 50.53643,
+            "std": 23.08036
+          },
+          "itl": {
+            "mean": 0.01337,
+            "p50": 0.01052,
+            "p75": 0.01312,
+            "p90": 0.01823,
+            "p95": 0.02495,
+            "std": 0.01453
+          },
+          "tpot": {
+            "mean": 0.01337,
+            "p50": 0.01052,
+            "p75": 0.01312,
+            "p90": 0.01823,
+            "p95": 0.02495,
+            "std": 0.01453
+          },
+          "intvty": {
+            "mean": 74.79723,
+            "p50": 95.02368,
+            "p75": 76.24297,
+            "p90": 54.86426,
+            "p95": 40.07346,
+            "std": 25.78107
+          },
+          "full_response_itl": {
+            "mean": 0.01338,
+            "p50": 0.01053,
+            "p75": 0.01312,
+            "p90": 0.01823,
+            "p95": 0.02496,
+            "std": 0.01453
+          },
+          "full_response_intvty": {
+            "mean": 74.76578,
+            "p50": 95.00078,
+            "p75": 76.20923,
+            "p90": 54.86336,
+            "p95": 40.06734,
+            "std": 25.74659
+          }
+        },
+        "tokens": {
+          "input": {
+            "mean": 127409.2611,
+            "p50": 92688,
+            "p75": 142432,
+            "p90": 215291.2,
+            "p95": 376100.8,
+            "std": 129430.61551
+          },
+          "output_actual": {
+            "mean": 938.83962,
+            "p50": 310,
+            "p75": 789,
+            "p90": 2188,
+            "p95": 4346,
+            "std": 2016.51149
+          },
+          "output_expected": {
+            "mean": 1546.43572,
+            "p50": 617,
+            "p75": 1804,
+            "p90": 4010.6,
+            "p95": 5542,
+            "std": 2574.52252
+          }
+        },
+        "throughput": {
+          "input": {
+            "tokens_per_second": 73770.38114
+          },
+          "output": {
+            "tokens_per_second": 543.59123
+          },
+          "total": {
+            "tokens_per_second": 74313.97237
+          },
+          "duration_seconds": 3618.28688,
+          "per_gpu": {
+            "total_tput_tps": 9289.24655,
+            "output_tput_tps": 67.9489,
+            "input_tput_tps": 9221.29764
+          }
+        },
+        "cache": {
+          "theoretical_cache_hit_rate": 0.96956
+        }
+      },
+      "server_metrics": {
+        "present": true,
+        "adapter": "dynamo-vllm",
+        "metric_count": 147,
+        "cache": {
+          "gpu_cache_hit_rate": 0.94456,
+          "cpu_cache_hit_rate": 0.0,
+          "external_cache_hit_rate": 0.0,
+          "overall_cache_hit_rate": 0.94456,
+          "prefix_cache_hits": 155422720,
+          "prefix_cache_queries": 164544636,
+          "external_prefix_cache_hits": 0.0,
+          "external_prefix_cache_queries": 0.0,
+          "cached_tokens_by_source": {},
+          "frontend_cache_hit_rate": 0.95924,
+          "router_kv_hit_rate": 0.90698,
+          "router_shared_cache_hit_rate": null,
+          "frontend_cached_tokens": 256174848,
+          "frontend_input_tokens": 267061332
+        },
+        "kv_cache": {
+          "gpu_usage_pct": 0.43979,
+          "gpu_total_tokens": 17237482,
+          "cpu_usage_pct": null,
+          "cpu_used_tokens": null,
+          "cpu_total_tokens": null
+        },
+        "kv_offload": {
+          "bytes_gpu_to_cpu": null,
+          "bytes_cpu_to_gpu": null,
+          "time_gpu_to_cpu": null,
+          "time_cpu_to_gpu": null,
+          "bandwidth_gpu_to_cpu_bytes_per_second": null,
+          "bandwidth_cpu_to_gpu_bytes_per_second": null
+        },
+        "tokens": {
+          "prompt_total": 267061332,
+          "generation_total": 1966870,
+          "requests_completed": 2095,
+          "prompt_by_source": {
+            "gpu_cache_hit": 155422720,
+            "cpu_or_external_cache_hit": 0.0,
+            "computed": 9121916,
+            "raw": {
+              "external_kv_transfer": 0.0,
+              "local_cache_hit": 155422720,
+              "local_compute": 9121916
+            }
+          }
+        },
+        "sources": [
+          {
+            "id": "decode|http://10.30.1.56:7500/metrics|worker_id=694d9fff79df300d|engine=0",
+            "role": "decode",
+            "prompt_tokens": 30168056,
+            "generation_tokens": 282959,
+            "prefix_cache_hit_rate": 0.93864,
+            "gpu_kv_cache_usage_pct": 0.34939
+          },
+          {
+            "id": "decode|http://10.30.1.56:7500/metrics|worker_id=694d9fff79df300d|engine=1",
+            "role": "decode",
+            "prompt_tokens": 37734898,
+            "generation_tokens": 236009,
+            "prefix_cache_hit_rate": 0.9294,
+            "gpu_kv_cache_usage_pct": 0.36651
+          },
+          {
+            "id": "decode|http://10.30.1.56:7500/metrics|worker_id=694d9fff79df300d|engine=2",
+            "role": "decode",
+            "prompt_tokens": 62888855,
+            "generation_tokens": 314368,
+            "prefix_cache_hit_rate": 0.95634,
+            "gpu_kv_cache_usage_pct": 0.43979
+          },
+          {
+            "id": "decode|http://10.30.1.56:7500/metrics|worker_id=694d9fff79df300d|engine=3",
+            "role": "decode",
+            "prompt_tokens": 33752827,
+            "generation_tokens": 251867,
+            "prefix_cache_hit_rate": 0.94487,
+            "gpu_kv_cache_usage_pct": 0.39146
+          }
+        ]
+      },
+      "kv_cache_pool_tokens": 17237482
+    }
+  }
+]

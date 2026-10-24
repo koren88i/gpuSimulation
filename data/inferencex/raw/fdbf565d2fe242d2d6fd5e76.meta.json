@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=Kimi-K3&benchmarkType=agentic_traces",
+  "sha256": "e227d1682841d1ba89431eea29d2c309fd1ae61cd965332f018b21fcd058b727",
+  "retrievedAt": "2026-09-05T13:37:43.164Z",
+  "bytes": 571268,
+  "count": 172
+}

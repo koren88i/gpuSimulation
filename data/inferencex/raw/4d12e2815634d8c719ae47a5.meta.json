@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=GLM-5&isl=8192&osl=1024",
+  "sha256": "d58fc3cdb9bc54daba0473ffb6c2a0a4e144612b2120744d14b1966a400e967e",
+  "retrievedAt": "2026-09-05T13:37:41.688Z",
+  "bytes": 685561,
+  "count": 478
+}

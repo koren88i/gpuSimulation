@@ -1,0 +1,11 @@
+{
+  "name": "glm-5-2-h200-capacity-simulator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "check": "node --check app.js && node tests/simulator.test.js",
+    "serve": "python -m http.server 4173"
+  }
+}

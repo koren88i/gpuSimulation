@@ -1,0 +1,7 @@
+{
+  "url": "https://inferencex.semianalysis.com/api/v1/benchmarks/history?model=DeepSeek-V4-Pro&benchmarkType=agentic_traces",
+  "sha256": "a2fdc757517e480f1f83b4cc36b1ed5ed768e13e407a0c34a0e564bac4112a7e",
+  "retrievedAt": "2026-09-05T13:37:44.249Z",
+  "bytes": 1311481,
+  "count": 416
+}

@@ -1,0 +1,26 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.openai/
+*.pem
+*.key
+*.p12
+*.pfx
+# Dependencies and generated local artifacts
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+# Local publication work, reference clones and old share bundles
+.publication/
+research-inferencex/
+research-inferencex-app/
+/*.zip
+/reports/*.zip
+# Optional GitHub response caches can contain contributor identity metadata
+/data/inferencex/audit/run-*.json
+/data/inferencex/audit/jobs-*.json
+/data/inferencex/audit/artifacts-*.json
